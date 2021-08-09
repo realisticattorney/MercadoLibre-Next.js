@@ -12,7 +12,7 @@ const Header = () => {
           <Image
             src="https://links.papareact.com/f90"
             width={120}
-            height={35}
+            height={33}
             objectFit="contain"
             className="cursor-pointer"
           />

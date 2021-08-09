@@ -11,7 +11,7 @@ const Header = () => {
           {/*objectFit keeps the aspect ratio*/}
           <Image
             src="https://links.papareact.com/f90"
-            width={120}
+            width={150}
             height={35}
             objectFit="contain"
             className="cursor-pointer"
