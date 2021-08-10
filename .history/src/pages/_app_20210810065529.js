@@ -6,7 +6,7 @@ import { Provider as AuthProvider } from 'next-auth/client'
 
 const MyApp = ({ Component, pageProps }) => {
   return (
-    <AuthProvider session={pageProps.session}>
+    <AuthProvider session={pageProps}>
     <Provider store={store}>
       <Component {...pageProps} />
     </Provider>
