@@ -15,7 +15,7 @@ const Product = ({ product }) => {
   const dispatch = useDispatch()
 
   const addItemToBasket = () => {
-   dispatch(addToBasket(product));
+   dispatch(addToBasket(id));
   }
   
 
@@ -42,7 +42,7 @@ const Product = ({ product }) => {
           <p className="text-xs text-gray-500">FREE Next-day Delivery</p>
         </div>
       )}
-      <button onClick={addItemToBasket} className="mt-auto button focus:ring-0">Add to Basket</button>
+      <button onClick={addItemToBasket(id)} className="mt-auto button focus:ring-0">Add to Basket</button>
     </div>
   );
 };

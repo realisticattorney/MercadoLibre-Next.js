@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { StarIcon } from '@heroicons/react/solid';
-import { useDispatch } from 'react-redux';
-import { addToBasket } from '../slices/basketSlice';
 //line-clamp to interrupt text once it gets too long
 //focus:ring-0 to remove the focus
 const Product = ({ product }) => {
@@ -12,10 +10,8 @@ const Product = ({ product }) => {
 
   const [hasPrime] = useState(Math.random() < 0.5);
 
-  const dispatch = useDispatch()
-
   const addItemToBasket = () => {
-   dispatch(addToBasket(product));
+     
   }
   
 

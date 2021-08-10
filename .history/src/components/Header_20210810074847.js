@@ -20,8 +20,6 @@ const Header = () => {
 
    const  router = useRouter();
 
-   const items = useSelector(selectItems);
-
   return (
     <header>
       <div className="flex items-center bg-amazon_blue p-1 flex-grow py-2">
@@ -62,7 +60,7 @@ const Header = () => {
 
           <div className="relative link flex items-center ">
             <span className="absolute top-0 right-0 md:right-10 h-4 w-4 bg-yellow-400 text-center rounded-full text-black font-bold">
-              {items.length}
+              0
             </span>
 
             <ShoppingCartIcon 

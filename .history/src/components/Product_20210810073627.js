@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { StarIcon } from '@heroicons/react/solid';
-import { useDispatch } from 'react-redux';
-import { addToBasket } from '../slices/basketSlice';
 //line-clamp to interrupt text once it gets too long
 //focus:ring-0 to remove the focus
 const Product = ({ product }) => {
@@ -11,13 +9,6 @@ const Product = ({ product }) => {
   const [rating] = useState(Math.round(Math.random() * 2) + 3);
 
   const [hasPrime] = useState(Math.random() < 0.5);
-
-  const dispatch = useDispatch()
-
-  const addItemToBasket = () => {
-   dispatch(addToBasket(product));
-  }
-  
 
   return (
     <div className="relative flex flex-col m-5 bg-white z-30 p-10">
@@ -42,7 +33,7 @@ const Product = ({ product }) => {
           <p className="text-xs text-gray-500">FREE Next-day Delivery</p>
         </div>
       )}
-      <button onClick={addItemToBasket} className="mt-auto button focus:ring-0">Add to Basket</button>
+      <button onClick={} className="mt-auto button focus:ring-0">Add to Basket</button>
     </div>
   );
 };

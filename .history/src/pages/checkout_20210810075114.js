@@ -2,8 +2,6 @@ import Image from 'next/image';
 import Header from '../components/Header';
 import { useSelector } from 'react-redux';
 import { selectItems } from '../slices/basketSlice';
-import Product from '../components/Product';
-
 
 //border-b for a thin line already styled
 
@@ -30,9 +28,7 @@ const checkout = () => {
             <h1 className="text-3xl border-b pb-4">Your Shopping Basket</h1>
           </div>
           <div>
-             {items.map(item => (
-                <Product product={item}/>)
-                )}
+             
           </div>
         </div>
 

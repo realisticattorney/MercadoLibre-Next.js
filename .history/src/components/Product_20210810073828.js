@@ -15,7 +15,7 @@ const Product = ({ product }) => {
   const dispatch = useDispatch()
 
   const addItemToBasket = () => {
-   dispatch(addToBasket(product));
+   dispatch(addToBasket(id));
   }
   
 
