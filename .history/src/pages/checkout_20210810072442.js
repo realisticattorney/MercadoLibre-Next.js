@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Header from '../components/Header';
-//border-b for a thin line already styled
 
 const checkout = () => {
   return (
