@@ -9,6 +9,7 @@ const ProductFeed = ({ products }) => {
             <Product key={product.id} product={product}/>
          ))}
       </div>
+      </div>
    )
 }
 

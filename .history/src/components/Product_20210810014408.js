@@ -2,7 +2,6 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { StarIcon } from '@heroicons/react/solid';
 //line-clamp to interrupt text once it gets too long
-//focus:ring-0 to remove the focus
 const Product = ({ product }) => {
   const { id, title, price, description, category, image } = product;
 
@@ -33,7 +32,7 @@ const Product = ({ product }) => {
           <p className="text-xs text-gray-500">FREE Next-day Delivery</p>
         </div>
       )}
-      <button className="mt-auto button focus:ring-0">Add to Basket</button>
+      <button className="mt-auto button shadow-none">Add to Basket</button>
     </div>
   );
 };

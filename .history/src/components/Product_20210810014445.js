@@ -2,7 +2,6 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { StarIcon } from '@heroicons/react/solid';
 //line-clamp to interrupt text once it gets too long
-//focus:ring-0 to remove the focus
 const Product = ({ product }) => {
   const { id, title, price, description, category, image } = product;
 
