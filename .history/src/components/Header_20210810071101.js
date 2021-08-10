@@ -25,7 +25,7 @@ const Header = () => {
         <div className="mt-2 flex items-center flex-grow sm:flex-grow-0">
           {/*objectFit keeps the aspect ratio*/}
           <Image
-            onClick={() => router.push('/')}
+            onClick={() => router.push}
             src="https://links.papareact.com/f90"
             width={120}
             height={35}
@@ -61,9 +61,7 @@ const Header = () => {
               0
             </span>
 
-            <ShoppingCartIcon 
-            onClick={() => router.push('/checkout')}
-            className="h-10" />
+            <ShoppingCartIcon className="h-10" />
             <p className="hidden md:inline font-extrabold md:text-sm mt-2">
               Basket
             </p>

@@ -5,18 +5,17 @@ import {
   ShoppingCartIcon,
 } from '@heroicons/react/outline';
 import { signIn, signOut, useSession } from 'next-auth/client';
-import { useRouter } from 'next/router';
 
 //onClick a div...bro
 //next.js Image component compress your image making it smaller w/o losing quality
 //click on the component to go to the file of the component
- 
+
 const Header = () => {
 
    //lets check our session
    const [session ] = useSession();
 
-   const  router = useRouter();
+   
 
   return (
     <header>
@@ -25,7 +24,6 @@ const Header = () => {
         <div className="mt-2 flex items-center flex-grow sm:flex-grow-0">
           {/*objectFit keeps the aspect ratio*/}
           <Image
-            onClick={() => router.push('/')}
             src="https://links.papareact.com/f90"
             width={120}
             height={35}
@@ -61,9 +59,7 @@ const Header = () => {
               0
             </span>
 
-            <ShoppingCartIcon 
-            onClick={() => router.push('/checkout')}
-            className="h-10" />
+            <ShoppingCartIcon className="h-10" />
             <p className="hidden md:inline font-extrabold md:text-sm mt-2">
               Basket
             </p>
