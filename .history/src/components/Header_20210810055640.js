@@ -5,7 +5,7 @@ import {
    ShoppingCartIcon,
 } from '@heroicons/react/outline';
 
-import { signIn, signOut, useSession } from 'next-auth/client';
+import { signIn, signOut,  } from '../actions/auth';
 
 //sticky header
 //next.js Image component compress your image making it smaller w/o losing quality
