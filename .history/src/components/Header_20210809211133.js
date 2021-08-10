@@ -70,7 +70,7 @@ const Header = () => {
       <p className="link hidden lg:inline-flex">Prime</p>
       <p className="link hidden lg:inline-flex">Buy Again</p>
       <p className="link hidden lg:inline-flex">Shopper Toolkit</p>
-      <p className="link hidden lg:inline-flex">Health & Personal Care</p>
+      <p className="link hidden lg:inline-flex">Health & </p>
       </div>
 
       
