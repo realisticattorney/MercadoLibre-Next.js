@@ -7,7 +7,7 @@ const ProductFeed = ({ products }) => {
       <div className="bg-gray-800">
       <div className="grid grid-cols-3 gap-5 bg-white px-5 mx-4">
          {products.map(product => (
-            <Product key={product.id} product={product}/>
+            <Product key={id} />
          ))}
       </div>
       </div>

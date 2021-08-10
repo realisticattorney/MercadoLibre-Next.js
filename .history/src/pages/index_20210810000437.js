@@ -3,11 +3,9 @@ import Header from '../components/Header';
 import Banner from '../components/Banner';
 import ProductFeed from '../components/ProductFeed';
 
-export default function Home( { products }) {
-
-  console.log(products)
+export default function Home() {
   return (
-    <div className="bg-gray-500">
+    <div className="bg-gray-100">
       <Head>
         <title>Amazon 2.0</title>
       </Head>
@@ -19,7 +17,7 @@ export default function Home( { products }) {
         <Banner />
 
         {/* ProductFeed */}
-        <ProductFeed products={products} />
+        <ProductFeed />
       </main>
     </div>
   );
@@ -28,19 +26,16 @@ export default function Home( { products }) {
 
 //To do any server-side 
 // GET >> https://fakestoreapi.com/products
-export async function getServerSideProps(context) {
-
+export async functoin getServerSideProps(context) {
   try {
-  const products = await fetch(`https://fakestoreapi.com/products`)
+  const products = await context.fetch(`https://fakestoreapi.com/products`)
+  products.json()
   return {
     props: {
-      products: await products.json()
+      products
     }
-  };
-} catch (e) {
-  return {
-    error: e
-  };
-}
+  }
+
+  }
 
 }

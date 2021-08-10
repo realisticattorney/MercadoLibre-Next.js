@@ -5,9 +5,10 @@ import ProductFeed from '../components/ProductFeed';
 
 export default function Home( { products }) {
 
-  console.log(products)
+
+
   return (
-    <div className="bg-gray-500">
+    <div className="bg-gray-100">
       <Head>
         <title>Amazon 2.0</title>
       </Head>
@@ -19,7 +20,10 @@ export default function Home( { products }) {
         <Banner />
 
         {/* ProductFeed */}
-        <ProductFeed products={products} />
+        <ProductFeed />
+        <p>
+          {products}
+        </p>
       </main>
     </div>
   );
