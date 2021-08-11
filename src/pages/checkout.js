@@ -5,7 +5,7 @@ import { selectItems } from '../slices/basketSlice';
 import CheckoutProduct from '../components/CheckoutProduct';
 import { useSession } from 'next-auth/client';
 import { loadStripe } from '@stripe/stripe-js';
-import axios from 'axios';
+import axios from 'axios'
 //border-b for a thin line already styled
 const stripePromise = loadStripe(process.env.stripe_public_key);
 
@@ -27,7 +27,7 @@ const Checkout = () => {
     const result = await stripe.redirectToCheckout({
       sessionId: checkoutSession.data.id,
     });
-    
+
     if (result.error) alert(result.error.message);
   };
 
