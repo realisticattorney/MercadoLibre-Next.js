@@ -23,12 +23,7 @@ const Checkout = () => {
       email: session.user.email,
     });
 
-    // Redirect to the checkout session
-    const result = await stripe.redirectToCheckout({
-      sessionId: checkoutSession.data.id,
-    });
     
-    if (result.error) alert(result.error.message);
   };
 
   return (

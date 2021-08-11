@@ -19,11 +19,7 @@ export default async (req, res) => {
   //I'm getting the items array and the email of the user logged in
   //   console.log(items);
   //   console.log(email);
-  //  stripe listen --forward-to localhost:3000/api/webhook
-//90-day 
 //acct_1JNAUjBQb7JmoLpk
-//secret:
-//whsec_QqHba9HYrV4mVHScEakY5uwJPbrnjVdF
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
     shipping_rates: ['shr_1JNBbHBQb7JmoLpkxcqZGxqa'],

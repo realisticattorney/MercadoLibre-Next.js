@@ -19,11 +19,7 @@ export default async (req, res) => {
   //I'm getting the items array and the email of the user logged in
   //   console.log(items);
   //   console.log(email);
-  //  stripe listen --forward-to localhost:3000/api/webhook
-//90-day 
-//acct_1JNAUjBQb7JmoLpk
-//secret:
-//whsec_QqHba9HYrV4mVHScEakY5uwJPbrnjVdF
+
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
     shipping_rates: ['shr_1JNBbHBQb7JmoLpkxcqZGxqa'],
@@ -32,8 +28,8 @@ export default async (req, res) => {
     },
     line_items: transformedItems,
     mode: 'payment',
-    success_url: `${process.env.HOST}/success`,
-    cancel_url: `${process.env.HOST}/checkout`,
+    success_url: `${process.env.BASE_URL}/success`,
+    cancel_url: `${process.env.BASE_URL}/checkout`,
     metadata: {
       email,
       images: JSON.stringify(items.map((item) => item.image)),

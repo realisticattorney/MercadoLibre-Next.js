@@ -25,11 +25,14 @@ const Checkout = () => {
 
     // Redirect to the checkout session
     const result = await stripe.redirectToCheckout({
-      sessionId: checkoutSession.data.id,
-    });
-    
-    if (result.error) alert(result.error.message);
-  };
+       sessionId: checkoutSession.data.id,
+
+  });
+    if(result.error) {
+      alert(result.error);
+    }
+
+}
 
   return (
     <div className="bg-gray-100">
