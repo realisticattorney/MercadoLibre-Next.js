@@ -4,9 +4,8 @@ import { useSelector } from 'react-redux';
 import { selectItems } from '../slices/basketSlice';
 import CheckoutProduct from '../components/CheckoutProduct';
 import { useSession } from 'next-auth/client';
-import { loadStripe } from '@stripe/stripe-js'
 //border-b for a thin line already styled
-const stripePromise = loadStripe();
+const stripePromise 
 
 const checkout = () => {
   const items = useSelector(selectItems);

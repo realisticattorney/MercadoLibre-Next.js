@@ -4,17 +4,12 @@ import { useSelector } from 'react-redux';
 import { selectItems } from '../slices/basketSlice';
 import CheckoutProduct from '../components/CheckoutProduct';
 import { useSession } from 'next-auth/client';
-import { loadStripe } from '@stripe/stripe-js'
 //border-b for a thin line already styled
-const stripePromise = loadStripe();
 
 const checkout = () => {
   const items = useSelector(selectItems);
 
   const [session] = useSession();
-
-const createCheckoutSession = (items) => {
-
 
   return (
     <div className="bg-gray-100">
@@ -62,7 +57,7 @@ const createCheckoutSession = (items) => {
               </h2>
               <button
                 role="link"
-                onClick={createCheckoutSession}
+                onClick={() => {
                 className={`button mt-2 ${
                   !session &&
                   `from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed active:from-gray-500 active:to-gray-700 `
