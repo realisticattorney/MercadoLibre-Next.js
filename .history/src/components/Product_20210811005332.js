@@ -7,6 +7,8 @@ import { toast } from 'react-toastify';
 //line-clamp to interrupt text once it gets too long
 //focus:ring-0 to remove the focus
 const Product = ({ product }) => {
+
+   
   const { id, title, price, description, category, image } = product;
 
   const [rating] = useState(Math.round(Math.random() * 2) + 3);
@@ -17,19 +19,20 @@ const Product = ({ product }) => {
 
   const addItemToBasket = () => {
     dispatch(addToBasket(product));
+
     toast.success(
       <>
         <span className="font-bold">Added to basket!</span>
         <br />
-        {product.title.slice(0, 40)}
-        {product.title.length > 40 ? '…' : ''}
+        {product.title.slice(0, 30)}
+        {product.title.length > 30 ? '…' : ''}
       </>,
       {
         position: 'top-right',
-        autoClose: 2900,
+        autoClose: 1500,
         hideProgressBar: false,
         closeOnClick: true,
-        pauseOnHover: true,
+        pauseOnHover: false,
         draggable: true,
         draggablePercent: 20,
         progress: undefined,
@@ -48,7 +51,7 @@ const Product = ({ product }) => {
         {Array(rating)
           .fill()
           .map((_, i) => (
-            <StarIcon key={i} className="h-5 text-yellow-500" />
+            <StarIcon className="h-5 text-yellow-500" />
           ))}
       </div>
       <p className="text-xs my-2 line-clamp-2">{description}</p>

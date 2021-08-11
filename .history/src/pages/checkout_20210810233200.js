@@ -38,7 +38,7 @@ const checkout = () => {
         </div>
 
         {/* Right section*/}
-        <div className="flex flex-col bg-white p-10 mb-5 shadow-md">
+        <div className="flex flex-col bg-white p-10 pb-2 shadow-md">
           {items.length > 0 && (
             <>
               <h2 className="whitespace-nowrap">

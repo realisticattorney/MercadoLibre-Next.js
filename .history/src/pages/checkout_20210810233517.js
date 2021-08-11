@@ -17,7 +17,7 @@ const checkout = () => {
 
       <main className="lg:flex max-w-screen-2xl mx-auto">
         {/* Left section*/}
-        <div className="flex-grow m-5 shadow-sm">
+        <div className="flex-grow m-5 shadow-sm ">
           <Image
             src="https://links.papareact.com/ikj"
             width={1020}

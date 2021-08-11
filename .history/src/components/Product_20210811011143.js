@@ -27,7 +27,7 @@ const Product = ({ product }) => {
       {
         position: 'top-right',
         autoClose: 2900,
-        hideProgressBar: false,
+        hideProgressBar: true,
         closeOnClick: true,
         pauseOnHover: true,
         draggable: true,

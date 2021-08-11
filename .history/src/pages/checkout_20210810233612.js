@@ -20,7 +20,7 @@ const checkout = () => {
         <div className="flex-grow m-5 shadow-sm">
           <Image
             src="https://links.papareact.com/ikj"
-            width={1020}
+            width={min}
             height={250}
             objectFit="contain"
           />

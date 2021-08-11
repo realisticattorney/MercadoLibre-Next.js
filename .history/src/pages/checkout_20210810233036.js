@@ -38,14 +38,13 @@ const checkout = () => {
         </div>
 
         {/* Right section*/}
-        <div className="flex flex-col bg-white p-10 mb-5 shadow-md">
+        <div className="flex flex-col bg-white p-10 shadow-md">
           {items.length > 0 && (
             <>
               <h2 className="whitespace-nowrap">
                 Subtotal:{' '}
                 {items.length === 1 ? '1 item' : items.length + ' items'}
                 <span className="font-bold">
-                {' '}
                   Total:
                   {' $'}
                   {items

@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { StarIcon } from '@heroicons/react/solid';
 import { useDispatch } from 'react-redux';
 import { addToBasket } from '../slices/basketSlice';
-import { toast } from 'react-toastify';
 //line-clamp to interrupt text once it gets too long
 //focus:ring-0 to remove the focus
 const Product = ({ product }) => {
@@ -13,32 +12,15 @@ const Product = ({ product }) => {
 
   const [hasPrime] = useState(Math.random() < 0.5);
 
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
 
   const addItemToBasket = () => {
-    dispatch(addToBasket(product));
-    toast.success(
-      <>
-        <span className="font-bold">Added to basket!</span>
-        <br />
-        {product.title.slice(0, 40)}
-        {product.title.length > 40 ? '…' : ''}
-      </>,
-      {
-        position: 'top-right',
-        autoClose: 2900,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        draggablePercent: 20,
-        progress: undefined,
-      }
-    );
-  };
+   dispatch(addToBasket(product));
+  }
+  
 
   return (
-    <div className="relative flex flex-col m-5 bg-white z-30 p-10 hover:shadow-md">
+    <div className="relative flex flex-col m-5 bg-white z-30 p-10 hover:w-">
       <p className="absolute top-2 right-2 text-sm italic text-gray-400">
         {category}
       </p>
@@ -48,7 +30,7 @@ const Product = ({ product }) => {
         {Array(rating)
           .fill()
           .map((_, i) => (
-            <StarIcon key={i} className="h-5 text-yellow-500" />
+            <StarIcon className="h-5 text-yellow-500" />
           ))}
       </div>
       <p className="text-xs my-2 line-clamp-2">{description}</p>
@@ -60,9 +42,7 @@ const Product = ({ product }) => {
           <p className="text-xs text-gray-500">FREE Next-day Delivery</p>
         </div>
       )}
-      <button onClick={addItemToBasket} className="mt-auto button focus:ring-0">
-        Add to Basket
-      </button>
+      <button onClick={addItemToBasket} className="mt-auto button focus:ring-0">Add to Basket</button>
     </div>
   );
 };

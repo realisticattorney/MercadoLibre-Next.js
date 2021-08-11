@@ -22,14 +22,14 @@ const Product = ({ product }) => {
         <span className="font-bold">Added to basket!</span>
         <br />
         {product.title.slice(0, 40)}
-        {product.title.length > 40 ? '…' : ''}
+        {product.title.length > 45 ? '…' : ''}
       </>,
       {
         position: 'top-right',
-        autoClose: 2900,
-        hideProgressBar: false,
+        autoClose: 2500,
+        hideProgressBar: true,
         closeOnClick: true,
-        pauseOnHover: true,
+        pauseOnHover: false,
         draggable: true,
         draggablePercent: 20,
         progress: undefined,
