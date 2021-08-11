@@ -7,8 +7,7 @@
 .stripe
 # testing
 /coverage
-stripe.exe
-stripe
+
 # next.js
 /.next/
 /out/
