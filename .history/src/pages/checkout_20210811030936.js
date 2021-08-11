@@ -4,25 +4,22 @@ import { useSelector } from 'react-redux';
 import { selectItems } from '../slices/basketSlice';
 import CheckoutProduct from '../components/CheckoutProduct';
 import { useSession } from 'next-auth/client';
-import { loadStripe } from '@stripe/stripe-js';
-import axios from 'axios';
+import { loadStripe } from '@stripe/stripe-js'
 //border-b for a thin line already styled
 const stripePromise = loadStripe(process.env.stripe_public_key);
 
-const Checkout = () => {
+const checkout = () => {
   const items = useSelector(selectItems);
 
   const [session] = useSession();
 
-  const createCheckoutSession = async () => {
-    const stripe = await stripePromise;
+const createCheckoutSession = async () => {
+   const stripe = await stripePromise;
+   
+   // Create a checkout session
 
-    // Create a checkout session
-    const checkoutSession = await axios.post('/api/create-checkout-session', {
-      items: items,
-      email: session.user.email,
-    });
-  };
+}
+
 
   return (
     <div className="bg-gray-100">
@@ -58,7 +55,7 @@ const Checkout = () => {
                 Subtotal:{' '}
                 {items.length === 1 ? '1 item' : items.length + ' items'}
                 <span className="font-bold">
-                  {' '}
+                {' '}
                   Total:
                   {' $'}
                   {items
@@ -71,7 +68,6 @@ const Checkout = () => {
               <button
                 role="link"
                 onClick={createCheckoutSession}
-                disabled={!session}
                 className={`button mt-2 ${
                   !session &&
                   `from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed active:from-gray-500 active:to-gray-700 `
@@ -87,4 +83,4 @@ const Checkout = () => {
   );
 };
 
-export default Checkout;
+export default checkout;
