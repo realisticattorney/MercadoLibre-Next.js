@@ -56,8 +56,8 @@ const checkout = () => {
               </h2>
               <button
                 className={`button mt-2 ${
-                  !session &&
-                  `from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed active:from-gray-500 active:to-gray-700 `
+                  session &&
+                  `from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed`
                 }`}
               >
                 {session ? 'Proceed to checkout' : 'Sign in to checkout'}
