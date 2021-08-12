@@ -4,10 +4,11 @@
 /node_modules
 /.pnp
 .pnp.js
-
+.stripe
 # testing
 /coverage
-
+stripe.exe
+stripe
 # next.js
 /.next/
 /out/

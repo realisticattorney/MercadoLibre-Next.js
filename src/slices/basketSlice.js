@@ -1,15 +1,38 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   items: [],
 };
 
 export const basketSlice = createSlice({
-  name: "basket",
+  name: 'basket',
   initialState,
   reducers: {
-    addToBasket: (state, action) => {},
-    removeFromBasket: (state, action) => {},
+    addToBasket: (state, action) => {
+      // const { id } = action.payload;
+      // if (state.items.indexOf(id) === -1) {
+      //   action.payload.quantity = 1;
+      //   state.items.push(action.payload);
+      // }
+      // else {
+      //  const item = state.items.splice(state.items.indexOf(id), 1);
+      //  item.quantity = item.quantity + 1;
+      //  state.items = state.items.map(obj => obj.id === id ? item : i);
+      // }
+      state.items = [...state.items, action.payload];
+    },
+    removeFromBasket: (state, action) => {
+      console.log('remove action', action.payload);
+      const index = state.items.findIndex((item) => item.id === action.payload.id);
+
+      let newState = [...state.items];
+
+      if (index > -1) {
+        newState.splice(index, 1);
+      }
+
+      state.items = newState;
+    },
   },
 });
 
