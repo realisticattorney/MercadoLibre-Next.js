@@ -23,18 +23,15 @@ const Header = () => {
 
   return (
     <header>
-      <div className="px-1 flex items-center bg-amazon_blue flex-grow">
+      <div className="flex items-center bg-amazon_blue flex-grow">
         {/*Left - Logo */}
-        <div
-          className="flex items-center flex-grow sm:flex-grow-0 cursor-pointer"
-          onClick={() => router.push('/')}
-        >
+        <div className="flex items-center flex-grow sm:flex-grow-0">
           {/*objectFit keeps the aspect ratio*/}
           <Image
-            // onClick={() => router.push('/')}
+            onClick={() => router.push('/')}
             src="/images/logo.jpg"
-            width={50}
-            height={32}
+            width={}
+            height={34}
             objectFit="contain"
             className="cursor-pointer"
           />

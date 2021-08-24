@@ -12,29 +12,27 @@ import { selectItems } from '../slices/basketSlice';
 //onClick a div...bro
 //next.js Image component compress your image making it smaller w/o losing quality
 //click on the component to go to the file of the component
-
+ 
 const Header = () => {
-  //lets check our session
-  const [session] = useSession();
 
-  const router = useRouter();
+   //lets check our session
+   const [session ] = useSession();
 
-  const items = useSelector(selectItems);
+   const  router = useRouter();
+
+   const items = useSelector(selectItems);
 
   return (
     <header>
-      <div className="px-1 flex items-center bg-amazon_blue flex-grow">
+      <div className="flex items-center bg-amazon_blue p-1 flex-grow py-2">
         {/*Left - Logo */}
-        <div
-          className="flex items-center flex-grow sm:flex-grow-0 cursor-pointer"
-          onClick={() => router.push('/')}
-        >
+        <div className="mt-2 flex items-center flex-grow sm:flex-grow-0">
           {/*objectFit keeps the aspect ratio*/}
           <Image
-            // onClick={() => router.push('/')}
-            src="/images/logo.jpg"
-            width={50}
-            height={32}
+            onClick={() => router.push('/')}
+            src="/"
+            width={120}
+            height={35}
             objectFit="contain"
             className="cursor-pointer"
           />
@@ -50,11 +48,10 @@ const Header = () => {
         </div>
         {/*right - */}
         <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
-          <div
-            onClick={session ? signOut : signIn}
-            className="cursor-pointer link"
-          >
-            <p>{session ? `Hello, ${session.user.name}!` : 'Sign in'}</p>
+          <div onClick={session ? signOut : signIn} className="cursor-pointer link">
+            <p>
+            {session ? `Hello, ${session.user.name}!` : 'Sign in'}
+            </p>
             <p className="font-extrabold md:text-sm">Account & Lists</p>
           </div>
 
@@ -68,10 +65,9 @@ const Header = () => {
               {items.length}
             </span>
 
-            <ShoppingCartIcon
-              onClick={() => router.push('/checkout')}
-              className="h-10"
-            />
+            <ShoppingCartIcon 
+            onClick={() => router.push('/checkout')}
+            className="h-10" />
             <p className="hidden md:inline font-extrabold md:text-sm mt-2">
               Basket
             </p>

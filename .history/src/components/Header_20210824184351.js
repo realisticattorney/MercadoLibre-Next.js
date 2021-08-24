@@ -35,7 +35,7 @@ const Header = () => {
             src="/images/logo.jpg"
             width={50}
             height={32}
-            objectFit="contain"
+            objectFit="cover"
             className="cursor-pointer"
           />
         </div>
