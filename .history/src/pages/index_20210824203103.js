@@ -4,12 +4,10 @@ import Banner from '../components/Banner';
 import ProductFeed from '../components/ProductFeed';
 import { useRouter } from 'next/router';
 
-export default function Home( 
-  // { products }
-  ) {
+export default function Home( { products }) {
   const router = useRouter();
 
-  // console.log(products)
+  console.log(products)
   return (
     <div className="bg-gray-100">
       <Head>
@@ -23,8 +21,8 @@ export default function Home(
         <Banner />
 
         {/* ProductFeed */}
-        <button onClick={() => router.replace('/products/lala')}>HERE SIR</button>
-        {/* <ProductFeed products={products} /> */}
+        <button onClick={() => router.push('/products/lala')}>HERE SIR</button>
+        <ProductFeed products={products} />
       </main>
     </div>
   );

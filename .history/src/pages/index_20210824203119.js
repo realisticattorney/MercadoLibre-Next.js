@@ -23,8 +23,8 @@ export default function Home(
         <Banner />
 
         {/* ProductFeed */}
-        <button onClick={() => router.replace('/products/lala')}>HERE SIR</button>
-        {/* <ProductFeed products={products} /> */}
+        <button onClick={() => router.push('/products/lala')}>HERE SIR</button>
+        <ProductFeed products={products} />
       </main>
     </div>
   );

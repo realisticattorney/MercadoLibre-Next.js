@@ -13,7 +13,7 @@ const Banner = () => {
         showThumbs={false}
         interval={5000}
       >
-        <div className="w-full h-72  from-gray-100 bottom-0 z-20">
+        <div className="w-full h-80   from-gray-100 bottom-0 z-20">
           {/* img loading lazy means that doesnt slows down the app*/}
           <Image
             loading="lazy"
