@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="px-1 flex items-center bg-amazon_blue flex-grow py-1 border-b border-gray-400 border-opacity-30">
+      <div className="px-1 flex items-center bg-amazon_blue flex-grow py-1">
         {/*Left - Logo */}
         <div
           className="flex items-center flex-grow sm:flex-grow-0 cursor-pointer"
@@ -41,7 +41,7 @@ const Header = () => {
         </div>
 
         {/*center - Search*/}
-        <div className="hidden sm:flex items-center h-7 rounded-sm flex-grow bg-white cursor-pointer shadow-sm">
+        <div className="hidden sm:flex items-center h-7 rounded-sm flex-grow bg-white cursor-pointer shadow-md">
           <SearchIcon className="h-6 p-1 pl-2 text-gray-400 active:mt-1" />
           <input
             className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-1 text-sm text-gray-600 placeholder-gray-300"
@@ -50,7 +50,7 @@ const Header = () => {
           />
         </div>
         {/*right - */}
-        <div className="text-white flex items-center text-xs space-x-2 mx-2 whitespace-nowrap">
+        <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
           {/* <div
             onClick={session ? signOut : signIn}
             className="cursor-pointer link"
@@ -63,9 +63,10 @@ const Header = () => {
             <p>Returns</p>
             <p className="font-extrabold md:text-sm">& Orders</p>
           </div> */}
-          <button className="link flex items-center">
-          <MenuIcon className="h-6 mr-1 text-amazon_blue-light" />
-        </button>
+          <p className="link flex items-center">
+          <MenuIcon className="h-6 mr-1" />
+          All
+        </p>
           <div className="relative link flex items-center">
             <span className="absolute top-0 right-1.5 h-3 w-3.5 font-light bg-amazon_blue text-center rounded-full text-black">
               {items.length}

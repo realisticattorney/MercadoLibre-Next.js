@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="px-1 flex items-center bg-amazon_blue flex-grow py-1 border-b border-gray-400 border-opacity-30">
+      <div className="px-1 flex items-center bg-amazon_blue flex-grow py-1 border-b border-gray-400 border-opacity-50">
         {/*Left - Logo */}
         <div
           className="flex items-center flex-grow sm:flex-grow-0 cursor-pointer"
@@ -41,7 +41,7 @@ const Header = () => {
         </div>
 
         {/*center - Search*/}
-        <div className="hidden sm:flex items-center h-7 rounded-sm flex-grow bg-white cursor-pointer shadow-sm">
+        <div className="hidden sm:flex items-center h-7 rounded-sm flex-grow bg-white cursor-pointer shadow-md">
           <SearchIcon className="h-6 p-1 pl-2 text-gray-400 active:mt-1" />
           <input
             className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-1 text-sm text-gray-600 placeholder-gray-300"
