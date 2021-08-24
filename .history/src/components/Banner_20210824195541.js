@@ -4,12 +4,12 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Banner = () => {
   return (
-    <div className="relative mb-52">
+    <div className="relative">
       <Carousel
         autoPlay
         infiniteLoop
-        showStatus={false}
-        showIndicators={true}
+        showStatus={status}
+        showIndicators={false}
         showThumbs={false}
         interval={5000}
       >

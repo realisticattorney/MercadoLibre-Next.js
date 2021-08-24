@@ -4,20 +4,20 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Banner = () => {
   return (
-    <div className="relative mb-52">
+    <div className="mt-0">
       <Carousel
         autoPlay
         infiniteLoop
         showStatus={false}
-        showIndicators={true}
+        showIndicators={false}
         showThumbs={false}
         interval={5000}
       >
-        <div className="w-full h-80  from-gray-100 bottom-0 z-20">
+        <div className="w-full h-48">
           {/* img loading lazy means that doesnt slows down the app*/}
           <Image
             loading="lazy"
-            objectFit="cover"
+            objectFit="contain"
             layout="fill"
             src="/images/slide-1.jpg"
             alt=""
@@ -26,7 +26,7 @@ const Banner = () => {
         <div>
           <Image
             loading="lazy"
-            objectFit="cover"
+            objectFit="contain"
             layout="fill"
             src="/images/slide-2.jpg"
             alt=""
@@ -35,7 +35,7 @@ const Banner = () => {
         <div>
           <Image
             loading="lazy"
-            objectFit="cover"
+            objectFit="contain"
             layout="fill"
             src="/images/slide-3.jpg"
             alt=""
@@ -44,7 +44,7 @@ const Banner = () => {
         <div>
           <Image
             loading="lazy"
-            objectFit="cover"
+            objectFit="contain"
             layout="fill"
             src="/images/slide-4.jpg"
             alt=""

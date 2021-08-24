@@ -92,7 +92,7 @@ const Header = () => {
           </span>
         </button>
         <button className="link flex items-center text-amazon_blue-light no-underline">
-        <ChevronRightIcon className="h-4 mr-1 text-gray-500 text-opacity-50" />
+        <ChevronRightIcon className="h-4 mr-1 text-gray-500 font text-opacity-50" />
         </button>
         {/* <p className="link ">Prime Video</p>
         <p className="link ">Amazon Business</p>

@@ -4,7 +4,7 @@ import {
   LocationMarkerIcon,
   SearchIcon,
   ShoppingCartIcon,
-  ChevronRightIcon
+  Chevrp
 } from '@heroicons/react/outline';
 import { signIn, signOut, useSession } from 'next-auth/client';
 import { useRouter } from 'next/router';
@@ -92,7 +92,7 @@ const Header = () => {
           </span>
         </button>
         <button className="link flex items-center text-amazon_blue-light no-underline">
-        <ChevronRightIcon className="h-4 mr-1 text-gray-500 text-opacity-50" />
+        <LocationMarkerIcon className="h-4 mr-1 text-amazon_blue-light" />
         </button>
         {/* <p className="link ">Prime Video</p>
         <p className="link ">Amazon Business</p>

@@ -4,7 +4,6 @@ import {
   LocationMarkerIcon,
   SearchIcon,
   ShoppingCartIcon,
-  ChevronRightIcon
 } from '@heroicons/react/outline';
 import { signIn, signOut, useSession } from 'next-auth/client';
 import { useRouter } from 'next/router';
@@ -66,8 +65,8 @@ const Header = () => {
             <p className="font-extrabold md:text-sm">& Orders</p>
           </div> */}
           <button className="link flex items-center">
-            <MenuIcon className="h-6 mr-1 text-amazon_blue-light" />
-          </button>
+          <MenuIcon className="h-6 mr-1 text-amazon_blue-light" />
+        </button>
           <div className="relative link flex items-center">
             <span className="absolute top-0 right-1.5 h-3 w-3.5 font-light bg-amazon_blue text-center rounded-full text-black">
               {items.length}
@@ -84,15 +83,10 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-between space-x-3 py-2 pl-2 bg-amazon_blue text-white text-sm">
+      <div className="flex items-center space-x-3 py-2 pl-6 bg-amazon_blue text-white text-sm">
         <button className="link flex items-center text-amazon_blue-light no-underline">
           <LocationMarkerIcon className="h-4 mr-1 text-amazon_blue-light" />
-          <span className="text-xs font-light">
-            Deliver to Analia Santa Fe 3388
-          </span>
-        </button>
-        <button className="link flex items-center text-amazon_blue-light no-underline">
-        <ChevronRightIcon className="h-4 mr-1 text-gray-500 text-opacity-50" />
+          <span>
         </button>
         {/* <p className="link ">Prime Video</p>
         <p className="link ">Amazon Business</p>
