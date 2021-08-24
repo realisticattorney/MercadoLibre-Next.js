@@ -41,12 +41,11 @@ const Header = () => {
         </div>
 
         {/*center - Search*/}
-        <div className="hidden sm:flex items-center h-7 rounded-sm flex-grow bg-white cursor-pointer ">
-          <SearchIcon className="h-6 p-1 pl-2 text-gray-400 active:mt-1" />
+        <div className="hidden sm:flex items-center h-10 rounded-md flex-grow cursor-pointer bg-yellow-400 hover:bg-yellow-500">
+          <SearchIcon className="h-12 p-4" />
           <input
-            className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-1 text-sm text-gray-300 shadow-md focus:shadow-sm"
+            className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-4"
             type="text"
-            placeholder="Search products, brands and more..."
           />
         </div>
         {/*right - */}
