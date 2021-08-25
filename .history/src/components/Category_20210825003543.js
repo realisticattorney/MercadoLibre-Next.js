@@ -6,6 +6,7 @@ const Category = ({ category }) => {
   const { id, name, src } = category;
 
   const router = useRouter();
+  
 
   return id === 3 ||
     id === 4 ||
@@ -13,10 +14,8 @@ const Category = ({ category }) => {
     id === 6 ||
     id === 13 ||
     id === 16 ? (
-    <div
-      className="col-span-full lg:col-span-2 relative flex flex-col m-2 bg-white z-30 p-5 hover:shadow-2xl shadow-lg rounded-sm md:rounded-md transform transition-shadow h-56 cursor-pointer"
-      onClick={() => router.replace(`/products/${id}`)}
-    >
+    <div className="col-span-full lg:col-span-2 relative flex flex-col m-2 bg-white z-30 p-5 hover:shadow-2xl shadow-lg rounded-sm md:rounded-md transform transition-shadow h-56"
+    onClick={() => router.replace(`/products/${id}`)}>
       <Image
         src={src}
         layout="fill"

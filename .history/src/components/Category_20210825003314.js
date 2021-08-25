@@ -1,11 +1,8 @@
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 //line-clamp to interrupt text once it gets too long
 //focus:ring-0 to remove the focus
 const Category = ({ category }) => {
   const { id, name, src } = category;
-
-  const router = useRouter();
 
   return id === 3 ||
     id === 4 ||
@@ -13,10 +10,7 @@ const Category = ({ category }) => {
     id === 6 ||
     id === 13 ||
     id === 16 ? (
-    <div
-      className="col-span-full lg:col-span-2 relative flex flex-col m-2 bg-white z-30 p-5 hover:shadow-2xl shadow-lg rounded-sm md:rounded-md transform transition-shadow h-56 cursor-pointer"
-      onClick={() => router.replace(`/products/${id}`)}
-    >
+    <div className="col-span-full lg:col-span-2 relative flex flex-col m-2 bg-white z-30 p-5 hover:shadow-xl shadow-lg rounded-sm md:rounded-md transform transition-shadow h-56">
       <Image
         src={src}
         layout="fill"
@@ -30,7 +24,7 @@ const Category = ({ category }) => {
       </div>
     </div>
   ) : id === 9 || id === 10 ? (
-    <div className="lg:col-span-3 col-span-full relative flex flex-col m-2 bg-white z-30 p-5 hover:shadow-2xl shadow-lg rounded-sm md:rounded-md transform transition-shadow h-36">
+    <div className="lg:col-span-3 col-span-full relative flex flex-col m-2 bg-white z-30 p-5 hover:shadow-xl shadow-lg rounded-sm md:rounded-md transform transition-shadow h-36">
       <Image
         src={src}
         layout="fill"

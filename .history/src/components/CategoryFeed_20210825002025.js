@@ -22,7 +22,7 @@ const CategoryFeed = ({ categories }) => {
         <Category key={category.id} category={category} />
       ))}
       {/* 24hour offers */}
-      <div className="text-center justify-center col-span-full text-gray-600 text-md mt-10 mb-1">
+      <div className="text-center justify-center col-span-full text-gray-600 text-md mt-10 mb-2">
         <h4>MORE DEALS ON YOUR FAVORITE PRODUCTS!</h4>
       </div>
       {categories.slice(10, 20).map((category) => (

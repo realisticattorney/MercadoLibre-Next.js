@@ -15,21 +15,9 @@ const CategoryFeed = ({ categories }) => {
       {categories.slice(0, 8).map((category) => (
         <Category key={category.id} category={category} />
       ))}
-      <div className="text-center justify-center col-span-full text-gray-600 text-md mt-10 mb-1">
+      <div className="text-center justify-center col-span-full text-gray-700">
         <h4>BEST DEALS FOR YOU</h4>
       </div>
-      {categories.slice(8, 10).map((category) => (
-        <Category key={category.id} category={category} />
-      ))}
-      {/* 24hour offers */}
-      <div className="text-center justify-center col-span-full text-gray-600 text-md mt-10 mb-1">
-        <h4>MORE DEALS ON YOUR FAVORITE PRODUCTS!</h4>
-      </div>
-      {categories.slice(10, 20).map((category) => (
-        <Category key={category.id} category={category} />
-      ))}
-
-
       {/* <img
         className="lg:col-span-full"
         src="https://links.papareact.com/dyz"
