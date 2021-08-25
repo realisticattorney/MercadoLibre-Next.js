@@ -8,7 +8,7 @@ const CategoryFeed = ({ categories }) => {
     <div className="grid grid-flow-row-dense grid-cols-2 lg:grid-cols-6 mx-auto">
     
   
-      {categories.map((category) => (
+      {categories.slice.map((category) => (
         <Category key={category.id} category={category} />
       ))}
 

@@ -5,18 +5,11 @@ import Category from './Category';
 //With Next you hit this other app, it loads a mid-server that does the work and renders everything (server-side) then delivers the html to the browser
 const CategoryFeed = ({ categories }) => {
   return (
-    <div className="grid grid-flow-row-dense grid-cols-2 lg:grid-cols-6 mx-auto">
+    <div className="grid grid-flow-row-dense grid-cols-2 lg:grid-cols-6 mx-auto m">
     
-  
-      {categories.map((category) => (
+      {categories.slice(0, 2).map((category) => (
         <Category key={category.id} category={category} />
       ))}
-
-
-
-      {/* {categories.slice(0, 2).map((category) => (
-        <Category key={category.id} category={category} />
-      ))} */}
 
       {/* <img
         className="lg:col-span-full"
@@ -24,7 +17,7 @@ const CategoryFeed = ({ categories }) => {
         alt=""
       /> */}
 
-      {/* <div className="col-span-full lg:col-span-2">
+      <div className="col-span-full lg:col-span-2">
         {categories.slice(2, 3).map((category) => (
           <Category key={category.id} category={category} />
         ))}
@@ -87,7 +80,7 @@ const CategoryFeed = ({ categories }) => {
       {categories.slice(16, 20).map((category) => (
         <Category key={category.id} category={category} />
       ))}
- */}
+
 
     </div>
   );

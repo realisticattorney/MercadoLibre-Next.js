@@ -7,39 +7,32 @@ const CategoryFeed = ({ categories }) => {
   return (
     <div className="grid grid-flow-row-dense grid-cols-2 lg:grid-cols-6 mx-auto">
     
-  
-      {categories.map((category) => (
+      {categories.slice(0, 2).map((category) => (
         <Category key={category.id} category={category} />
       ))}
 
-
-
-      {/* {categories.slice(0, 2).map((category) => (
-        <Category key={category.id} category={category} />
-      ))} */}
-
       {/* <img
-        className="lg:col-span-full"
+        className="md:col-span-full"
         src="https://links.papareact.com/dyz"
         alt=""
       /> */}
 
-      {/* <div className="col-span-full lg:col-span-2">
+      <div className="col-span-full md:col-span-2">
         {categories.slice(2, 3).map((category) => (
           <Category key={category.id} category={category} />
         ))}
       </div>
-      <div className="col-span-full lg:col-span-2">
+      <div className="col-span-full md:col-span-2">
         {categories.slice(3, 4).map((category) => (
           <Category key={category.id} category={category} />
         ))}
       </div>
-      <div className="col-span-full lg:col-span-2">
+      <div className="col-span-full md:col-span-2">
         {categories.slice(4, 5).map((category) => (
           <Category key={category.id} category={category} />
         ))}
       </div>
-      <div className="col-span-full lg:col-span-2">
+      <div className="col-span-full md:col-span-2">
         {categories.slice(5, 6).map((category) => (
           <Category key={category.id} category={category} />
         ))}
@@ -49,25 +42,16 @@ const CategoryFeed = ({ categories }) => {
       {categories.slice(6, 8).map((category) => (
         <Category key={category.id} category={category} />
       ))}
-
-      <div className="lg:col-span-3">
-      {categories.slice(8, 9).map((category) => (
+      {categories.slice(8, 10).map((category) => (
         <Category key={category.id} category={category} />
       ))}
-      </div>
-      
-      <div className="lg:col-span-3">
-      {categories.slice(9, 10).map((category) => (
-        <Category key={category.id} category={category} />
-      ))}
-      </div>
       
       {categories.slice(10, 12).map((category) => (
         <Category key={category.id} category={category} />
       ))}
 
 
-      <div className="col-span-full lg:col-span-2">
+      <div className="col-span-full md:col-span-2">
         {categories.slice(12,13).map((category) => (
           <Category key={category.id} category={category} />
         ))}
@@ -78,7 +62,7 @@ const CategoryFeed = ({ categories }) => {
       ))}
 
 
-      <div className="col-span-full lg:col-span-2">
+      <div className="col-span-full md:col-span-2">
         {categories.slice(15,16).map((category) => (
           <Category key={category.id} category={category} />
         ))}
@@ -87,7 +71,7 @@ const CategoryFeed = ({ categories }) => {
       {categories.slice(16, 20).map((category) => (
         <Category key={category.id} category={category} />
       ))}
- */}
+
 
     </div>
   );

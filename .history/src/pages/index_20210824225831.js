@@ -29,10 +29,9 @@ export default function Home({ categories }) {
           HERE SIR
         </button> */}
         {/* <ProductFeed products={products} /> */}
-        <section className="px-1">
+        sect
         {/* Categories */}
         {<CategoryFeed categories={categories} />}
-        </section>
       </main>
     </div>
   );

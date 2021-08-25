@@ -20,7 +20,7 @@ export default function Home({ categories }) {
 
       <Header />
 
-      <main className="max-w-screen-2xl mx-auto">
+      <main className="max-w-screen-2xl mx-auto px-2">
         {/* Banner */}
         <Banner />
 
@@ -29,10 +29,9 @@ export default function Home({ categories }) {
           HERE SIR
         </button> */}
         {/* <ProductFeed products={products} /> */}
-        <section className="px-1">
+
         {/* Categories */}
         {<CategoryFeed categories={categories} />}
-        </section>
       </main>
     </div>
   );

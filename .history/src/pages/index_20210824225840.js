@@ -29,7 +29,7 @@ export default function Home({ categories }) {
           HERE SIR
         </button> */}
         {/* <ProductFeed products={products} /> */}
-        <section className="px-1">
+        <section className="px-2">
         {/* Categories */}
         {<CategoryFeed categories={categories} />}
         </section>
