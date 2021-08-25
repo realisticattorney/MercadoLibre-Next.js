@@ -10,44 +10,21 @@ const CategoryFeed = ({ categories }) => {
         <Category key={category.id} category={category} />
       ))}
 
-      {/* <img
+      <img
         className="md:col-span-full"
         src="https://links.papareact.com/dyz"
         alt=""
-      /> */}
+      />
 
-      <div className="col-span-full md:col-span-2">
-        {categories.slice(2, 6).map((category) => (
+      <div className="md:col-span-2">
+        {categories.slice(4, 5).map((category) => (
           <Category key={category.id} category={category} />
         ))}
       </div>
 
-      {categories.slice(6, 12).map((category) => (
+      {categories.slice(5, -1).map((category) => (
         <Category key={category.id} category={category} />
       ))}
-
-      <div className="col-span-full md:col-span-2">
-        {categories.slice(12,13).map((category) => (
-          <Category key={category.id} category={category} />
-        ))}
-      </div>
-
-      {categories.slice(13, 15).map((category) => (
-        <Category key={category.id} category={category} />
-      ))}
-
-
-      <div className="col-span-full md:col-span-2">
-        {categories.slice(15,16).map((category) => (
-          <Category key={category.id} category={category} />
-        ))}
-      </div>
-
-      {categories.slice(16, 20).map((category) => (
-        <Category key={category.id} category={category} />
-      ))}
-
-
     </div>
   );
 };

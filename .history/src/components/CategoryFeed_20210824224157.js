@@ -32,22 +32,10 @@ const CategoryFeed = ({ categories }) => {
         ))}
       </div>
 
-      {categories.slice(13, 15).map((category) => (
+      {categories.slice(6, 12).map((category) => (
         <Category key={category.id} category={category} />
       ))}
-
-
-      <div className="col-span-full md:col-span-2">
-        {categories.slice(15,16).map((category) => (
-          <Category key={category.id} category={category} />
-        ))}
-      </div>
-
-      {categories.slice(16, 20).map((category) => (
-        <Category key={category.id} category={category} />
-      ))}
-
-
+      
     </div>
   );
 };

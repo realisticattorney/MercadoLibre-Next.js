@@ -43,7 +43,7 @@ const CategoryFeed = ({ categories }) => {
         ))}
       </div>
 
-      {categories.slice(16, 20).map((category) => (
+      {categories.slice(16, 18).map((category) => (
         <Category key={category.id} category={category} />
       ))}
 
