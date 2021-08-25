@@ -1,6 +1,6 @@
 import ProductFeed from '../../components/ProductFeed';
 import Header from '../../components/Header';
-import Banner from '../../components/Banner';
+import Banner from '../components/Banner';
 
 const CategoryId = ({ products }) => {
   console.log(products);

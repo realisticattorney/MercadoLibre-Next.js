@@ -1,30 +1,40 @@
 import ProductFeed from '../../components/ProductFeed';
-import Header from '../../components/Header';
-import Banner from '../../components/Banner';
+import Header from '../components/Header';
+import Banner from '../components/Banner';
 
 const CategoryId = ({ products }) => {
   console.log(products);
 
   return (
-    <div className="bg-gray-200">
-      {/* <Head>
-        <title>Amazon 2.0</title>
-      </Head> */}
+    <div>
 
-      <Header />
-
-      <main className="max-w-screen-2xl mx-auto">
-        {/* Banner */}
-        <Banner />
-
-        <section className="px-1">
-          {/* ProductFeed */}
-          <ProductFeed products={products} />
-        </section>
-      </main>
     </div>
   );
 };
+
+return (
+  <div className="bg-gray-200">
+    <Head>
+      <title>Amazon 2.0</title>
+    </Head>
+
+    <Header />
+
+    <main className="max-w-screen-2xl mx-auto">
+      {/* Banner */}
+      <Banner />
+
+ 
+
+      <section className="px-1">
+      {/* ProductFeed */}
+      <ProductFeed products={products} />
+      </section>
+    </main>
+  </div>
+);
+}
+
 
 export default CategoryId;
 

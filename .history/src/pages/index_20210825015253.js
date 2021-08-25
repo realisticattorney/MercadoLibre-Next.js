@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
-
 import { useRouter } from 'next/router';
 import CategoryFeed from '../components/CategoryFeed';
 //this can only be read by the server

@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
-
+import ProductFeed from '../components/ProductFeed';
 import { useRouter } from 'next/router';
 import CategoryFeed from '../components/CategoryFeed';
 //this can only be read by the server
@@ -11,7 +11,7 @@ import path from 'path';
 export default function Home({ categories }) {
   const router = useRouter();
 
-  
+  // console.log(products)
   return (
     <div className="bg-gray-200">
       <Head>
