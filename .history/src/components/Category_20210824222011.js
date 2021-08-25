@@ -5,9 +5,9 @@ const Category = ({ category }) => {
   const { id, name, src } = category;
 
   return (
-    <div className="relative flex flex-col m-2 bg-white z-30 p-5 hover:shadow-xl shadow-lg rounded-md transform transition-shadow ">
+    <div className="relative flex flex-col m-5 bg-white z-30 p-10 hover:shadow-xl shadow-lg rounded-md transform transition-shadow ">
       <Image src={src} height={112} width={115} objectFit="contain" />
-      <h4 className="mt-3 text-sm uppercase text-gray-700">{name} <span className="font-bold">30% OFF</span></h4>
+      <h4 className="my-3">{name}</h4>
     </div>
   );
 };
