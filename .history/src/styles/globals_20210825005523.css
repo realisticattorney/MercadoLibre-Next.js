@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  font-family: 'ProximaNova';
-}
-
 @layer components {
   .link {
     @apply cursor-pointer hover:underline;
@@ -22,7 +17,7 @@ body {
 
 @font-face {
   font-family: 'ProximaNova';
-  src: url('/fonts/Nova/ProximaNova-Light.ttf');
+  src: '/fonts/Nova/ProximaNova-Light.ttf';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
@@ -30,36 +25,29 @@ body {
 
 @font-face {
   font-family: 'ProximaNova';
-  src: url('/fonts/Nova/ProximaNova-Regular.ttf');
+  src: '/fonts/Nova/ProximaNova-Regular.ttf';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: 'ProximaNova';
-  src: url('/fonts/Nova/ProximaNova-Medium.ttf');
+  src: '/fonts/Nova/ProximaNova-Medium.ttf';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: 'ProximaNova';
-  src: url('/fonts/Nova/ProximaNova-Semibold.ttf');
+  src: '/fonts/Nova/ProximaNova-Semibold.ttf';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
   font-family: 'ProximaNova';
-  src: url('/fonts/Nova/ProximaNova-Bold.ttf');
+  src: '/fonts/Nova/ProximaNova-Bold.ttf';
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'ProximaNova';
-  src: url('/fonts/Nova/ProximaNova-ExtraBld.ttf');
-  font-style: normal;
-  font-weight: 800;
   font-display: swap;
 }

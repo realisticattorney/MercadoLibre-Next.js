@@ -56,10 +56,3 @@ body {
   font-weight: 700;
   font-display: swap;
 }
-@font-face {
-  font-family: 'ProximaNova';
-  src: url('/fonts/Nova/ProximaNova-ExtraBld.ttf');
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-}

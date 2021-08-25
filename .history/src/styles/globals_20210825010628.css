@@ -58,8 +58,8 @@ body {
 }
 @font-face {
   font-family: 'ProximaNova';
-  src: url('/fonts/Nova/ProximaNova-ExtraBld.ttf');
+  src: url('/fonts/Nova/ProximaNova-ExtraBold.ttf');
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-display: swap;
 }

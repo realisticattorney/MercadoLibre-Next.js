@@ -48,7 +48,7 @@ const Category = ({ category }) => {
       <Image src={src} height={112} width={115} objectFit="contain" />
       <div className="text-center text-xs text-gray-700 uppercase">
         <h4 className="mt-3">up to</h4>
-        <span className="font-bold text-xl">30% OFF</span>
+        <span className="font-semibold text-2xl">30% OFF</span>
         <h4>{name}</h4>
       </div>
     </div>

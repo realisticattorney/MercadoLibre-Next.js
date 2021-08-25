@@ -53,13 +53,13 @@ body {
   font-family: 'ProximaNova';
   src: url('/fonts/Nova/ProximaNova-Bold.ttf');
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   font-display: swap;
 }
 @font-face {
   font-family: 'ProximaNova';
   src: url('/fonts/Nova/ProximaNova-ExtraBld.ttf');
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-display: swap;
 }
