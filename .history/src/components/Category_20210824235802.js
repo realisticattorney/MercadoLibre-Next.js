@@ -11,11 +11,11 @@ const Category = ({ category }) => {
     id === 13 ||
     id === 16 ? (
     <div className="col-span-full lg:col-span-2">
-      <div className="relative flex flex-col m-2 bg-white z-30 p-5 hover:shadow-xl shadow-lg rounded-md transform transition-shadow h-48">
+      <div className="relative flex flex-col m-2 bg-white z-30 p-5 hover:shadow-xl shadow-lg rounded-md transform transition-shadow ">
         <Image src={src} layout="fill" objectFit="cover" />
-        <div className="absolute bottom-4 left-4 bg-gray-50 rounded-md p-3.5 text-xs text-gray-700 uppercase">
-          <h4>up to</h4>
-          <span className="font-bold text-2xl">30% OFF</span>
+        <div className="text-center text-xs text-gray-700 uppercase">
+          <h4 className="mt-3">up to</h4>
+          <span className="font-bold text-lg">30% OFF</span>
           <h4>{name}</h4>
         </div>
       </div>
