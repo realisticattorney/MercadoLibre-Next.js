@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { addToBasket, removeFromBasket } from '../slices/basketSlice';
 
 const CheckoutProduct = ({ product }) => {
-  const { id, title, price, category, thumbnail } = product;
+  const { id, title, price, description, category, thumbnail } = product;
 
   const [rating] = useState(Math.round(Math.random() * 2) + 3);
 
@@ -22,7 +22,7 @@ const CheckoutProduct = ({ product }) => {
 
   return (
     <div className="grid grid-cols-5">
-      <Image src={thumbnail} width={200} height={200} objectFit="contain" />
+      <Image src={src} width={200} height={200} objectFit="contain" />
       {/* Middle Section */}
       <div className="col-span-3 mx-5">
         <p>{title}</p>
@@ -34,7 +34,7 @@ const CheckoutProduct = ({ product }) => {
             ))}
         </div>
 
-        <p className="text-xs my-2 line-clamp-3">ni idea men</p>
+        <p className="text-xs my-2 line-clamp-3">{description}</p>
         <p className="font-semibold">${price}</p>
 
         {hasPrime && (

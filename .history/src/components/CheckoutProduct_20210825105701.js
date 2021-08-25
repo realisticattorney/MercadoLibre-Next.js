@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { addToBasket, removeFromBasket } from '../slices/basketSlice';
 
 const CheckoutProduct = ({ product }) => {
-  const { id, title, price, category, thumbnail } = product;
+  const { id, title, price, , category, thumbnail } = product;
 
   const [rating] = useState(Math.round(Math.random() * 2) + 3);
 
@@ -34,7 +34,7 @@ const CheckoutProduct = ({ product }) => {
             ))}
         </div>
 
-        <p className="text-xs my-2 line-clamp-3">ni idea men</p>
+        <p className="text-xs my-2 line-clamp-3">{description}</p>
         <p className="font-semibold">${price}</p>
 
         {hasPrime && (

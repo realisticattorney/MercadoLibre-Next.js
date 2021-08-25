@@ -34,7 +34,7 @@ const CheckoutProduct = ({ product }) => {
             ))}
         </div>
 
-        <p className="text-xs my-2 line-clamp-3">ni idea men</p>
+        <p className="text-xs my-2 line-clamp-3">{description}</p>
         <p className="font-semibold">${price}</p>
 
         {hasPrime && (
