@@ -5,10 +5,12 @@ import ProductFeed from '../components/ProductFeed';
 import { useRouter } from 'next/router';
 import CategoryFeed from '../components/CategoryFeed';
 //this can only be read by the server
-import fs from 'fs/promises';
+import fs from 'fs';
 import path from 'path';
 
-export default function Home({ categories }) {
+export default function Home( 
+  { categories }
+  ) {
   const router = useRouter();
 
   // console.log(products)
@@ -25,31 +27,33 @@ export default function Home({ categories }) {
         <Banner />
 
         {/* ProductFeed */}
-        <button onClick={() => router.replace('/products/lala')}>
-          HERE SIR
-        </button>
+        <button onClick={() => router.replace('/products/lala')}>HERE SIR</button>
         {/* <ProductFeed products={products} /> */}
 
         {/* Categories */}
-        {<CategoryFeed categories={categories} />}
+        { <CategoryFeed categories={categories} />}
       </main>
     </div>
   );
 }
 
+
 export async function getStaticProps(context) {
-  const filePath = path.join(process.cwd(), 'data', 'categories.json');
-  const jsonCategoriesData = await fs.readFile(filePath);
-  const categoriesData = JSON.parse(jsonCategoriesData);
+
+
+
 
   return {
     props: {
-      categories: categoriesData.categories,
-    },
-  };
+      categories: 
+    }}
+  
+
 }
 
-// To do any server-side
+
+
+// To do any server-side 
 // GET >> https://fakestoreapi.com/products
 // export async function getServerSideProps(context) {
 
