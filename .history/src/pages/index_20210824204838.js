@@ -31,8 +31,8 @@ export default function Home(
 }
 
 
-// To do any server-side 
-// GET >> https://fakestoreapi.com/products
+To do any server-side 
+GET >> https://fakestoreapi.com/products
 export async function getServerSideProps(context) {
 
   try {

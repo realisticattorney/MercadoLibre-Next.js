@@ -9,7 +9,7 @@ export default function Home(
   ) {
   const router = useRouter();
 
-  console.log(products)
+  // console.log(products)
   return (
     <div className="bg-gray-100">
       <Head>
@@ -31,8 +31,8 @@ export default function Home(
 }
 
 
-// To do any server-side 
-// GET >> https://fakestoreapi.com/products
+To do any server-side 
+GET >> https://fakestoreapi.com/products
 export async function getServerSideProps(context) {
 
   try {
