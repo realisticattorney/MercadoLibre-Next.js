@@ -89,25 +89,15 @@ const ProductsFeedContainer = ({ products }) => {
              <FilterComponent availableFilters={available_filters} itemNumber={15} />
           </div>
 
-          {/* Tipo de entrega */}
+          {/* Discounts */}
           <div>
           <h4 className="font-semibold text-lg">Tipo de entrega</h4>
              <FilterComponent availableFilters={available_filters} itemNumber={7} />
           </div>
-          {/* Location */}
+          {/* Discounts */}
           <div>
-          <h4 className="font-semibold text-lg">Location</h4>
-             <FilterComponent availableFilters={available_filters} itemNumber={3} />
-          </div>
-          {/* Price Range */}
-          <div>
-          <h4 className="font-semibold text-lg">Price Range</h4>
-             <FilterComponent availableFilters={available_filters} itemNumber={4} />
-          </div>
-          {/* Best sellers */}
-          <div>
-          <h4 className="font-semibold text-lg">Price Range</h4>
-             <FilterComponent availableFilters={available_filters} itemNumber={8} />
+          <h4 className="font-semibold text-lg">Shipping Cost</h4>
+             <FilterComponent availableFilters={available_filters} itemNumber={7} />
           </div>
 
 

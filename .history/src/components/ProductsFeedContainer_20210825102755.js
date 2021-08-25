@@ -97,7 +97,7 @@ const ProductsFeedContainer = ({ products }) => {
           {/* Location */}
           <div>
           <h4 className="font-semibold text-lg">Location</h4>
-             <FilterComponent availableFilters={available_filters} itemNumber={3} />
+             <FilterComponent availableFilters={available_filters} itemNumber={4} />
           </div>
           {/* Price Range */}
           <div>
