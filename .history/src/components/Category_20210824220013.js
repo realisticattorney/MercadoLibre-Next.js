@@ -10,7 +10,7 @@ const Category = ({ category }) => {
         {name}
       </p>
       <Image src={src} height={200} width={200} objectFit="contain" />
-      <h4 className="my-3">{name}</h4>
+      <h4 className="my-3">{title}</h4>
     </div>
   );
 };
