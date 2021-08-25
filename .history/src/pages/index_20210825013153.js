@@ -25,8 +25,8 @@ export default function Home({ categories }) {
         <Banner />
 
         {/* ProductFeed */}
+        {/* <button onClick={() => router.replace('/
         {/* <ProductFeed products={products} /> */}
-
         <section className="px-1">
           {/* Categories */}
           {<CategoryFeed categories={categories} />}

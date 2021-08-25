@@ -27,16 +27,13 @@ const Category = ({ category }) => {
         <h4>up to</h4>
         <span className="font-bold text-2xl">30% OFF</span>
         <h4>{name}</h4>
-        <p className="hidden lg:inline-flex capitalize text-blue-500 font-medium mt-2 hover:text-blue-400">
+        <p className="hidden lg:flex capitalize text-blue-500 font-medium mt-2 hover:text-blue-400">
           See offers
         </p>
       </div>
     </div>
   ) : id === 9 || id === 10 ? (
-    <div
-      className="lg:col-span-3 col-span-full relative flex flex-col m-2 bg-white z-30 p-5 hover:shadow-2xl shadow-lg rounded-sm md:rounded-md transform transition-shadow h-36"
-      onClick={() => router.replace(`/products/${id}`)}
-    >
+    <div className="lg:col-span-3 col-span-full relative flex flex-col m-2 bg-white z-30 p-5 hover:shadow-2xl shadow-lg rounded-sm md:rounded-md transform transition-shadow h-36">
       <Image
         src={src}
         layout="fill"
@@ -50,16 +47,13 @@ const Category = ({ category }) => {
       </div>
     </div>
   ) : (
-    <div
-      className="relative flex flex-col m-2 bg-white z-30 p-5 hover:shadow-2xl shadow-lg rounded-md transform transition-shadow cursor-pointer"
-      onClick={() => router.replace(`/products/${id}`)}
-    >
+    <div className="relative flex flex-col m-2 bg-white z-30 p-5 hover:shadow-2xl shadow-lg rounded-md transform transition-shadow ">
       <Image src={src} height={93} width={115} objectFit="contain" />
       <div className="text-center text-xs text-gray-700 uppercase">
         <h4 className="mt-3">up to</h4>
         <span className="font-bold text-xl">30% OFF</span>
         <h4>{name}</h4>
-        <span className="hidden lg:inline-flex capitalize text-blue-500 font-medium mt-2 hover:text-blue-400">
+        <span className="hidden lg:inline-flex capitalize text-blue-500 text-center font-medium mt-2 hover:text-blue-400">
           See offers
         </span>
       </div>

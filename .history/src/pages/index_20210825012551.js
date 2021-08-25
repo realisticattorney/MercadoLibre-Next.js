@@ -13,7 +13,7 @@ export default function Home({ categories }) {
 
   // console.log(products)
   return (
-    <div className="bg-gray-200">
+    <div className="bg-gray-150">
       <Head>
         <title>Amazon 2.0</title>
       </Head>
@@ -25,11 +25,13 @@ export default function Home({ categories }) {
         <Banner />
 
         {/* ProductFeed */}
+        {/* <button onClick={() => router.replace('/products/lala')}>
+          HERE SIR
+        </button> */}
         {/* <ProductFeed products={products} /> */}
-
         <section className="px-1">
-          {/* Categories */}
-          {<CategoryFeed categories={categories} />}
+        {/* Categories */}
+        {<CategoryFeed categories={categories} />}
         </section>
       </main>
     </div>

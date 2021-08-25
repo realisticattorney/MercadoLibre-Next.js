@@ -25,11 +25,13 @@ export default function Home({ categories }) {
         <Banner />
 
         {/* ProductFeed */}
+        {/* <button onClick={() => router.replace('/products/lala')}>
+          HERE SIR
+        </button> */}
         {/* <ProductFeed products={products} /> */}
-
         <section className="px-1">
-          {/* Categories */}
-          {<CategoryFeed categories={categories} />}
+        {/* Categories */}
+        {<CategoryFeed categories={categories} />}
         </section>
       </main>
     </div>

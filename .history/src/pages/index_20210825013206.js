@@ -27,6 +27,7 @@ export default function Home({ categories }) {
         {/* ProductFeed */}
         {/* <ProductFeed products={products} /> */}
 
+
         <section className="px-1">
           {/* Categories */}
           {<CategoryFeed categories={categories} />}

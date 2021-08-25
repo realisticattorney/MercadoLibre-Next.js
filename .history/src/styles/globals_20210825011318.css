@@ -22,9 +22,9 @@ body {
 
 @font-face {
   font-family: 'ProximaNova';
-  src: url('/fonts/Nova/ProximaNova-Thin.ttf');
+  src: url('/fonts/Nova/ProximaNova-Light.ttf');
   font-style: normal;
-  font-weight: 200;
+  font-weight: 300;
   font-display: swap;
 }
 @font-face {

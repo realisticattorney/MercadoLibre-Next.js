@@ -33,9 +33,8 @@ const Category = ({ category }) => {
       </div>
     </div>
   ) : id === 9 || id === 10 ? (
-    <div
-      className="lg:col-span-3 col-span-full relative flex flex-col m-2 bg-white z-30 p-5 hover:shadow-2xl shadow-lg rounded-sm md:rounded-md transform transition-shadow h-36"
-      onClick={() => router.replace(`/products/${id}`)}
+    <div className="lg:col-span-3 col-span-full relative flex flex-col m-2 bg-white z-30 p-5 hover:shadow-2xl shadow-lg rounded-sm md:rounded-md transform transition-shadow h-36"
+    onClick={() => router.replace(`/products/${id}`)}
     >
       <Image
         src={src}
@@ -50,9 +49,8 @@ const Category = ({ category }) => {
       </div>
     </div>
   ) : (
-    <div
-      className="relative flex flex-col m-2 bg-white z-30 p-5 hover:shadow-2xl shadow-lg rounded-md transform transition-shadow cursor-pointer"
-      onClick={() => router.replace(`/products/${id}`)}
+    <div className="relative flex flex-col m-2 bg-white z-30 p-5 hover:shadow-2xl shadow-lg rounded-md transform transition-shadow cursor-pointer"
+    onClick={() => router.replace(`/products/${id}`)}
     >
       <Image src={src} height={93} width={115} objectFit="contain" />
       <div className="text-center text-xs text-gray-700 uppercase">
