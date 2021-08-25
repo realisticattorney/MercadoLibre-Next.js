@@ -1,6 +1,4 @@
-import FilterComponent from './FilterComponent';
 import ProductFeed from './ProductFeed';
-
 
 const ProductsFeedContainer = ({ products }) => {
   const { results, available_filters } = products;
@@ -75,17 +73,30 @@ const ProductsFeedContainer = ({ products }) => {
           {/* Categories */}
           <div>
           <h4 className="font-semibold text-lg">Categories</h4>
-             <FilterComponent availableFilters={available_filters} itemNumber={0} />
+            <ul>
+              {available_filters[0].values.map((filter) => (
+                <li className="my-2">
+                  <a href="#" className="text-gray-700">
+                    {filter.name}({Math.floor(filter.results / 100)})
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
-
+        </div>
           {/* Categories */}
           <div>
           <h4 className="font-semibold text-lg">Discounts</h4>
-             <FilterComponent availableFilters={available_filters} itemNumber={2} />
+            <ul>
+              {available_filters[1].values.map((filter) => (
+                <li className="my-2">
+                  <a href="#" className="text-gray-700">
+                    {filter.name}({Math.floor(filter.results / 100)})
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
-
-
-          {/* laconchae ut....... */}
         </div>
 
         <div className="col-span-2 md:col-span-5">

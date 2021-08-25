@@ -1,0 +1,575 @@
+{
+   "site_id": "MLA",
+   "country_default_time_zone": "GMT-03:00",
+   "paging": {
+     "total": 357436,
+     "primary_results": 1000,
+     "offset": 0,
+     "limit": 50
+   },
+,
+   "sort": {
+     "id": "relevance",
+     "name": "More relevant"
+   },
+   "available_sorts": [
+     {
+       "id": "price_asc",
+       "name": "Lower price"
+     },
+     {
+       "id": "price_desc",
+       "name": "Higher price"
+     }
+   ],
+   "filters": [
+     {
+       "id": "category",
+       "name": "Categories",
+       "type": "text",
+       "values": [
+         {
+           "id": "MLA5726",
+           "name": "Electrodomésticos y Aires Ac.",
+           "path_from_root": [
+             {
+               "id": "MLA5726",
+               "name": "Electrodomésticos y Aires Ac."
+             }
+           ]
+         }
+       ]
+     }
+   ],
+   "available_filters": [
+     {
+       "id": "category",
+       "name": "Categories",
+       "type": "text",
+       "values": [
+         {
+           "id": "MLA438284",
+           "name": "Pequeños Electrodomésticos",
+           "results": 90772
+         },
+         {
+           "id": "MLA1618",
+           "name": "Cocción",
+           "results": 43794
+         },
+         {
+           "id": "MLA385177",
+           "name": "Climatización",
+           "results": 95699
+         },
+         {
+           "id": "MLA438282",
+           "name": "Lavado",
+           "results": 49392
+         },
+         {
+           "id": "MLA1576",
+           "name": "Refrigeración",
+           "results": 36576
+         },
+         {
+           "id": "MLA6355",
+           "name": "Artefactos de Cuidado Personal",
+           "results": 32994
+         },
+         {
+           "id": "MLA117258",
+           "name": "Dispensadores y Purificadores",
+           "results": 6913
+         },
+         {
+           "id": "MLA5977",
+           "name": "Otros",
+           "results": 1296
+         }
+       ]
+     },
+     {
+       "id": "official_store",
+       "name": "Tiendas oficiales",
+       "type": "text",
+       "values": [
+         {
+           "id": "all",
+           "name": "Todas las tiendas oficiales",
+           "results": 13190
+         },
+         {
+           "id": "522",
+           "name": "Yelmo",
+           "results": 75
+         },
+         {
+           "id": "229",
+           "name": "Fravega",
+           "results": 1154
+         },
+         {
+           "id": "2068",
+           "name": "Exahome",
+           "results": 2
+         },
+         {
+           "id": "251",
+           "name": "Grupo Marquez",
+           "results": 2305
+         },
+         {
+           "id": "1449",
+           "name": "Tomassa",
+           "results": 73
+         },
+         {
+           "id": "523",
+           "name": "Ultracomb",
+           "results": 73
+         },
+         {
+           "id": "1938",
+           "name": "Mercado Libre Electronica",
+           "results": 1
+         },
+         {
+           "id": "466",
+           "name": "Dolce Gusto",
+           "results": 1
+         },
+         {
+           "id": "56",
+           "name": "BGH",
+           "results": 1
+         },
+         {
+           "id": "586",
+           "name": "Black Decker Home",
+           "results": 1
+         }
+       ]
+     },
+     {
+       "id": "discount",
+       "name": "Descuentos",
+       "type": "range",
+       "values": [
+         {
+           "id": "5-100",
+           "name": "Desde 5% OFF",
+           "results": 8378
+         },
+         {
+           "id": "10-100",
+           "name": "Desde 10% OFF",
+           "results": 6932
+         },
+         {
+           "id": "15-100",
+           "name": "Desde 15% OFF",
+           "results": 1015
+         },
+         {
+           "id": "20-100",
+           "name": "Desde 20% OFF",
+           "results": 796
+         },
+         {
+           "id": "25-100",
+           "name": "Desde 25% OFF",
+           "results": 362
+         },
+         {
+           "id": "30-100",
+           "name": "Desde 30% OFF",
+           "results": 216
+         }
+       ]
+     },
+     {
+       "id": "state",
+       "name": "Location",
+       "type": "text",
+       "values": [
+         {
+           "id": "TUxBUENBUGw3M2E1",
+           "name": "Capital Federal",
+           "results": 152556
+         },
+         {
+           "id": "TUxBUEdSQXJlMDNm",
+           "name": "Bs.As. G.B.A. Sur",
+           "results": 56817
+         },
+         {
+           "id": "TUxBUEdSQWVmNTVm",
+           "name": "Bs.As. G.B.A. Oeste",
+           "results": 47324
+         },
+         {
+           "id": "TUxBUEdSQWU4ZDkz",
+           "name": "Bs.As. G.B.A. Norte",
+           "results": 35437
+         },
+         {
+           "id": "TUxBUFNBTmU5Nzk2",
+           "name": "Santa Fe",
+           "results": 26571
+         },
+         {
+           "id": "TUxBUENPUmFkZGIw",
+           "name": "Córdoba",
+           "results": 17787
+         },
+         {
+           "id": "TUxBUFpPTmFpbnRl",
+           "name": "Buenos Aires Interior",
+           "results": 11234
+         },
+         {
+           "id": "TUxBUE1FTmE5OWQ4",
+           "name": "Mendoza",
+           "results": 3890
+         },
+         {
+           "id": "TUxBUEVOVHMzNTdm",
+           "name": "Entre Ríos",
+           "results": 3602
+         },
+         {
+           "id": "TUxBUFRVQ244NmM3",
+           "name": "Tucumán",
+           "results": 2736
+         },
+         {
+           "id": "TUxBUENPU2ExMmFkMw",
+           "name": "Bs.As. Costa Atlántica",
+           "results": 2449
+         },
+         {
+           "id": "TUxBUE5FVW4xMzMzNQ",
+           "name": "Neuquén",
+           "results": 1802
+         },
+         {
+           "id": "TUxBUE1JU3MzNjIx",
+           "name": "Misiones",
+           "results": 1512
+         },
+         {
+           "id": "TUxBUFNBTm5lYjU4",
+           "name": "San Juan",
+           "results": 1226
+         },
+         {
+           "id": "TUxBUENPUnM5MjI0",
+           "name": "Corrientes",
+           "results": 1224
+         },
+         {
+           "id": "TUxBUFNBTm9lOTlk",
+           "name": "Santiago del Estero",
+           "results": 1224
+         },
+         {
+           "id": "TUxBUFNBTGFjMTJi",
+           "name": "Salta",
+           "results": 1153
+         },
+         {
+           "id": "TUxBUENIQW8xMTNhOA",
+           "name": "Chaco",
+           "results": 1080
+         },
+         {
+           "id": "TUxBUEpVSnk3YmUz",
+           "name": "Jujuy",
+           "results": 1080
+         },
+         {
+           "id": "TUxBUENBVGFiY2Fm",
+           "name": "Catamarca",
+           "results": 1008
+         },
+         {
+           "id": "TUxBUENIVXQxNDM1MQ",
+           "name": "Chubut",
+           "results": 1008
+         },
+         {
+           "id": "TUxBUFNBTnM0ZTcz",
+           "name": "San Luis",
+           "results": 720
+         },
+         {
+           "id": "TUxBUExBWmE1OWMy",
+           "name": "La Pampa",
+           "results": 648
+         },
+         {
+           "id": "TUxBUExBWmEyNzY0",
+           "name": "La Rioja",
+           "results": 504
+         },
+         {
+           "id": "TUxBUFLNT29iZmZm",
+           "name": "Río Negro",
+           "results": 432
+         },
+         {
+           "id": "TUxBUFNBTno3ZmY5",
+           "name": "Santa Cruz",
+           "results": 144
+         }
+       ]
+     },
+     {
+       "id": "price",
+       "name": "Precio",
+       "type": "range",
+       "values": [
+         {
+           "id": "*-3000.0",
+           "name": "Up to $3.000",
+           "results": 114435
+         },
+         {
+           "id": "3000.0-10000.0",
+           "name": "$3.000 to $10.000",
+           "results": 105026
+         },
+         {
+           "id": "10000.0-*",
+           "name": "More than $10.000",
+           "results": 137975
+         }
+       ]
+     },
+     {
+       "id": "accepts_mercadopago",
+       "name": "MercadoPago filter",
+       "type": "boolean",
+       "values": [
+         {
+           "id": "yes",
+           "name": "With MercadoPago",
+           "results": 357436
+         }
+       ]
+     },
+     {
+       "id": "installments",
+       "name": "Pago",
+       "type": "text",
+       "values": [
+         {
+           "id": "yes",
+           "name": "Installments",
+           "results": 354412
+         },
+         {
+           "id": "no_interest",
+           "name": "Sin interés",
+           "results": 67182
+         }
+       ]
+     },
+     {
+       "id": "shipping",
+       "name": "Envío",
+       "type": "text",
+       "values": [
+         {
+           "id": "mercadoenvios",
+           "name": "Mercado Envíos",
+           "results": 265707
+         },
+         {
+           "id": "fulfillment",
+           "name": "Full",
+           "results": 4861
+         }
+       ]
+     },
+     {
+       "id": "power_seller",
+       "name": "Seller quality filter",
+       "type": "boolean",
+       "values": [
+         {
+           "id": "yes",
+           "name": "Best sellers",
+           "results": 192625
+         }
+       ]
+     },
+     {
+       "id": "since",
+       "name": "Auction start date filter",
+       "type": "text",
+       "values": [
+         {
+           "id": "today",
+           "name": "Publicados hoy",
+           "results": 1731
+         }
+       ]
+     },
+     {
+       "id": "until",
+       "name": "Auction stop filter",
+       "type": "text",
+       "values": [
+         {
+           "id": "today",
+           "name": "Ending today",
+           "results": 720
+         }
+       ]
+     },
+     {
+       "id": "has_video",
+       "name": "Video publications filter",
+       "type": "boolean",
+       "values": [
+         {
+           "id": "yes",
+           "name": "Publications with video",
+           "results": 33784
+         }
+       ]
+     },
+     {
+       "id": "has_pictures",
+       "name": "Items with images filter",
+       "type": "boolean",
+       "values": [
+         {
+           "id": "yes",
+           "name": "With pictures",
+           "results": 357364
+         }
+       ]
+     },
+     {
+       "id": "all_payment_methods_discount",
+       "name": "Descuentos para todos los medios de pago",
+       "type": "range",
+       "values": [
+         {
+           "id": "5-100",
+           "name": "Desde 5% OFF",
+           "results": 4766
+         },
+         {
+           "id": "10-100",
+           "name": "Desde 10% OFF",
+           "results": 4765
+         },
+         {
+           "id": "15-100",
+           "name": "Desde 15% OFF",
+           "results": 219
+         },
+         {
+           "id": "20-100",
+           "name": "Desde 20% OFF",
+           "results": 144
+         },
+         {
+           "id": "30-100",
+           "name": "Desde 30% OFF",
+           "results": 72
+         }
+       ]
+     },
+     {
+       "id": "price_campaign_id",
+       "name": "Campaña",
+       "type": "number",
+       "values": [
+         {
+           "id": "MLA6791",
+           "name": "MLA6791",
+           "results": 10
+         },
+         {
+           "id": "P-MLA1481006",
+           "name": "P-MLA1481006",
+           "results": 5
+         },
+         {
+           "id": "P-MLA1278004",
+           "name": "P-MLA1278004",
+           "results": 3
+         },
+         {
+           "id": "P-MLA1234001",
+           "name": "P-MLA1234001",
+           "results": 2
+         },
+         {
+           "id": "MLA1909",
+           "name": "MLA1909",
+           "results": 2
+         },
+         {
+           "id": "P-MLA1431002",
+           "name": "P-MLA1431002",
+           "results": 1
+         },
+         {
+           "id": "P-MLA1430005",
+           "name": "P-MLA1430005",
+           "results": 1
+         },
+         {
+           "id": "P-MLA1209002",
+           "name": "P-MLA1209002",
+           "results": 1
+         },
+         {
+           "id": "P-MLA1194001",
+           "name": "P-MLA1194001",
+           "results": 1
+         }
+       ]
+     },
+     {
+       "id": "shipping_cost",
+       "name": "Costo de envío",
+       "type": "text",
+       "values": [
+         {
+           "id": "free",
+           "name": "Gratis",
+           "results": 138165
+         }
+       ]
+     },
+     {
+       "id": "ITEM_CONDITION",
+       "name": "Condición",
+       "type": "STRING",
+       "values": [
+         {
+           "id": "2230284",
+           "name": "Nuevo",
+           "results": 276360
+         },
+         {
+           "id": "2230581",
+           "name": "Usado",
+           "results": 77560
+         },
+         {
+           "id": "2230582",
+           "name": "Reacondicionado",
+           "results": 210
+         }
+       ]
+     }
+   ]
+ }

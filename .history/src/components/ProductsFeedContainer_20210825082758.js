@@ -1,11 +1,8 @@
-import FilterComponent from './FilterComponent';
 import ProductFeed from './ProductFeed';
 
-
 const ProductsFeedContainer = ({ products }) => {
-  const { results, available_filters } = products;
+  const { results } = products;
 
-  console.log(available_filters.values);
   return (
     <div className="flex flex-col">
       <p className="p-2">
@@ -13,17 +10,19 @@ const ProductsFeedContainer = ({ products }) => {
         electrico peabody
       </p>
       <div className="flex mt-10">
-        <div className="flex-col flex p-2 space-y-6">
-          {/* Subhead, Title, Results */}
-          <div>
-            <h5>Descuentazos electronicaElectrodomésticos y Aires Ac.</h5>
-            <h5 className="text-2xl">
-              Descuentazos: Electrodomésticos y Aires Ac.
-            </h5>
-            <p className="text-gray-700 font-light text-sm">5.340 Results</p>
-          </div>
+        <div className="flex-col flex p-2">
 
-          {/* Buttons */}
+
+        {/* Subhead, Title, Results */}
+        <div>
+          <h5>Descuentazos electronicaElectrodomésticos y Aires Ac.</h5>
+          <h5 className="text-2xl">
+            Descuentazos: Electrodomésticos y Aires Ac.
+          </h5>
+          <p className="text-gray-700 font-light text-sm">5.340 Results</p>
+
+
+         {/* Buttons */}
           <div className="my-5">
             <div className="flex bg-white p-3 m-2 mr-5 border-gray-300 border rounded-md justify-between">
               <h5 className="font-medium">Llegan hoy</h5>
@@ -67,25 +66,12 @@ const ProductsFeedContainer = ({ products }) => {
             </div>
           </div>
 
+
           {/* Official Stores */}
-          <div>
-            <h4 className="font-semibold text-lg">Official Stores</h4>
-          </div>
-
-          {/* Categories */}
-          <div>
-          <h4 className="font-semibold text-lg">Categories</h4>
-             <FilterComponent availableFilters={available_filters} itemNumber={0} />
-          </div>
-
-          {/* Categories */}
-          <div>
-          <h4 className="font-semibold text-lg">Discounts</h4>
-             <FilterComponent availableFilters={available_filters} itemNumber={2} />
-          </div>
-
-
-          {/* laconchae ut....... */}
+          
+          
+          
+          
         </div>
 
         <div className="col-span-2 md:col-span-5">

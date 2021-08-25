@@ -1,11 +1,8 @@
-import FilterComponent from './FilterComponent';
 import ProductFeed from './ProductFeed';
 
-
 const ProductsFeedContainer = ({ products }) => {
-  const { results, available_filters } = products;
+  const { results } = products;
 
-  console.log(available_filters.values);
   return (
     <div className="flex flex-col">
       <p className="p-2">
@@ -13,7 +10,7 @@ const ProductsFeedContainer = ({ products }) => {
         electrico peabody
       </p>
       <div className="flex mt-10">
-        <div className="flex-col flex p-2 space-y-6">
+        <div className="flex-col flex p-2">
           {/* Subhead, Title, Results */}
           <div>
             <h5>Descuentazos electronicaElectrodomésticos y Aires Ac.</h5>
@@ -69,23 +66,8 @@ const ProductsFeedContainer = ({ products }) => {
 
           {/* Official Stores */}
           <div>
-            <h4 className="font-semibold text-lg">Official Stores</h4>
+             <h4 className="">Official Stores</h4>
           </div>
-
-          {/* Categories */}
-          <div>
-          <h4 className="font-semibold text-lg">Categories</h4>
-             <FilterComponent availableFilters={available_filters} itemNumber={0} />
-          </div>
-
-          {/* Categories */}
-          <div>
-          <h4 className="font-semibold text-lg">Discounts</h4>
-             <FilterComponent availableFilters={available_filters} itemNumber={2} />
-          </div>
-
-
-          {/* laconchae ut....... */}
         </div>
 
         <div className="col-span-2 md:col-span-5">

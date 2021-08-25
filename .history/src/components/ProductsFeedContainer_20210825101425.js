@@ -81,7 +81,7 @@ const ProductsFeedContainer = ({ products }) => {
           {/* Categories */}
           <div>
           <h4 className="font-semibold text-lg">Discounts</h4>
-             <FilterComponent availableFilters={available_filters} itemNumber={2} />
+             <FilterComponent availableFilters={available_filters} itemNumber={0} />
           </div>
 
 
