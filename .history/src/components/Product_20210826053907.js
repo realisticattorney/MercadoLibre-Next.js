@@ -49,7 +49,7 @@ const Product = ({ product }) => {
   return (
     <div className="relative flex flex-col m-2 bg-white z-30 shadow-sm transition duration-300 hover:shadow-2xl border border-gray-300 rounded-md ">
       <HeartIcon className="absolute z-50 h-6 right-3 top-3 text-blue-500" />
-      <div className="border-b text-center">
+      <div className="border-b">
         <Image src={thumbnail} height={200} width={200} objectFit="contain" />
       </div>
       <div className="p-5">
