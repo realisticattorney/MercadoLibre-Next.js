@@ -50,10 +50,10 @@ const Header = () => {
         </div>
 
         {/*center - Search*/}
-        <div className="flex items-center h-7 rounded-sm flex-grow bg-white cursor-pointer shadow-sm lg:col-span-1 lg:row-start-1 lg:col-start-2 lg:row-span-1 lg:min-w-[400px] lg:flex-row-reverse lg:h-9 lg:p-2">
-          <SearchIcon className="h-6 p-1 pl-2 text-gray-400 active:mt-1 lg:h-7 lg:border-l lg:pl-3 " />
+        <div className="flex items-center h-7 rounded-sm flex-grow bg-white cursor-pointer shadow-sm lg:col-span-1 lg:row-start-1 lg:col-start-2 lg:row-span-1 lg:min-w-[400px] lg:flex-row-reverse lg:h-9">
+          <SearchIcon className="h-6 p-1 pl-2 text-gray-400 active:mt-1 lg:h-7" />
           <input
-            className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-1 text-sm text-gray-600 placeholder-gray-300 lg:text-base"
+            className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-1 text-sm text-gray-600 placeholder-gray-300 text-lg"
             type="text"
             placeholder="Search products, brands and more..."
           />
@@ -100,7 +100,7 @@ const Header = () => {
             onClick={session ? signOut : signIn}
           >
             <UserCircleIcon className="h-6 mr-1 text-amazon_blue-light" />
-            <p>{session ? `${session.user.name.split(' ')[1]}` : 'Sign in'}</p>
+            <p>{session ? `${(session.user.name).split(" ")[1]}` : 'Sign in'}</p>
             <ChevronDownIcon className="h-3.5 text-gray-500 text-opacity-50" />
           </div>
           <div className="cursor-pointer">
