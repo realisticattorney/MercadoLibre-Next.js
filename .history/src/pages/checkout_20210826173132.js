@@ -47,7 +47,7 @@ const Checkout = () => {
             ))}
           </div>
 
-          <div className="flex flex-col bg-white p-5 mb-1 border-b text-right items-end">
+          <div className="flex flex-col bg-white p-1 mb-1 border-b text-right items-end">
             {items.length > 0 && (
               <>
                 <h2 className="whitespace-nowrap mb-5 text-3xl font-regular text-gray-700">
@@ -69,7 +69,7 @@ const Checkout = () => {
                     disabled={!session}
                     className={`button text-white rounded-md max-w-xs text-lg mt-2 ${
                       !session &&
-                      `from-gray-500 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed active:bg-red-600-500 active:bg-red-700`
+                      `from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed active:bg-red-600-500 active:bg-red-700`
                     }`}
                   >
                     {session ? 'Proceed to checkout' : 'Sign in to checkout'}

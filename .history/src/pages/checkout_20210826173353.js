@@ -69,7 +69,7 @@ const Checkout = () => {
                     disabled={!session}
                     className={`button text-white rounded-md max-w-xs text-lg mt-2 ${
                       !session &&
-                      `from-gray-500 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed active:bg-red-600-500 active:bg-red-700`
+                      ` border-gray-200 text-gray-300 cursor-not-allowed active:bg-red-600-500 active:bg-red-700`
                     }`}
                   >
                     {session ? 'Proceed to checkout' : 'Sign in to checkout'}

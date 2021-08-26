@@ -47,21 +47,22 @@ const Checkout = () => {
             ))}
           </div>
 
-          <div className="flex flex-col bg-white p-5 mb-1 border-b text-right items-end">
+          <div className="flex flex-col bg-white p-10 mb-5 border-b text-right items-end">
             {items.length > 0 && (
               <>
-                <h2 className="whitespace-nowrap mb-5 text-3xl font-regular text-gray-700">
-                  {' '}
-                  Total:
-                  <span className="ml-10">
+                <h2 className="whitespace-nowrap">
+                  Subtotal:{' '}
+                  {items.length === 1 ? '1 item' : items.length + ' items'}
+                  <span className="font-bold">
                     {' '}
+                    Total:
                     {' $'}
                     {items.reduce((acc, b) => {
                       return acc + parseFloat(b.price);
                     }, 0)}
                   </span>
                 </h2>
-
+<br /> <hr className="border-t border-black" />
                 <div className="mt-5">
                   <button
                     role="link"
@@ -69,7 +70,7 @@ const Checkout = () => {
                     disabled={!session}
                     className={`button text-white rounded-md max-w-xs text-lg mt-2 ${
                       !session &&
-                      `from-gray-500 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed active:bg-red-600-500 active:bg-red-700`
+                      `from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed active:bg-red-600-500 active:bg-red-700`
                     }`}
                   >
                     {session ? 'Proceed to checkout' : 'Sign in to checkout'}
