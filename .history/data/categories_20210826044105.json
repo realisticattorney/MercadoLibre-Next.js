@@ -16,12 +16,12 @@
       "src": "/images/categories/category-3.jpg"
     },
     {
-      "id": "MLA11830",
+      "id": 4,
       "name": "home appliances",
       "src": "/images/categories/category-4.jpg"
     },
     {
-      "id": "MLA73986",
+      "id": 5,
       "name": "mattresses",
       "src": "/images/categories/category-5.jpg"
     },
@@ -31,7 +31,7 @@
       "src": "/images/categories/category-6.jpg"
     },
     {
-      "id": "MLA407134",
+      "id": 7,
       "name": "tool kits",
       "src": "/images/categories/category-7.jpg"
     },
@@ -46,12 +46,12 @@
       "src": "/images/categories/category-9.jpg"
     },
     {
-      "id": "MLA1648",
+      "id": 10,
       "name": "offers",
       "src": "/images/categories/category-10.jpg"
     },
     {
-      "id": "MLA1276",
+      "id": 11,
       "name": "fitness",
       "src": "/images/categories/category-11.jpg"
     },
@@ -66,12 +66,12 @@
       "src": "/images/categories/category-13.jpg"
     },
     {
-      "id": "MLA385177",
+      "id": 14,
       "name": "air conditioning",
       "src": "/images/categories/category-14.jpg"
     },
     {
-      "id": "MLA1253",
+      "id": 15,
       "name": "body care",
       "src": "/images/categories/category-15.jpg"
     },
@@ -81,22 +81,22 @@
       "src": "/images/categories/category-16.jpg"
     },
     {
-      "id": "MLA438284",
+      "id": 17,
       "name": "small appliances",
       "src": "/images/categories/category-17.jpg"
     },
     {
-      "id": "MLA1423",
+      "id": 18,
       "name": "groceries",
       "src": "/images/categories/category-18.jpg"
     },
     {
-      "id": "MLA5228",
+      "id": 19,
       "name": "construction",
       "src": "/images/categories/category-19.jpg"
     },
     {
-      "id": "MLA1132",
+      "id": 20,
       "name": "toys",
       "src": "/images/categories/category-20.jpg"
     }

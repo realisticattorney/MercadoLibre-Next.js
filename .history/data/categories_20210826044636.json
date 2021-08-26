@@ -21,7 +21,7 @@
       "src": "/images/categories/category-4.jpg"
     },
     {
-      "id": "MLA73986",
+      "id": 5,
       "name": "mattresses",
       "src": "/images/categories/category-5.jpg"
     },
@@ -46,7 +46,7 @@
       "src": "/images/categories/category-9.jpg"
     },
     {
-      "id": "MLA1648",
+      "id": 10,
       "name": "offers",
       "src": "/images/categories/category-10.jpg"
     },

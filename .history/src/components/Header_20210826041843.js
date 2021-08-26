@@ -106,7 +106,7 @@ const Header = () => {
           <div className="cursor-pointer">
             <p>{session ? `My orders` : 'Login'}</p>
           </div>
-          <div className="flex cursor-pointer  items-center">
+          <div className="cursor-pointer flex items-center">
             <p>{session ? `Favorites` : 'My orders'}</p>
             <ChevronDownIcon className="h-3.5 text-gray-500 text-opacity-50" />
           </div>

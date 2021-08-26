@@ -32,7 +32,7 @@ const Category = ({ category }) => {
         </p>
       </div>
     </div>
-  ) : id === "MLA1039" || id === "MLA1648" ? (
+  ) : id === 9 || id === 10 ? (
     <div
       className="lg:col-span-3 col-span-full relative flex flex-col m-2 bg-white z-30 p-5 hover:shadow-2xl shadow-lg rounded-sm md:rounded-md transform transition-shadow h-36"
       onClick={() => router.replace(`/products/${id}`)}
