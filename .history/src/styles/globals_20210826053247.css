@@ -13,7 +13,7 @@ body {
   }
 
   .button {
-    @apply p-2 text-xs md:text-sm bg-gradient-to-b from-blue-500 to-blue-500 border-blue-500 border-b-2 focus:shadow-sm rounded-sm focus:ring-0  active:from-blue-600 active:to-blue-600;
+    @apply p-2 text-xs md:text-sm bg-gradient-to-b from-blue-400 to-blue-500 border-blue-500 border-b-2 foucs:sh rounded-sm focus:ring-0 focus:ring-blue-500 active:from-blue-500;
   }
   .button:focus {
     @apply outline-none;
@@ -32,7 +32,7 @@ input:checked ~ .toggle-circle {
   transform: translateX(100%);
 }
 input:checked ~ .toggle-path {
-  background-color: #3684fa;
+  background-color: #3684FA;
 }
 
 @font-face {
