@@ -83,7 +83,7 @@ const Product = ({ product }) => {
       </div>
       <button
         onClick={addItemToBasket}
-        className="mt-auto button focus:ring-0  rounded-br-md rounded-bl-md"
+        className="mt-auto button focus:ring-0 border"
       >
         Add to Basket
       </button>
