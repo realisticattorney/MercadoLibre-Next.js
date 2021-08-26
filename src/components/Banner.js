@@ -19,7 +19,7 @@ const Banner = () => {
             loading="lazy"
             objectFit="cover"
             layout="fill"
-            src="/images/slide-1.jpg"
+            src="/images/slide-5.jpg"
             alt=""
           />
         </div>
@@ -47,6 +47,15 @@ const Banner = () => {
             objectFit="cover"
             layout="fill"
             src="/images/slide-4.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <Image
+            loading="lazy"
+            objectFit="cover"
+            layout="fill"
+            src="/images/slide-1.jpg"
             alt=""
           />
         </div>
