@@ -7,10 +7,10 @@ const ProductsFeedContainer = ({ products }) => {
   console.log(available_filters.values);
   return (
     <div className="flex flex-col">
-      {/* <p className="p-2">
+      <p className="p-2">
         Búsquedas relacionadascampana cocinatermo electricothermomixtermo
         electrico peabody
-      </p> */}
+      </p>
       <div className="flex mt-10">
         <div className="flex-col flex p-2 space-y-6">
           {/* Subhead, Title, Results */}

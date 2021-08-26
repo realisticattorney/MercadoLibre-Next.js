@@ -7,15 +7,15 @@ const ProductsFeedContainer = ({ products }) => {
   console.log(available_filters.values);
   return (
     <div className="flex flex-col">
-      {/* <p className="p-2">
+      <p className="p-2">
         Búsquedas relacionadascampana cocinatermo electricothermomixtermo
         electrico peabody
-      </p> */}
+      </p>
       <div className="flex mt-10">
         <div className="flex-col flex p-2 space-y-6">
           {/* Subhead, Title, Results */}
           <div>
-            <h5 className="text-gray-500 text-sm">{filters[0].values[0].name} {' > '} {filters[0].values[0].name}</h5>
+            <h5 className="text-gray-500 text-sm">{filters[0].values[0].name} {' >'} {filters[0].values[0].name}</h5>
             <h5 className="text-2xl">{filters[0].values[0].name}</h5>
             <p className="text-gray-700 font-light text-sm">5.340 Results</p>
           </div>

@@ -32,7 +32,7 @@ input:checked ~ .toggle-circle {
   transform: translateX(100%);
 }
 input:checked ~ .toggle-path {
-  background-color: #3684FA;
+  background-color: #81e6d9;
 }
 
 @font-face {
