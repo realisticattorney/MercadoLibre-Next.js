@@ -34,7 +34,7 @@ const CheckoutProduct = ({ product }) => {
         <div className="flex flex-col max-w-[150px] space-y-3">
           <button
             onClick={addItemToBasket}
-            className="link text-sm text-left mt-1 cursor-pointer no-underline focus:no-underline text-blue-600"
+            className="link text-sm text-left cursor-pointer no-underline focus:no-underline text-blue-600"
           >
             Add to Basket
           </button>

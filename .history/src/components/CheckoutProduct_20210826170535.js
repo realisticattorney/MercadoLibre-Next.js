@@ -27,7 +27,7 @@ const CheckoutProduct = ({ product }) => {
         <p className="text-gray-700 font-semibold text-lg">{title}</p>
 
         {shipping.free_shipping === true && (
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-1">
             <p className="text-sm text-green-500">Free Shipping</p>
           </div>
         )}

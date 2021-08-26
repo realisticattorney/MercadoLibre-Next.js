@@ -62,12 +62,11 @@ const Checkout = () => {
                     }, 0)}
                   </span>
                 </h2>
-                <div className="relative"></div>
-                <button 
+                <button
                   role="link"
                   onClick={createCheckoutSession}
                   disabled={!session}
-                  className={`button text-white rounded-md max-w-xs text-lg mt-2 absolute right-5 ${
+                  className={`button text-white rounded-md maxw text-lg mt-2 ${
                     !session &&
                     `from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed active:bg-red-600-500 active:bg-red-700`
                   }`}

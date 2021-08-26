@@ -47,7 +47,7 @@ const Checkout = () => {
             ))}
           </div>
 
-          <div className="flex flex-col bg-white p-10 mb-5 border-b text-right">
+          <div className="flex flex-col bg-white p-10 mb-5 border-b text-right justify-end">
             {items.length > 0 && (
               <>
                 <h2 className="whitespace-nowrap">
@@ -62,12 +62,11 @@ const Checkout = () => {
                     }, 0)}
                   </span>
                 </h2>
-                <div className="relative"></div>
-                <button 
+                <button
                   role="link"
                   onClick={createCheckoutSession}
                   disabled={!session}
-                  className={`button text-white rounded-md max-w-xs text-lg mt-2 absolute right-5 ${
+                  className={`button text-white rounded-md max-w-xs text-lg mt-2 ${
                     !session &&
                     `from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed active:bg-red-600-500 active:bg-red-700`
                   }`}

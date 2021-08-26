@@ -23,7 +23,7 @@ const CheckoutProduct = ({ product }) => {
   return (
     <div className="grid grid-cols-5 pb-2 border-b">
       <Image src={thumbnail} width={200} height={200} objectFit="contain" />
-      <div className="col-span-3 mx-5 space-y-3">
+      <div className="col-span-3 mx-5 sp">
         <p className="text-gray-700 font-semibold text-lg">{title}</p>
 
         {shipping.free_shipping === true && (
@@ -34,7 +34,7 @@ const CheckoutProduct = ({ product }) => {
         <div className="flex flex-col max-w-[150px] space-y-3">
           <button
             onClick={addItemToBasket}
-            className="link text-sm text-left mt-1 cursor-pointer no-underline focus:no-underline text-blue-600"
+            className="link text-sm text-left mt-3 cursor-pointer no-underline focus:no-underline text-blue-600"
           >
             Add to Basket
           </button>

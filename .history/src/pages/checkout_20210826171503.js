@@ -62,8 +62,7 @@ const Checkout = () => {
                     }, 0)}
                   </span>
                 </h2>
-                <div className="relative"></div>
-                <button 
+                <button
                   role="link"
                   onClick={createCheckoutSession}
                   disabled={!session}

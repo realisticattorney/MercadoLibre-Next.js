@@ -5,7 +5,7 @@ import { selectItems } from '../slices/basketSlice';
 import CheckoutProduct from '../components/CheckoutProduct';
 import { useSession } from 'next-auth/client';
 import { loadStripe } from '@stripe/stripe-js';
-import axios from 'axios';
+import axios from 'axios'
 //border-b for a thin line already styled
 const stripePromise = loadStripe(process.env.stripe_public_key);
 
@@ -38,48 +38,51 @@ const Checkout = () => {
       <main className=" max-w-screen-2xl mx-auto">
         {/* Left section*/}
         <div className="flex-grow m-5 shadow-sm">
+
           <div className="flex flex-col p-5 space-y-10 bg-white">
             <h1 className="text-3xl border-b pb-4">
-              {items.length === 0 ? 'Your Basket is empty' : 'Shopping Basket'}
+              {items.length === 0
+                ? 'Your Basket is empty'
+                : 'Shopping Basket'}
             </h1>
             {items.map((item, i) => (
               <CheckoutProduct product={item} key={i} />
             ))}
           </div>
-
-          <div className="flex flex-col bg-white p-10 mb-5 border-b text-right">
-            {items.length > 0 && (
-              <>
-                <h2 className="whitespace-nowrap">
-                  Subtotal:{' '}
-                  {items.length === 1 ? '1 item' : items.length + ' items'}
-                  <span className="font-bold">
-                    {' '}
-                    Total:
-                    {' $'}
-                    {items.reduce((acc, b) => {
-                      return acc + parseFloat(b.price);
-                    }, 0)}
-                  </span>
-                </h2>
-                <div className="relative"></div>
-                <button 
-                  role="link"
-                  onClick={createCheckoutSession}
-                  disabled={!session}
-                  className={`button text-white rounded-md max-w-xs text-lg mt-2 absolute right-5 ${
-                    !session &&
-                    `from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed active:bg-red-600-500 active:bg-red-700`
-                  }`}
-                >
-                  {session ? 'Proceed to checkout' : 'Sign in to checkout'}
-                </button>
-              </>
-            )}
-          </div>
         </div>
 
         {/* Right section*/}
+        <div className="flex flex-col bg-white p-10 mb-5 shadow-md">
+          {items.length > 0 && (
+            <>
+              <h2 className="whitespace-nowrap">
+                Subtotal:{' '}
+                {items.length === 1 ? '1 item' : items.length + ' items'}
+                <span className="font-bold">
+                  {' '}
+                  Total:
+                  {' $'}
+                  {items
+                    .reduce((acc, b) => {
+                      return acc + parseFloat(b.price);
+                    }, 0)
+                    }
+                </span>
+              </h2>
+              <button
+                role="link"
+                onClick={createCheckoutSession}
+                disabled={!session}
+                className={`button mt-2 ${
+                  !session &&
+                  `from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed active:from-gray-500 active:to-gray-700 `
+                }`}
+              >
+                {session ? 'Proceed to checkout' : 'Sign in to checkout'}
+              </button>
+            </>
+          )}
+        </div>
       </main>
     </div>
   );
