@@ -6,6 +6,12 @@ import Category from './Category';
 const CategoryFeed = ({ categories }) => {
   return (
     <div className="grid grid-flow-row-dense grid-cols-2 lg:grid-cols-6 mx-auto">
+      {/*   
+      {categories.map((category) => (
+        <Category key={category.id} category={category} />
+      ))}
+ */}
+
       {categories.slice(0, 8).map((category) => (
         <Category key={category.id} category={category} />
       ))}
@@ -22,6 +28,7 @@ const CategoryFeed = ({ categories }) => {
       {categories.slice(10, 20).map((category) => (
         <Category key={category.id} category={category} />
       ))}
+
     </div>
   );
 };
