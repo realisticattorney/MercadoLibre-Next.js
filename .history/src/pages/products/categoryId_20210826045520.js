@@ -39,9 +39,10 @@ export default CategoryId;
 export async function getServerSideProps(context) {
   const { categoryId } = context.params;
 
+
   try {
     const products = await fetch(
-      `https://api.mercadolibre.com/sites/MLA/search?category=${category}&limit=10`
+      `https://api.mercadolibre.com/sites/MLA/search?category=${category}&limit=5`
     );
     return {
       props: {

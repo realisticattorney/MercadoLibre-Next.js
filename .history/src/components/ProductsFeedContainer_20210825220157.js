@@ -83,7 +83,6 @@ const ProductsFeedContainer = ({ products }) => {
           <div>
             <h4 className="font-semibold text-lg">Categories</h4>
             <FilterComponent
-              key={available_filters[0].id}
               availableFilters={available_filters}
               itemNumber={0}
             />
@@ -93,7 +92,6 @@ const ProductsFeedContainer = ({ products }) => {
           <div>
             <h4 className="font-semibold text-lg">Discounts</h4>
             <FilterComponent
-              key={available_filters[2].id}
               availableFilters={available_filters}
               itemNumber={2}
             />
@@ -102,7 +100,6 @@ const ProductsFeedContainer = ({ products }) => {
           <div>
             <h4 className="font-semibold text-lg">Shipping Cost</h4>
             <FilterComponent
-              key={available_filters[15].id}
               availableFilters={available_filters}
               itemNumber={15}
             />
@@ -112,7 +109,6 @@ const ProductsFeedContainer = ({ products }) => {
           <div>
             <h4 className="font-semibold text-lg">Tipo de entrega</h4>
             <FilterComponent
-              key={available_filters[7].id}
               availableFilters={available_filters}
               itemNumber={7}
             />
@@ -121,7 +117,6 @@ const ProductsFeedContainer = ({ products }) => {
           <div>
             <h4 className="font-semibold text-lg">Location</h4>
             <FilterComponent
-              key={available_filters[3].id}
               availableFilters={available_filters}
               itemNumber={3}
             />
@@ -130,7 +125,6 @@ const ProductsFeedContainer = ({ products }) => {
           <div>
             <h4 className="font-semibold text-lg">Price Range</h4>
             <FilterComponent
-              key={available_filters[4].id}
               availableFilters={available_filters}
               itemNumber={4}
             />
@@ -139,7 +133,6 @@ const ProductsFeedContainer = ({ products }) => {
           <div>
             <h4 className="font-semibold text-lg">Price Range</h4>
             <FilterComponent
-              key={available_filters[8].id}
               availableFilters={available_filters}
               itemNumber={8}
             />
