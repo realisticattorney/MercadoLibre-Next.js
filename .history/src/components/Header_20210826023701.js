@@ -86,10 +86,7 @@ const Header = () => {
         </div>
 
         <div className="flex lg:col-span-1 lg:row-start-2 lg:col-start-3 lg:row-span-1 space-x-3">
-          <div
-            className="flex cursor-pointer"
-            onClick={session ? signOut : signIn}
-          >
+          <div className="flex cursor-pointer" onClick={session ? signOut : signIn}>
             <UserCircleIcon className="h-6 mr-0.5 text-amazon_blue-light" />
             <p>{session ? `${session.user.name}` : 'Sign in'}</p>
           </div>
@@ -118,9 +115,7 @@ const Header = () => {
       </div>
 
       <div className="hidden lg:flex lg:col-span-1 lg:row-start-1 lg:col-start-3 lg:row-span-1 text-center">
-        <h4 className="text-amazon_blue-light text-lg opacity-90">
-          Up to 4 months of Disney+ free
-        </h4>
+    <h4 className="text-amazon_blue-light text-lg opac">Up to 4 months of Disney+ free</h4>
       </div>
     </header>
   );
