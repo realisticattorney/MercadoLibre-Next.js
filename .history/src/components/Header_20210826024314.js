@@ -78,9 +78,9 @@ const Header = () => {
         <div className="lg:col-span-1 lg:row-start-2 lg:col-start-1 lg:row-span-1">
           <button className="link flex items-center text-amazon_blue-light no-underline">
             <LocationMarkerIcon className="h-4 lg:h-7 mr-1 text-amazon_blue-light" />
-            <span className="text-xs font-light text-left">
+            <span className="text-xs font-light text-left ">
               Deliver to{' '}
-              <span className="lg:line-clamp-2 lg:text-sm -mt-1">Analia Santa Fe 3388</span>
+              <span className="lg:line-clamp-2 lg:text-sm">Analia Santa Fe 3388</span>
             </span>
           </button>
         </div>

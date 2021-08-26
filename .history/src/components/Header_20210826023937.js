@@ -77,10 +77,10 @@ const Header = () => {
       <div className="flex items-center justify-between space-x-3 py-2 pl-2 bg-amazon_blue text-sm lg:contents">
         <div className="lg:col-span-1 lg:row-start-2 lg:col-start-1 lg:row-span-1">
           <button className="link flex items-center text-amazon_blue-light no-underline">
-            <LocationMarkerIcon className="h-4 lg:h-7 mr-1 text-amazon_blue-light" />
+            <LocationMarkerIcon className="h-4 mr-1 text-amazon_blue-light" />
             <span className="text-xs font-light text-left">
               Deliver to{' '}
-              <span className="lg:line-clamp-2 lg:text-sm -mt-1">Analia Santa Fe 3388</span>
+              <span className="lg:line-clamp-2">Analia Santa Fe 3388</span>
             </span>
           </button>
         </div>
@@ -90,7 +90,7 @@ const Header = () => {
             className="flex cursor-pointer items-center"
             onClick={session ? signOut : signIn}
           >
-            <UserCircleIcon className="h-6 mr-1 text-amazon_blue-light" />
+            <UserCircleIcon className="h-6 mr-0.5 items-center text-amazon_blue-light" />
             <p>{session ? `${session.user.name}` : 'Sign in'}</p>
           </div>
           <div className="cursor-pointer">

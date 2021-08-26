@@ -80,7 +80,7 @@ const Header = () => {
             <LocationMarkerIcon className="h-4 lg:h-7 mr-1 text-amazon_blue-light" />
             <span className="text-xs font-light text-left">
               Deliver to{' '}
-              <span className="lg:line-clamp-2 lg:text-sm -mt-1">Analia Santa Fe 3388</span>
+              <span className="lg:line-clamp-2 lg:text-sm-mb-1">Analia Santa Fe 3388</span>
             </span>
           </button>
         </div>
