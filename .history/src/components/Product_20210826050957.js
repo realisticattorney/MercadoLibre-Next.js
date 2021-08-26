@@ -68,9 +68,9 @@ const Product = ({ product }) => {
         )}
         <p className="text-xs my-2 line-clamp-2">
           {title}
-          {eshop && <span className="text-gray-500 text-xs line-clamp-2">
+          {eshop &&}<span className="text-gray-500 text-xs line-clamp-2">
             sold by {eshop.nick_name}
-          </span>}
+          </span>
         </p>
 
         <div className="flex">

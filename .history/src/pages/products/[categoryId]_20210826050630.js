@@ -9,26 +9,32 @@ const CategoryId = ({ products, categoryId }) => {
   const router = useRouter();
 
   console.log(products);
-  console.log(categoryId);
 
-  const { results } = products;
+  const { results, available_filters } = products;
 
   return (
-    <div className="bg-gray-200">
-      {/* <Head>
-        <title>Amazon 2.0</title>
-      </Head> */}
+    <div className=" bg-gray-200">
+      <Head>
+        <title>Mercado Libre</title>
+      </Head>
 
       <Header />
 
       <main className="max-w-screen-2xl mx-auto">
-        {/* Banner */}
-        <Banner />
+        <div className="relative">
+          <div className="w-full h-72">
+            {/* img loading lazy means that doesnt slows down the app*/}
+            <Image
+              loading="lazy"
+              objectFit="cover"
+              layout="fill"
+              src="/images/banner-1.png"
+              alt=""
+            />
+          </div>
+        </div>
 
-        <section className="px-1">
-          {/* ProductFeed */}
-          <ProductFeed products={results} />
-        </section>
+        <ProductsFeedContainer products={products} />
       </main>
     </div>
   );
