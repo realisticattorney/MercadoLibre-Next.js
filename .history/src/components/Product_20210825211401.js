@@ -7,8 +7,7 @@ import { toast } from 'react-toastify';
 //line-clamp to interrupt text once it gets too long
 //focus:ring-0 to remove the focus
 const Product = ({ product }) => {
-  const { id, title, price, thumbnail, condition, eshop, original_price } =
-    product;
+  const { id, title, price, thumbnail, condition, eshop, original_price } = product;
 
   const [rating] = useState(Math.round(Math.random() * 2) + 3);
 
@@ -45,10 +44,8 @@ const Product = ({ product }) => {
         {condition}
       </p>
       <Image src={thumbnail} height={200} width={200} objectFit="contain" />
-      {original_price && (
-        <p className="text-xs line-through text-gray-400">$ {original_price}</p>
-      )}
-      <p className="mb-5 text-3xl font-regular">$ {price}</p>
+      {original_price  <p className="mb-5 font-semibold">${original_price}</p>}
+      <p className="mb-5 font-semibold">${price}</p>
       {hasPrime && (
         <div className="flex items-center space-x-2 -mt-5">
           <img className="w-12" src="https://links.papareact.com/fdw" alt="" />

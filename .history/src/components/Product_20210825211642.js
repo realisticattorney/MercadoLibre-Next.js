@@ -48,7 +48,7 @@ const Product = ({ product }) => {
       {original_price && (
         <p className="text-xs line-through text-gray-400">$ {original_price}</p>
       )}
-      <p className="mb-5 text-3xl font-regular">$ {price}</p>
+      <p className="mb-5 text-3xl font-medium">$ {price}</p>
       {hasPrime && (
         <div className="flex items-center space-x-2 -mt-5">
           <img className="w-12" src="https://links.papareact.com/fdw" alt="" />

@@ -41,14 +41,14 @@ const Product = ({ product }) => {
 
   return (
     <div className="relative flex flex-col m-2 bg-white z-30 p-5 hover:shadow-md">
-      <p className="absolute top-2 right-2 text-sm italic text-gray-400">
+      <p className="absolute top-2 right-2 text-sm italic line-through text-gray-400">
         {condition}
       </p>
       <Image src={thumbnail} height={200} width={200} objectFit="contain" />
       {original_price && (
-        <p className="text-xs line-through text-gray-400">$ {original_price}</p>
+        <p className="text-xs text-gray-400">$ {original_price}</p>
       )}
-      <p className="mb-5 text-3xl font-regular">$ {price}</p>
+      <p className="mb-5 font-semibold">$ {price}</p>
       {hasPrime && (
         <div className="flex items-center space-x-2 -mt-5">
           <img className="w-12" src="https://links.papareact.com/fdw" alt="" />
