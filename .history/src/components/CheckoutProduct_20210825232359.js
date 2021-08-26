@@ -24,7 +24,7 @@ const CheckoutProduct = ({ product }) => {
     <div className="grid grid-cols-5 pb-2 border-b">
       <Image src={thumbnail} width={200} height={200} objectFit="contain" />
       <div className="col-span-3 mx-5">
-        <p className="text-gray-700 font-semibold text-lg">{title}</p>
+        <p>{title}</p>
 
       
         {shipping.free_shipping === true && (
@@ -37,7 +37,7 @@ const CheckoutProduct = ({ product }) => {
 
       {/* Right Section */}
       <div className="flex flex-col space-y-2 my-auto justify-self-end">
-      <p className="mb-5 text-3xl font-regular text-gray-700">$ {price}</p>
+      <p className="mb-5 text-3xl font-regular ">$ {price}</p>
         <button onClick={addItemToBasket} className="button">
           Add to Basket
         </button>

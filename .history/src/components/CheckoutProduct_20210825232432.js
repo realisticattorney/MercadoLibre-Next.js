@@ -24,7 +24,7 @@ const CheckoutProduct = ({ product }) => {
     <div className="grid grid-cols-5 pb-2 border-b">
       <Image src={thumbnail} width={200} height={200} objectFit="contain" />
       <div className="col-span-3 mx-5">
-        <p className="text-gray-700 font-semibold text-lg">{title}</p>
+        <p className="">{title}</p>
 
       
         {shipping.free_shipping === true && (

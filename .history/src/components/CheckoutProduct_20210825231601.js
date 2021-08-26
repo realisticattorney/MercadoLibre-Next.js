@@ -21,11 +21,20 @@ const CheckoutProduct = ({ product }) => {
   };
 
   return (
-    <div className="grid grid-cols-5 pb-2 border-b">
+    <div className="grid grid-cols-5">
       <Image src={thumbnail} width={200} height={200} objectFit="contain" />
+      {/* Middle Section */}
       <div className="col-span-3 mx-5">
-        <p className="text-gray-700 font-semibold text-lg">{title}</p>
+        <p>{title}</p>
+        {/* <div className="flex">
+          {Array(rating)
+            .fill()
+            .map((_, i) => (
+              <StarIcon key={i} className="h-5 text-yellow-500" />
+            ))}
+        </div> */}
 
+        
       
         {shipping.free_shipping === true && (
           <div className="flex items-center space-x-2">
@@ -37,7 +46,7 @@ const CheckoutProduct = ({ product }) => {
 
       {/* Right Section */}
       <div className="flex flex-col space-y-2 my-auto justify-self-end">
-      <p className="mb-5 text-3xl font-regular text-gray-700">$ {price}</p>
+      <p className="mb-5 text-2xl font-regular">$ {price}</p>
         <button onClick={addItemToBasket} className="button">
           Add to Basket
         </button>
