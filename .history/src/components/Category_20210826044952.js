@@ -7,12 +7,12 @@ const Category = ({ category }) => {
 
   const router = useRouter();
 
-  return id === 'MLA1574' ||
-    id === 'MLA11830' ||
-    id === 'MLA73986' ||
-    id === 'MLA1000' ||
-    id === 'MLA3114' ||
-    id === 'MLA1144' ? (
+  return id === "MLA157" ||
+    id === "MLA11830" ||
+    id === "MLA73986" ||
+    id === "MLA1000" ||
+    id === "MLA3114" ||
+    id === "MLA1144" ? (
     <div
       className="col-span-full lg:col-span-2 relative flex flex-col m-2 bg-white z-30 p-5 hover:shadow-2xl shadow-lg rounded-sm md:rounded-md transform transition-shadow h-56 cursor-pointer"
       onClick={() => router.push(`/products/${id}`)}
@@ -32,7 +32,7 @@ const Category = ({ category }) => {
         </p>
       </div>
     </div>
-  ) : id === 'MLA1039' || id === 'MLA1648' ? (
+  ) : id === "MLA1039" || id === "MLA1648" ? (
     <div
       className="lg:col-span-3 col-span-full relative flex flex-col m-2 bg-white z-30 p-5 hover:shadow-2xl shadow-lg rounded-sm md:rounded-md transform transition-shadow h-36"
       onClick={() => router.replace(`/products/${id}`)}

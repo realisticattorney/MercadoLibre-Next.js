@@ -16,9 +16,9 @@ const ProductsFeedContainer = ({ products }) => {
           {/* Subhead, Title, Results */}
           <div>
             <h5 className="text-gray-500 text-sm font-medium">
-              {filters[0]?.values[0].name} {' > '} {filters[0]?.values[0].name}
+              {filters[0]?.values[0].name} {' > '} {filters[0].values[0].name}
             </h5>
-            <h5 className="text-3xl text-gray-800 font-medium">{filters[0]?.values[0].name}</h5>
+            <h5 className="text-3xl text-gray-800 font-medium">{filters[0].values[0].name}</h5>
             <p className="text-gray-700 font-light text-sm">5.340 Results</p>
           </div>
 

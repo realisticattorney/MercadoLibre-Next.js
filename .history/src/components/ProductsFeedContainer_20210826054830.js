@@ -83,7 +83,7 @@ const ProductsFeedContainer = ({ products }) => {
           <div>
             <h4 className="font-semibold text-lg">Categories</h4>
             <FilterComponent
-              key={available_filters[0].id}
+              key={available_filters[0]?.id}
               availableFilters={available_filters}
               itemNumber={0}
             />
