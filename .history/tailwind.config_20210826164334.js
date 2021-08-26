@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         mercadolibre: {
-          blue: '#2D3277',
+          light: '#2D3277',
           DEFAULT: '#FFF159',
         },
       },

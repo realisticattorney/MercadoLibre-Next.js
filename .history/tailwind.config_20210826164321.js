@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        mercadolibre: {
-          blue: '#2D3277',
+        ml_yellow: {
+          light: '#2D3277',
           DEFAULT: '#FFF159',
         },
       },

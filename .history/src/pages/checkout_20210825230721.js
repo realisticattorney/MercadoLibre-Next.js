@@ -66,7 +66,7 @@ const Checkout = () => {
                     .reduce((acc, b) => {
                       return acc + parseFloat(b.price);
                     }, 0)
-                    }
+                    .toFixed(2)}
                 </span>
               </h2>
               <button

@@ -15,7 +15,7 @@ export default function Home({ categories }) {
   return (
     <div className="bg-gray-200">
       <Head>
-        <title>Next MercadoLibre</title>
+        <title>MercadoLibre</title>
       </Head>
 
       <Header />

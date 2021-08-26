@@ -9,17 +9,24 @@ export default async (req, res) => {
     quantity: 1,
     price_data: {
       currency: 'ars',
-      unit_amount: item.price * 100,
+      unit_amount: item.price,
       product_data: {
         name: item.title,
         images: [item.image],
       },
     },
   }));
-  
+  //I'm getting the items array and the email of the user logged in
+  //   console.log(items);
+  //   console.log(email);
+  //  stripe listen --forward-to localhost:3000/api/webhook
+  //90-day
+  //acct_1JNAUjBQb7JmoLpk
+  //secret:
+  //whsec_QqHba9HYrV4mVHScEakY5uwJPbrnjVdF
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
-    shipping_rates: ['shr_1JSf5pBQb7JmoLpkuJqFl9PW'],
+    shipping_rates: ['shr_1JNBbHBQb7JmoLpkxcqZGxqa'],
     shipping_address_collection: {
       allowed_countries: ['US', 'CA', 'MX', 'GB', 'AU'],
     },

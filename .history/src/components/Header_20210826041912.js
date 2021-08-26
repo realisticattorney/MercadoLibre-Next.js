@@ -44,7 +44,7 @@ const Header = () => {
               className="cursor-pointer"
             />
           </div>
-          <h2 className="text-xl text-mercadolibre-blue line-clamp-2 font-extrabold opacity-95">
+          <h2 className="text-xl text-mercadolibre-light line-clamp-2 font-extrabold opacity-95">
             mercado <span className="line-clamp-2 -mt-2.5">libre</span>
           </h2>
         </div>
@@ -60,9 +60,9 @@ const Header = () => {
         </div>
 
         {/*right - */}
-        <div className="text-mercadolibre-blue flex items-center text-xs space-x-2 whitespace-nowrap lg:col-span-1 lg:row-start-2 lg:col-start-3 lg:row-span-1 flex-row-reverse">
+        <div className="text-mercadolibre-light flex items-center text-xs space-x-2 whitespace-nowrap lg:col-span-1 lg:row-start-2 lg:col-start-3 lg:row-span-1 flex-row-reverse">
           <button className="link flex items-center">
-            <MenuIcon className="h-6 mr-1 text-mercadolibre-blue lg:hidden" />
+            <MenuIcon className="h-6 mr-1 text-mercadolibre-light lg:hidden" />
           </button>
 
           <div className="relative link flex items-center ">
@@ -72,19 +72,19 @@ const Header = () => {
 
             <ShoppingCartIcon
               onClick={() => router.push('/checkout')}
-              className="h-7 font-thin text-mercadolibre-blue"
+              className="h-7 font-thin text-mercadolibre-light"
             />
           </div>
           <button className="link flex items-center">
-            <BellIcon className="hidden h-6  text-mercadolibre-blue lg:inline-flex" />
+            <BellIcon className="hidden h-6  text-mercadolibre-light lg:inline-flex" />
           </button>
         </div>
       </div>
 
       <div className="flex items-center justify-between space-x-3 py-2 pl-2 bg-mercadolibre text-sm lg:contents">
         <div className="lg:col-span-1 lg:row-start-2 lg:col-start-1 lg:row-span-1">
-          <button className="link flex items-center text-mercadolibre-blue no-underline">
-            <LocationMarkerIcon className="h-4 lg:h-7 mr-1 text-mercadolibre-blue" />
+          <button className="link flex items-center text-mercadolibre-light no-underline">
+            <LocationMarkerIcon className="h-4 lg:h-7 mr-1 text-mercadolibre-light" />
             <span className="text-xs font-light text-left">
               Deliver to{' '}
               <span className="lg:line-clamp-2 lg:text-sm -mt-1">
@@ -99,7 +99,7 @@ const Header = () => {
             className="flex cursor-pointer items-center"
             onClick={session ? signOut : signIn}
           >
-            <UserCircleIcon className="h-6 mr-1 text-mercadolibre-blue" />
+            <UserCircleIcon className="h-6 mr-1 text-mercadolibre-light" />
             <p>{session ? `${session.user.name.split(' ')[1]}` : 'Sign in'}</p>
             <ChevronDownIcon className="h-3.5 text-gray-500 text-opacity-50" />
           </div>
@@ -112,7 +112,7 @@ const Header = () => {
           </div>
           <button
             className="link flex items-center 
-        text-mercadolibre-blue no-underline  lg:hidden"
+        text-mercadolibre-light no-underline  lg:hidden"
           >
             <ChevronRightIcon className="h-4 mr-1 text-gray-500 text-opacity-50" />
           </button>
@@ -132,7 +132,7 @@ const Header = () => {
       </div>
 
       <div className="hidden lg:flex lg:col-span-1 lg:row-start-1 lg:col-start-3 lg:row-span-1 justify-center">
-        <h4 className="text-mercadolibre-blue">
+        <h4 className="text-mercadolibre-light">
           Up to 4 months of Disney+ free
         </h4>
       </div>

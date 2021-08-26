@@ -24,11 +24,11 @@
 </div>
 
 {/*right - */}
-<div className="text-mercadolibre-blue flex items-center text-xs space-x-2 mx-2 whitespace-nowrap">
+<div className="text-mercadolibre-light flex items-center text-xs space-x-2 mx-2 whitespace-nowrap">
 
 
   <button className="link flex items-center">
-    <MenuIcon className="h-6 mr-1 text-mercadolibre-blue" />
+    <MenuIcon className="h-6 mr-1 text-mercadolibre-light" />
   </button>
   <div className="relative link flex items-center">
     <span className="absolute top-0 right-1.5 h-3 w-3.5 font-light bg-mercadolibre text-center rounded-full text-black">
@@ -37,15 +37,15 @@
 
     <ShoppingCartIcon
       onClick={() => router.push('/checkout')}
-      className="h-7 font-thin text-mercadolibre-blue"
+      className="h-7 font-thin text-mercadolibre-light"
     />
   </div>
 </div>
 </div>
 
 <div className="flex items-center justify-between space-x-3 py-2 pl-2 bg-mercadolibre text-sm">
-<button className="link flex items-center text-mercadolibre-blue no-underline">
-  <LocationMarkerIcon className="h-4 mr-1 text-mercadolibre-blue" />
+<button className="link flex items-center text-mercadolibre-light no-underline">
+  <LocationMarkerIcon className="h-4 mr-1 text-mercadolibre-light" />
   <span className="text-xs font-light">
     Deliver to Analia Santa Fe 3388
   </span>
@@ -60,7 +60,7 @@
     <p className="font-extrabold md:text-sm">Account & Lists</p>
   </div>
 <button className="link flex items-center 
-text-mercadolibre-blue no-underline">
+text-mercadolibre-light no-underline">
   <ChevronRightIcon className="h-4 mr-1 text-gray-500 text-opacity-50" />
 </button>
 </div>

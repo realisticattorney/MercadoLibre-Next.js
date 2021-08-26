@@ -15,7 +15,7 @@ const Practice = ({ products }) => {
   return (
     <div className=" bg-gray-200">
       {/* <Head>
-        <title>Next MercadoLibre</title>
+        <title>Amazon 2.0</title>
       </Head> */}
 
       <Header />
