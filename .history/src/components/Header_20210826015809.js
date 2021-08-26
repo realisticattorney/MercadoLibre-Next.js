@@ -5,8 +5,6 @@ import {
   SearchIcon,
   ShoppingCartIcon,
   ChevronRightIcon,
-  UserCircleIcon,
-  BellIcon,
 } from '@heroicons/react/outline';
 import { signIn, signOut, useSession } from 'next-auth/client';
 import { useRouter } from 'next/router';
@@ -26,7 +24,7 @@ const Header = () => {
   const items = useSelector(selectItems);
 
   return (
-    <header className="lg:grid lg:grid-flow-col lg:grid-rows-2 bg-amazon_blue items-center">
+    <header className="lg:grid lg:grid-flow-col lg:grid-rows-2 bg-amazon_blue">
       <div className="px-2 flex items-center bg-amazon_blue flex-grow py-1 border-b border-gray-400 border-opacity-30 lg:contents ">
         {/*Left - Logo */}
         <div
@@ -43,7 +41,7 @@ const Header = () => {
         </div>
 
         {/*center - Search*/}
-        <div className="flex items-center h-7 rounded-sm flex-grow bg-white cursor-pointer shadow-sm lg:col-span-1 lg:row-start-1 lg:col-start-2 lg:row-span-1 lg:min-w-[400px]">
+        <div className="flex items-center h-7 rounded-sm flex-grow bg-white cursor-pointer shadow-sm lg:col-span-1 lg:row-start-1 lg:col-start-2 lg:row-span-1">
           <SearchIcon className="h-6 p-1 pl-2 text-gray-400 active:mt-1" />
           <input
             className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-1 text-sm text-gray-600 placeholder-gray-300"
@@ -53,13 +51,12 @@ const Header = () => {
         </div>
 
         {/*right - */}
-        <div className="text-amazon_blue-light flex items-center text-xs space-x-2 mx-2 whitespace-nowrap lg:col-span-1 lg:row-start-2 lg:col-start-3 lg:row-span-1 flex-row-reverse">
+        <div className="text-amazon_blue-light flex items-center text-xs space-x-2 mx-2 whitespace-nowrap lg:col-span-1 lg:row-start-2 lg:col-start-3 lg:row-span-1">
           <button className="link flex items-center">
-            <MenuIcon className="h-6 mr-1 text-amazon_blue-light lg:hidden" />
+            <MenuIcon className="h-6 mr-1 text-amazon_blue-light" />
           </button>
-
-          <div className="relative link flex items-center ">
-            <span className="absolute top-0 right-1.5  h-3 w-3.5 font-light bg-amazon_blue text-center rounded-full text-black">
+          <div className="relative link flex items-center">
+            <span className="absolute top-0 right-1.5 h-3 w-3.5 font-light bg-amazon_blue text-center rounded-full text-black">
               {items.length}
             </span>
 
@@ -68,9 +65,6 @@ const Header = () => {
               className="h-7 font-thin text-amazon_blue-light"
             />
           </div>
-          <button className="link flex items-center">
-            <BellIcon className="hidden h-6  text-amazon_blue-light lg:inline-flex" />
-          </button>
         </div>
       </div>
 
@@ -78,39 +72,37 @@ const Header = () => {
         <div className="lg:col-span-1 lg:row-start-2 lg:col-start-1 lg:row-span-1">
           <button className="link flex items-center text-amazon_blue-light no-underline">
             <LocationMarkerIcon className="h-4 mr-1 text-amazon_blue-light" />
-            <span className="text-xs font-light text-left">
-              Deliver to{' '}
-              <span className="lg:line-clamp-2">Analia Santa Fe 3388</span>
+            <span className="text-xs font-light">
+              Deliver to Analia Santa Fe 3388
             </span>
           </button>
         </div>
 
-        <div className="flex lg:col-span-1 lg:row-start-2 lg:col-start-3 lg:row-span-1 space-x-3">
-          <div className="flex cursor-pointer" onClick={session ? signOut : signIn}>
-            <UserCircleIcon className="h-6 mr-0.5 text-amazon_blue-light" />
-            <p>{session ? `${session.user.name}` : 'Sign in'}</p>
-          </div>
-          <div className="cursor-pointer">
-            <p>{session ? `My orders` : 'Login'}</p>
-          </div>
-          <div className="cursor-pointer">
-            <p>{session ? `Favorites` : 'My orders'}</p>
+        <div className="flex lg:col-span-1 lg:row-start-2 lg:col-start-3 lg:row-span-1">
+          <div
+            onClick={session ? signOut : signIn}
+            className="cursor-pointer link"
+          >
+            <p>{session ? `Hello, ${session.user.name}!` : 'Sign in'}</p>
+            <p className="font-extrabold md:text-sm">Account & Lists</p>
           </div>
           <button
             className="link flex items-center 
-        text-amazon_blue-light no-underline  lg:hidden"
+        text-amazon_blue-light no-underline"
           >
             <ChevronRightIcon className="h-4 mr-1 text-gray-500 text-opacity-50" />
           </button>
         </div>
-        <div className="lg:col-span-1 lg:row-start-2 lg:col-start-2 lg:row-span-1 hidden lg:flex space-x-3">
-          <p className="link hidden lg:inline-flex">Categories</p>
-          <p className="link hidden lg:inline-flex">Offers</p>
-          <p className="link hidden lg:inline-flex">History</p>
-          <p className="link hidden xl:inline-flex">Supermarket</p>
-          <p className="link hidden xl:inline-flex">Fashion</p>
+        <div className="lg:col-span-1 lg:row-start-2 lg:col-start-2 lg:row-span-1 hidden lg:flex">
+          <p className="link hidden">Categories</p>
+          <p className="link hidden">Offers</p>
+          <p className="link hidden">History</p>
           <p className="link hidden lg:inline-flex">Sell</p>
           <p className="link hidden lg:inline-flex">Help</p>
+          <p className="link hidden lg:inline-flex">Prime</p>
+          <p className="link hidden lg:inline-flex">Buy Again</p>
+          <p className="link hidden lg:inline-flex">Shopper Toolkit</p>
+          <p className="link hidden lg:inline-flex">Health & Personal Care</p>
         </div>
       </div>
     </header>

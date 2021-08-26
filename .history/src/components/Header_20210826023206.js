@@ -85,22 +85,22 @@ const Header = () => {
           </button>
         </div>
 
-        <div className="flex lg:col-span-1 lg:row-start-2 lg:col-start-3 lg:row-span-1 space-x-3">
+        <div className="flex lg:col-span-1 lg:row-start-2 lg:col-start-3 lg:row-span-1 ">
           <div className="flex cursor-pointer" onClick={session ? signOut : signIn}>
             <UserCircleIcon className="h-6 mr-0.5 text-amazon_blue-light" />
             <p>{session ? `${session.user.name}` : 'Sign in'}</p>
           </div>
-          <div className="cursor-pointer">
+          <div>
             <p>{session ? `My orders` : 'Login'}</p>
           </div>
-          <div className="cursor-pointer">
+          <div>
             <p>{session ? `Favorites` : 'My orders'}</p>
           </div>
           <button
             className="link flex items-center 
-        text-amazon_blue-light no-underline  lg:hidden"
+        text-amazon_blue-light no-underline"
           >
-            <ChevronRightIcon className="h-4 mr-1 text-gray-500 text-opacity-50" />
+            <ChevronRightIcon className="h-4 mr-1 text-gray-500 text-opacity-50 lg:hidden" />
           </button>
         </div>
         <div className="lg:col-span-1 lg:row-start-2 lg:col-start-2 lg:row-span-1 hidden lg:flex space-x-3">

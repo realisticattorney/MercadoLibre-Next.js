@@ -6,7 +6,6 @@ import {
   ShoppingCartIcon,
   ChevronRightIcon,
   UserCircleIcon,
-  BellIcon,
 } from '@heroicons/react/outline';
 import { signIn, signOut, useSession } from 'next-auth/client';
 import { useRouter } from 'next/router';
@@ -53,11 +52,10 @@ const Header = () => {
         </div>
 
         {/*right - */}
-        <div className="text-amazon_blue-light flex items-center text-xs space-x-2 mx-2 whitespace-nowrap lg:col-span-1 lg:row-start-2 lg:col-start-3 lg:row-span-1 flex-row-reverse">
+        <div className="text-amazon_blue-light flex items-center text-xs space-x-2 mx-2 whitespace-nowrap lg:col-span-1 lg:row-start-2 lg:col-start-3 lg:row-span-1">
           <button className="link flex items-center">
-            <MenuIcon className="h-6 mr-1 text-amazon_blue-light lg:hidden" />
+            <MenuIcon className="h-6 mr-1 text-amazon_blue-light order-10" />
           </button>
-
           <div className="relative link flex items-center ">
             <span className="absolute top-0 right-1.5  h-3 w-3.5 font-light bg-amazon_blue text-center rounded-full text-black">
               {items.length}
@@ -65,12 +63,9 @@ const Header = () => {
 
             <ShoppingCartIcon
               onClick={() => router.push('/checkout')}
-              className="h-7 font-thin text-amazon_blue-light"
+              className="h-7 font-thin text-amazon_blue-light order-10"
             />
           </div>
-          <button className="link flex items-center">
-            <BellIcon className="hidden h-6  text-amazon_blue-light lg:inline-flex" />
-          </button>
         </div>
       </div>
 
@@ -85,22 +80,23 @@ const Header = () => {
           </button>
         </div>
 
-        <div className="flex lg:col-span-1 lg:row-start-2 lg:col-start-3 lg:row-span-1 space-x-3">
-          <div className="flex cursor-pointer" onClick={session ? signOut : signIn}>
-            <UserCircleIcon className="h-6 mr-0.5 text-amazon_blue-light" />
-            <p>{session ? `${session.user.name}` : 'Sign in'}</p>
-          </div>
-          <div className="cursor-pointer">
-            <p>{session ? `My orders` : 'Login'}</p>
-          </div>
-          <div className="cursor-pointer">
-            <p>{session ? `Favorites` : 'My orders'}</p>
+        <div className="flex lg:col-span-1 lg:row-start-2 lg:col-start-3 lg:row-span-1">
+          <div
+            onClick={session ? signOut : signIn}
+            className="cursor-pointer link flex space-x-3"
+          >
+            <UserCircleIcon className="h-6 mr-0.5 text-amazon_blue-light order-1" />
+            <p className="order-2">
+              {session ? `${session.user.name}` : 'Sign in'}
+            </p>
+            <p className="order-3">{session ? `My orders` : 'Login'}</p>
+            <p className="order-4">{session ? `Favorites` : 'My orders'}</p>
           </div>
           <button
             className="link flex items-center 
-        text-amazon_blue-light no-underline  lg:hidden"
+        text-amazon_blue-light no-underline"
           >
-            <ChevronRightIcon className="h-4 mr-1 text-gray-500 text-opacity-50" />
+            <ChevronRightIcon className="h-4 mr-1 text-gray-500 text-opacity-50 lg:hidden" />
           </button>
         </div>
         <div className="lg:col-span-1 lg:row-start-2 lg:col-start-2 lg:row-span-1 hidden lg:flex space-x-3">

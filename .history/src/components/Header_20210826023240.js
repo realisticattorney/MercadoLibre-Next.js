@@ -85,7 +85,7 @@ const Header = () => {
           </button>
         </div>
 
-        <div className="flex lg:col-span-1 lg:row-start-2 lg:col-start-3 lg:row-span-1 space-x-3">
+        <div className="flex lg:col-span-1 lg:row-start-2 lg:col-start-3 lg:row-span-1 ">
           <div className="flex cursor-pointer" onClick={session ? signOut : signIn}>
             <UserCircleIcon className="h-6 mr-0.5 text-amazon_blue-light" />
             <p>{session ? `${session.user.name}` : 'Sign in'}</p>
