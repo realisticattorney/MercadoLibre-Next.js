@@ -2,6 +2,7 @@
 import { buffer } from 'micro';
 import * as admin from 'firebase-admin';
 //admin has access to everything
+//we need
 
 //secure a connection to firebase from the server
 const serviceAccount = require('../../../permissions.json');
