@@ -84,7 +84,7 @@ const Header = () => {
       <div className="flex items-center justify-between space-x-3 py-2 pl-2 bg-mercadolibre text-sm lg:contents">
         <div className="lg:col-span-1 lg:row-start-2 lg:col-start-1 lg:row-span-1">
           <button className="link flex items-center text-mercadolibre-blue no-underline">
-            {/* <svg
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-4 lg:h-7 mr-1 text-mercadolibre-blue"
               fill="none"
@@ -103,8 +103,8 @@ const Header = () => {
                 stroke-width="1"
                 d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
               />
-            </svg> */}
-            <LocationMarkerIcon className="h-4 lg:h-7 mr-1 text-mercadolibre-blue heroicon-sw-1" />
+            </svg>
+            <LocationMarkerIcon strokeWidth="1" className="h-4 lg:h-7 mr-1 text-mercadolibre-blue" />
             <span className="text-xs font-light text-left">
               Deliver to{' '}
               <span className="lg:line-clamp-2 lg:text-sm -mt-1">

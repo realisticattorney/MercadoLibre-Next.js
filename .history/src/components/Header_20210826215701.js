@@ -104,7 +104,7 @@ const Header = () => {
                 d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
               />
             </svg> */}
-            <LocationMarkerIcon className="h-4 lg:h-7 mr-1 text-mercadolibre-blue heroicon-sw-1" />
+            <LocationMarkerIcon className="h-4 lg:h-7 mr-1 text-mercadolibre-blue stroke-width" />
             <span className="text-xs font-light text-left">
               Deliver to{' '}
               <span className="lg:line-clamp-2 lg:text-sm -mt-1">
