@@ -66,17 +66,17 @@ const Header = () => {
           </button>
 
           <div className="relative link flex items-center ">
-            <span className="absolute top-0 right-1.5  h-3 w-3.5 font-light bg-mercadolibre text-center rounded-full text-black text-xs">
+            <span className="absolute top-0 right-1.5  h-3 w-3.5 font-light bg-mercadolibre text-center rounded-full text-black">
               {items.length}
             </span>
 
             <ShoppingCartIcon
               onClick={() => router.push('/checkout')}
-              className="h-7 font-thin text-mercadolibre-blue heroicon-sw-0.8"
+              className="h-7 font-thin text-mercadolibre-blue"
             />
           </div>
           <button className="link flex items-center">
-            <BellIcon className="hidden h-6  text-mercadolibre-blue lg:inline-flex heroicon-sw-1" />
+            <BellIcon className="hidden h-6  text-mercadolibre-blue lg:inline-flex" />
           </button>
         </div>
       </div>
@@ -84,6 +84,26 @@ const Header = () => {
       <div className="flex items-center justify-between space-x-3 py-2 pl-2 bg-mercadolibre text-sm lg:contents">
         <div className="lg:col-span-1 lg:row-start-2 lg:col-start-1 lg:row-span-1">
           <button className="link flex items-center text-mercadolibre-blue no-underline">
+            {/* <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 lg:h-7 mr-1 text-mercadolibre-blue"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+            </svg> */}
             <LocationMarkerIcon className="h-4 lg:h-7 mr-1 text-mercadolibre-blue heroicon-sw-1" />
             <span className="text-xs font-light text-left">
               Deliver to{' '}

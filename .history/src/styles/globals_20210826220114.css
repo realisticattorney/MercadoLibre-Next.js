@@ -36,9 +36,10 @@ body {
 .heroicon-sw-1 path {
   stroke-width: 1 !important;
 }
-.heroicon-sw-0\.8 path {
-  stroke-width: 0.8 !important;
+.heroicon-sw-1 path {
+  stroke-width: 1 !important;
 }
+
 
 .toggle-path {
   transition: 0.3s ease-in-out;

@@ -66,7 +66,7 @@ const Header = () => {
           </button>
 
           <div className="relative link flex items-center ">
-            <span className="absolute top-0 right-1.5  h-3 w-3.5 font-light bg-mercadolibre text-center rounded-full text-black text-xs">
+            <span className="absolute top-0 right-1.5  h-3 w-3.5 font-light bg-mercadolibre text-center rounded-full text-black text-">
               {items.length}
             </span>
 

@@ -66,13 +66,13 @@ const Header = () => {
           </button>
 
           <div className="relative link flex items-center ">
-            <span className="absolute top-0 right-1.5  h-3 w-3.5 font-light bg-mercadolibre text-center rounded-full text-black text-xs">
+            <span className="absolute top-0 right-1.5  h-3 w-3.5 font-light bg-mercadolibre text-center rounded-full text-black">
               {items.length}
             </span>
 
             <ShoppingCartIcon
               onClick={() => router.push('/checkout')}
-              className="h-7 font-thin text-mercadolibre-blue heroicon-sw-0.8"
+              className="h-7 font-thin text-mercadolibre-blue heroicon-sw-1"
             />
           </div>
           <button className="link flex items-center">
