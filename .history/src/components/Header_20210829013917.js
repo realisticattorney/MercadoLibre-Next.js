@@ -112,7 +112,7 @@ const Header = () => {
                         href="#"
                         className="group flex items-center text-base  text-gray-900 heroicon-sw-1.2 hover:bg-indigo-500 hover:text-white font-semibold"
                       >
-                        Level 5 - Advanced {'>'}
+                        Welcome
                       </a>{' '}
                     </>
                   ) : (
@@ -121,16 +121,10 @@ const Header = () => {
                         href="#"
                         className="group flex items-center text-base  text-gray-900 heroicon-sw-1.2 hover:bg-indigo-500 hover:text-white font-semibold"
                       >
-                        Welcome
+                        Sign in to see 
                       </p>
 
-                      <p className="text-gray-500 text-sm -mb-1">
-                        {' '}
-                        Sign in to see your orders, cart, and more
-                      </p>
-                      <button className="button text-white rounded-md my-3">
-                        Login
-                      </button>
+                      <p className="text-gray-500 text-sm -mb-1">Welcome</p>
                     </>
                   )}
                 </div>

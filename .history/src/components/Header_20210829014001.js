@@ -128,9 +128,6 @@ const Header = () => {
                         {' '}
                         Sign in to see your orders, cart, and more
                       </p>
-                      <button className="button text-white rounded-md my-3">
-                        Login
-                      </button>
                     </>
                   )}
                 </div>

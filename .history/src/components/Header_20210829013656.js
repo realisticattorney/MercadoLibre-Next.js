@@ -104,34 +104,18 @@ const Header = () => {
                 <UserIcon className="h-12 border-4 rounded-full p-2 border-indigo-600 text-gray-600" />
                 <div className="flex-col group flex justify-center px-4 py-2 text-sm ">
                   {session ? (
-                    <>
-                      <p className="text-gray-500 text-sm -mb-1">
-                        Hi {session.user.name.split(' ')[0]}
-                      </p>
-                      <a
-                        href="#"
-                        className="group flex items-center text-base  text-gray-900 heroicon-sw-1.2 hover:bg-indigo-500 hover:text-white font-semibold"
-                      >
-                        Level 5 - Advanced {'>'}
-                      </a>{' '}
-                    </>
-                  ) : (
-                    <>
-                      <p
-                        href="#"
-                        className="group flex items-center text-base  text-gray-900 heroicon-sw-1.2 hover:bg-indigo-500 hover:text-white font-semibold"
-                      >
-                        Welcome
-                      </p>
-
-                      <p className="text-gray-500 text-sm -mb-1">
-                        {' '}
-                        Sign in to see your orders, cart, and more
-                      </p>
-                      <button className="button text-white rounded-md my-3">
-                        Login
-                      </button>
-                    </>
+                    <p className="text-gray-500 text-sm -mb-1">
+                      Hi {session.user.name.split(' ')[0]}
+                    </p>
+                  
+                  <a
+                    href="#"
+                    className="group flex items-center text-base  text-gray-900 heroicon-sw-1.2 hover:bg-indigo-500 hover:text-white font-semibold"
+                  >
+                    Level 5 - Advanced {'>'}
+                  </a>)
+                  : (
+                    
                   )}
                 </div>
               </div>

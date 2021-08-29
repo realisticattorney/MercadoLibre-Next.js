@@ -124,13 +124,7 @@ const Header = () => {
                         Welcome
                       </p>
 
-                      <p className="text-gray-500 text-sm -mb-1">
-                        {' '}
-                        Sign in to see your orders, cart, and more
-                      </p>
-                      <button className="button text-white rounded-md my-3">
-                        Login
-                      </button>
+                      <p className="text-gray-500 text-sm -mb-1">                        Sign in to see your orders, cart, and more</p>
                     </>
                   )}
                 </div>
