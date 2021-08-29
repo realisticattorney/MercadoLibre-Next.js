@@ -103,191 +103,161 @@ const Header = () => {
                 </div>
               </div>
               <div className="p-6 space-y-6">
-                <Menu.Item>
-                  <a
-                    href="#"
-                    className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    <HomeIcon
-                      className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
-                      aria-hidden="true"
-                    />
-                    Start
-                  </a>
+                <Menu.Item
+                  href="#"
+                  className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+                >
+                  <HomeIcon
+                    className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                    aria-hidden="true"
+                  />
+                  Start
                 </Menu.Item>
-                <Menu.Item>
-                  <a
-                    href="#"
-                    className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    <BellIcon
-                      className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
-                      aria-hidden="true"
-                    />
-                    Notifications
-                  </a>
+                <Menu.Item
+                  href="#"
+                  className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+                >
+                  <BellIcon
+                    className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                    aria-hidden="true"
+                  />
+                  Notifications
                 </Menu.Item>
-                <Menu.Item>
-                  <a
-                    href="#"
-                    className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    <ShoppingBagIcon
-                      className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
-                      aria-hidden="true"
-                    />
-                    My Orders
-                  </a>
+                <Menu.Item
+                  href="#"
+                  className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+                >
+                  <ShoppingBagIcon
+                    className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                    aria-hidden="true"
+                  />
+                  My Orders
                 </Menu.Item>
-                <Menu.Item>
-                  <a
-                    href="#"
-                    className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    <HeartIcon
-                      className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
-                      aria-hidden="true"
-                    />
-                    Favorites
-                  </a>
+                <Menu.Item
+                  href="#"
+                  className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+                >
+                  <HeartIcon
+                    className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                    aria-hidden="true"
+                  />
+                  Favorites
                 </Menu.Item>
-                <Menu.Item>
-                  <a
-                    href="#"
-                    className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    <UserIcon
-                      className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
-                      aria-hidden="true"
-                    />
-                    My account
-                  </a>
+                <Menu.Item
+                  href="#"
+                  className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+                >
+                  <UserIcon
+                    className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                    aria-hidden="true"
+                  />
+                  My account
                 </Menu.Item>
-                <Menu.Item>
-                  <a
-                    href="#"
-                    className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    <ReceiptTaxIcon
-                      className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
-                      aria-hidden="true"
-                    />
-                    Deals
-                  </a>
+                <Menu.Item
+                  href="#"
+                  className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+                >
+                  <ReceiptTaxIcon
+                    className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                    aria-hidden="true"
+                  />
+                  Deals
                 </Menu.Item>
-                <Menu.Item>
-                  <a
-                    href="#"
-                    className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    <PlayIcon
-                      className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
-                      aria-hidden="true"
-                    />
-                    Movies & TV Shows
-                  </a>
+                <Menu.Item
+                  href="#"
+                  className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+                >
+                  <PlayIcon
+                    className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                    aria-hidden="true"
+                  />
+                  Movies & TV Shows
                 </Menu.Item>
-                <Menu.Item>
-                  <a
-                    href="#"
-                    className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    <ClockIcon
-                      className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
-                      aria-hidden="true"
-                    />
-                    History
-                  </a>
+                <Menu.Item
+                  href="#"
+                  className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+                >
+                  <ClockIcon
+                    className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                    aria-hidden="true"
+                  />
+                  History
                 </Menu.Item>
-                <Menu.Item>
-                  <a
-                    href="#"
-                    className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    <TagIcon
-                      className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
-                      aria-hidden="true"
-                    />
-                    Sell
-                  </a>
+                <Menu.Item
+                  href="#"
+                  className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+                >
+                  <TagIcon
+                    className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                    aria-hidden="true"
+                  />
+                  Sell
                 </Menu.Item>
               </div>
               <div className="p-6 space-y-6">
-                <Menu.Item>
-                  <a
-                    href="#"
-                    className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    <ShoppingCartIcon
-                      className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
-                      aria-hidden="true"
-                    />
-                    Supermarket
-                  </a>
+                <Menu.Item
+                  href="#"
+                  className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+                >
+                  <ShoppingCartIcon
+                    className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                    aria-hidden="true"
+                  />
+                  Supermarket
                 </Menu.Item>
-                <Menu.Item>
-                  <a
-                    href="#"
-                    className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    <ShoppingBagIcon
-                      className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
-                      aria-hidden="true"
-                    />
-                    Fashion
-                  </a>
+                <Menu.Item
+                  href="#"
+                  className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+                >
+                  <ShoppingBagIcon
+                    className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                    aria-hidden="true"
+                  />
+                  Fashion
                 </Menu.Item>
-                <Menu.Item>
-                  <a
-                    href="#"
-                    className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    <OfficeBuildingIcon
-                      className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
-                      aria-hidden="true"
-                    />
-                    Official Stores
-                  </a>
+                <Menu.Item
+                  href="#"
+                  className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+                >
+                  <OfficeBuildingIcon
+                    className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                    aria-hidden="true"
+                  />
+                  Official Stores
                 </Menu.Item>
-                <Menu.Item>
-                  <a
-                    href="#"
-                    className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    <ViewGridIcon
-                      className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
-                      aria-hidden="true"
-                    />
-                    Categories
-                  </a>
+                <Menu.Item
+                  href="#"
+                  className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+                >
+                  <ViewGridIcon
+                    className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                    aria-hidden="true"
+                  />
+                  Categories
                 </Menu.Item>
               </div>
               <div className="p-6">
-                <Menu.Item>
-                  <a
-                    href="#"
-                    className="group flex items-center  text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    <QuestionMarkCircleIcon
-                      className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
-                      aria-hidden="true"
-                    />
-                    Help
-                  </a>
+                <Menu.Item
+                  href="#"
+                  className="group flex items-center  text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+                >
+                  <QuestionMarkCircleIcon
+                    className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                    aria-hidden="true"
+                  />
+                  Help
                 </Menu.Item>
               </div>
               <div className="p-6">
-                <Menu.Item>
-                  <a
-                    href="#"
-                    className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    <DownloadIcon
-                      className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
-                      aria-hidden="true"
-                    />
-                    Buy and sell using our app!
-                  </a>
+                <Menu.Item
+                  href="#"
+                  className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+                >
+                  <DownloadIcon
+                    className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                    aria-hidden="true"
+                  />
+                  Buy and sell using our app!
                 </Menu.Item>
               </div>
             </Menu.Items>
