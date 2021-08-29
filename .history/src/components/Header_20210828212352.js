@@ -8,7 +8,6 @@ import {
   ChevronDownIcon,
   UserCircleIcon,
   BellIcon,
-  PencilAltIcon,
 } from '@heroicons/react/outline';
 import { signIn, signOut, useSession } from 'next-auth/client';
 import { useRouter } from 'next/router';
@@ -28,11 +27,6 @@ const Header = () => {
   const items = useSelector(selectItems);
 
   const [isOpen, setIsOpen] = useState(false);
-
-  function openHandler() {
-    setIsOpen(!isOpen);
-    console.log(isOpen);
-  }
 
   return (
     <header className="lg:grid lg:grid-flow-col lg:grid-rows-2 bg-mercadolibre items-center lg:pl-3 lg:pt-1">
@@ -69,17 +63,13 @@ const Header = () => {
 
         {/*right - */}
         <div className="text-mercadolibre-blue flex items-center text-xs whitespace-nowrap lg:col-span-1 lg:row-start-2 lg:col-start-3 lg:row-span-1 lg:flex-row-reverse">
-          <div>
-            <button
-              className="link flex items-center mx-2 w-full"
-              onClick={openHandler}
-            >
-              <MenuIcon
-                className="h-6 text-mercadolibre-blue lg:hidden heroicon-sw-0.8"
-                aria-hidden="true"
-              />
-            </button>
-          </div>
+          <button
+            className="link flex items-center mx-2"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <MenuIcon className="h-6 text-mercadolibre-blue lg:hidden heroicon-sw-0.8" />
+          </button>
+
           <div className="relative link flex items-center ">
             <span className="absolute top-0 right-1.5  h-3 w-3.5 font-light bg-mercadolibre text-center rounded-full text-black text-xs">
               {items.length}
@@ -152,54 +142,13 @@ const Header = () => {
         </h4>
       </div>
 
+
       {isOpen && (
-        <div className="origin-top absolute right-0 -mt-10 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none z-50">
-          <div className="py-1">
-            <a
-              href="#"
-              className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
-            >
-              <PencilAltIcon
-                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
-                aria-hidden="true"
-              />
-              Edit
-            </a>
-            <a
-              href="#"
-              className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
-            >
-              <PencilAltIcon
-                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
-                aria-hidden="true"
-              />
-              Duplicate
-            </a>
-          </div>
-          <div className="py-1">
-            <a
-              href="#"
-              className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
-            >
-              <PencilAltIcon
-                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
-                aria-hidden="true"
-              />
-              Edit
-            </a>
-            <a
-              href="#"
-              className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
-            >
-              <PencilAltIcon
-                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
-                aria-hidden="true"
-              />
-              Duplicate
-            </a>
-          </div>
-        </div>
+        <div className="origin-top-right "></div>
+        
+        
       )}
+
     </header>
   );
 };

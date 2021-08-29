@@ -31,8 +31,10 @@ const Header = () => {
 
   function openHandler() {
     setIsOpen(!isOpen);
-    console.log(isOpen);
+    console.log(isOpen)
   }
+
+  
 
   return (
     <header className="lg:grid lg:grid-flow-col lg:grid-rows-2 bg-mercadolibre items-center lg:pl-3 lg:pt-1">

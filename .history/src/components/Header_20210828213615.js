@@ -31,8 +31,10 @@ const Header = () => {
 
   function openHandler() {
     setIsOpen(!isOpen);
-    console.log(isOpen);
+    console.log(isOpen)
   }
+
+  
 
   return (
     <header className="lg:grid lg:grid-flow-col lg:grid-rows-2 bg-mercadolibre items-center lg:pl-3 lg:pt-1">
@@ -153,7 +155,7 @@ const Header = () => {
       </div>
 
       {isOpen && (
-        <div className="origin-top absolute right-0 -mt-10 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none z-50">
+        <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
           <div className="py-1">
             <a
               href="#"
