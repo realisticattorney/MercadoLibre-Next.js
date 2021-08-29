@@ -412,7 +412,7 @@ const Header = () => {
                   <Menu as="div" className="relative w-[700px]">
                     <Menu.Button
                       href="#"
-                      className="group flex py-3 pl-8 w-60  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
+                      className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
                     >
                       Electronics
                     </Menu.Button>
@@ -424,39 +424,37 @@ const Header = () => {
                           </div>
                           <div className="grid grid-cols-3 grid-rows-2 mt-5">
                             <div>
-                              <p className="font-medium ">
+                              <p className="font-medium text-base">
                                 Smartphones & Phones
                               </p>
                               <p>Smarthphones</p>
                               <p>Accessories for smartphones</p>
                             </div>
                             <div>
-                              <p className="font-medium ">
-                                Cameras & Accessories
-                              </p>
+                            <p className="font-medium text-base">Cameras & Accessories</p>
                               <p>Digital Cameras</p>
                               <p>Accessories for cameras</p>
                             </div>
                             <div>
-                              <p className="font-medium ">Videogame Consoles</p>
+                            <p className="font-medium text-base">Videogame Consoles</p>
                               <p>Videogames</p>
                               <p>For PS5</p>
                             </div>
                             <div>
-                              <p className="font-medium ">Computers</p>
+                              <p>Computers</p>
                               <p>Components</p>
                               <p>Prints</p>
                               <p>Tablets & Pads</p>
                               <p>PC</p>
                             </div>
                             <div>
-                              <p className="font-medium ">Audio & Video</p>
+                              <p>Audio & Video</p>
                               <p>Audio</p>
                               <p>Accessories for Audio & Video</p>
                               <p>Drones & Accessories</p>
                             </div>
                             <div>
-                              <p className="font-medium ">TVs</p>
+                              <p>TVs</p>
                             </div>
                           </div>
                         </div>

@@ -412,7 +412,7 @@ const Header = () => {
                   <Menu as="div" className="relative w-[700px]">
                     <Menu.Button
                       href="#"
-                      className="group flex py-3 pl-8 w-60  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
+                      className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
                     >
                       Electronics
                     </Menu.Button>
