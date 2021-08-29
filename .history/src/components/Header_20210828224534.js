@@ -190,7 +190,7 @@ const Header = () => {
               </a>
             </div>
           </div>
-          <div className="p-6 space-y-6">
+          <div className="px-6 space-y-6">
             <a
               href="#"
               className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"

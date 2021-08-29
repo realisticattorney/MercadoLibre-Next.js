@@ -190,10 +190,10 @@ const Header = () => {
               </a>
             </div>
           </div>
-          <div className="p-6 space-y-6">
+          <div className="p-2 space-y-6">
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 pt-4 text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
             >
               <HomeIcon
                 className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
@@ -203,7 +203,7 @@ const Header = () => {
             </a>
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
             >
               <BellIcon
                 className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
@@ -213,7 +213,7 @@ const Header = () => {
             </a>
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
             >
               <ShoppingBagIcon
                 className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
@@ -223,7 +223,7 @@ const Header = () => {
             </a>
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
             >
               <HeartIcon
                 className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
@@ -233,7 +233,7 @@ const Header = () => {
             </a>
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
             >
               <UserIcon
                 className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
@@ -243,7 +243,7 @@ const Header = () => {
             </a>
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
             >
               <ReceiptTaxIcon
                 className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
@@ -253,7 +253,7 @@ const Header = () => {
             </a>
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
             >
               <PlayIcon
                 className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
@@ -263,7 +263,7 @@ const Header = () => {
             </a>
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
             >
               <ClockIcon
                 className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
@@ -273,7 +273,7 @@ const Header = () => {
             </a>
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
             >
               <TagIcon
                 className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
@@ -282,10 +282,10 @@ const Header = () => {
               Sell
             </a>
           </div>
-          <div className="p-6 space-y-6">
+          <div className="p-2 space-y-6">
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 pt-4 text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
             >
               <ShoppingCartIcon
                 className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
@@ -295,7 +295,7 @@ const Header = () => {
             </a>
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
             >
               <ShoppingBagIcon
                 className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
@@ -305,7 +305,7 @@ const Header = () => {
             </a>
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
             >
               <OfficeBuildingIcon
                 className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
@@ -315,7 +315,7 @@ const Header = () => {
             </a>
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
             >
               <ViewGridIcon
                 className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
@@ -324,10 +324,10 @@ const Header = () => {
               Categories
             </a>
           </div>
-          <div className="p-6">
+          <div className="p-2 space-y-6">
             <a
               href="#"
-              className="group flex items-center  text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4  pt-4 text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
             >
               <QuestionMarkCircleIcon
                 className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
@@ -336,10 +336,10 @@ const Header = () => {
               Help
             </a>
           </div>
-          <div className="p-6">
+          <div className="p-2">
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4  pt-4 text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
             >
               <DownloadIcon
                 className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"

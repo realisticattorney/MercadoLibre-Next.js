@@ -18,12 +18,6 @@ import {
   PlayIcon,
   ClockIcon,
   TagIcon,
-  CloudDownloadIcon,
-  DownloadIcon,
-  ReceiptTaxIcon,
-  OfficeBuildingIcon,
-  ViewGridIcon,
-  QuestionMarkCircleIcon,
 } from '@heroicons/react/outline';
 import { signIn, signOut, useSession } from 'next-auth/client';
 import { useRouter } from 'next/router';
@@ -184,168 +178,168 @@ const Header = () => {
               </p>
               <a
                 href="#"
-                className="group flex items-center text-base  text-gray-900 heroicon-sw-1.2 hover:bg-indigo-500 hover:text-white font-semibold"
+                className="group flex items-center text-base  text-gray-700 hover:bg-indigo-500 hover:text-white font-semibold"
               >
                 Level 5 - Advanced {'>'}
               </a>
             </div>
           </div>
-          <div className="p-6 space-y-6">
+          <div className="p-2 space-y-6">
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 pt-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
               <HomeIcon
-                className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
                 aria-hidden="true"
               />
               Start
             </a>
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
               <BellIcon
-                className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
                 aria-hidden="true"
               />
               Notifications
             </a>
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
               <ShoppingBagIcon
-                className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
                 aria-hidden="true"
               />
               My Orders
             </a>
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
               <HeartIcon
-                className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
                 aria-hidden="true"
               />
               Favorites
             </a>
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
               <UserIcon
-                className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
                 aria-hidden="true"
               />
               My account
             </a>
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
-              <ReceiptTaxIcon
-                className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+              <TicketIcon
+                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
                 aria-hidden="true"
               />
               Deals
             </a>
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
               <PlayIcon
-                className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
                 aria-hidden="true"
               />
               Movies & TV Shows
             </a>
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
               <ClockIcon
-                className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
                 aria-hidden="true"
               />
               History
             </a>
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
               <TagIcon
-                className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
                 aria-hidden="true"
               />
               Sell
             </a>
           </div>
-          <div className="p-6 space-y-6">
+          <div className="p-2">
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
-              <ShoppingCartIcon
-                className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+              <PencilAltIcon
+                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
                 aria-hidden="true"
               />
               Supermarket
             </a>
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
-              <ShoppingBagIcon
-                className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+              <PencilAltIcon
+                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
                 aria-hidden="true"
               />
               Fashion
             </a>
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
-              <OfficeBuildingIcon
-                className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+              <PencilAltIcon
+                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
                 aria-hidden="true"
               />
-              Official Stores
+              Edit
             </a>
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
-              <ViewGridIcon
-                className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+              <PencilAltIcon
+                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
                 aria-hidden="true"
               />
-              Categories
-            </a>
-          </div>
-          <div className="p-6">
-            <a
-              href="#"
-              className="group flex items-center  text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
-            >
-              <QuestionMarkCircleIcon
-                className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
-                aria-hidden="true"
-              />
-              Help
+              Edit
             </a>
           </div>
-          <div className="p-6">
+          <div className="p-2">
             <a
               href="#"
-              className="group flex items-center text-sm text-gray-900 font-medium hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
-              <DownloadIcon
-                className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2  group-hover:text-white"
+              <PencilAltIcon
+                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
                 aria-hidden="true"
               />
-              Buy and sell using our app!
+              Edit
+            </a>
+          </div>
+          <div className="p-2">
+            <a
+              href="#"
+              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
+            >
+              <PencilAltIcon
+                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
+                aria-hidden="true"
+              />
+              Edit
             </a>
           </div>
         </div>
