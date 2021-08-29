@@ -332,13 +332,13 @@ const Header = () => {
               </>
             )}
           </Menu>
-          <div className="relative link flex items-center "
-                        onClick={() => router.push('/checkout')}>
+          <div className="relative link flex items-center ">
             <span className="absolute top-0 right-1.5  h-3 w-3.5 font-light bg-mercadolibre text-center rounded-full text-black text-xs">
               {items.length}
             </span>
 
             <ShoppingCartIcon
+              onClick={() => router.push('/checkout')}
               className="h-7 font-thin text-mercadolibre-blue heroicon-sw-0.8"
             />
           </div>
@@ -363,163 +363,165 @@ const Header = () => {
 
         <div className="flex lg:col-span-1 lg:row-start-2 lg:col-start-3 lg:row-span-1  items-center justify-end">
           <div className="hidden lg:flex items-center mr-20 space-x-3">
-            {session && (
-              <Menu as="div" className="relative">
-                <Menu.Button className="flex cursor-pointer items-center focus:outline-none">
-                  <UserCircleIcon className="h-6 mr-1 text-mercadolibre-blue heroicon-sw-1" />
-                  <p>
-                    {session ? `${session.user.name.split(' ')[1]}` : 'Sign in'}
-                  </p>
-                  <ChevronDownIcon className="h-3.5 text-gray-500 text-opacity-50" />
-                </Menu.Button>
-                <Menu.Items className="origin-top absolute -right-10 mt-2.5 w-72 rounded-b-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-50 py-3 divide-y">
-                  <Menu.Item className="flex flex-nowrap px-4 py-1 items-center">
-                    <div className="">
-                      <UserIcon className="h-12 border-4 rounded-full p-2 border-indigo-600 text-gray-600" />
-                      <div className="flex-col group flex justify-center px-3 py-2 text-sm ">
-                        {session ? (
-                          <>
-                            <p className="text-gray-500 text-sm -mb-1">
-                              Hi {session.user.name.split(' ')[0]}
-                            </p>
-                            <a
-                              href="#"
-                              className="group flex items-center text-base  text-gray-900 heroicon-sw-1.2  font-semibold"
-                            >
-                              Level 5 - Advanced {'>'}
-                            </a>{' '}
-                          </>
-                        ) : (
-                          <>
-                            <p
-                              href="#"
-                              className="group flex items-center text-base  text-gray-900 heroicon-sw-1.2  font-semibold"
-                            >
-                              Welcome
-                            </p>
+          {session && (
+            <Menu as="div" className="relative">
+              <Menu.Button
+                className="flex cursor-pointer items-center focus:outline-none"
+                
+              >
+                <UserCircleIcon className="h-6 mr-1 text-mercadolibre-blue heroicon-sw-1" />
+                <p>
+                  {session ? `${session.user.name.split(' ')[1]}` : 'Sign in'}
+                </p>
+                <ChevronDownIcon className="h-3.5 text-gray-500 text-opacity-50" />
+              </Menu.Button>
+              <Menu.Items className="origin-top absolute -right-10 mt-2.5 w-72 rounded-b-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-50 py-3 divide-y">
+                <Menu.Item className="flex flex-nowrap px-4 py-1 items-center">
+                  <div className="">
+                    <UserIcon className="h-12 border-4 rounded-full p-2 border-indigo-600 text-gray-600" />
+                    <div className="flex-col group flex justify-center px-3 py-2 text-sm ">
+                      {session ? (
+                        <>
+                          <p className="text-gray-500 text-sm -mb-1">
+                            Hi {session.user.name.split(' ')[0]}
+                          </p>
+                          <a
+                            href="#"
+                            className="group flex items-center text-base  text-gray-900 heroicon-sw-1.2  font-semibold"
+                          >
+                            Level 5 - Advanced {'>'}
+                          </a>{' '}
+                        </>
+                      ) : (
+                        <>
+                          <p
+                            href="#"
+                            className="group flex items-center text-base  text-gray-900 heroicon-sw-1.2  font-semibold"
+                          >
+                            Welcome
+                          </p>
 
-                            <p className="text-gray-500 text-sm -mb-1">
-                              {' '}
-                              Sign in to see your orders, cart, and more
-                            </p>
-                            <button className="button text-white rounded-md my-3">
-                              Login
-                            </button>
-                          </>
-                        )}
-                      </div>
+                          <p className="text-gray-500 text-sm -mb-1">
+                            {' '}
+                            Sign in to see your orders, cart, and more
+                          </p>
+                          <button className="button text-white rounded-md my-3">
+                            Login
+                          </button>
+                        </>
+                      )}
                     </div>
-                  </Menu.Item>
-                  <Menu.Item className="py-2.5">
-                    <div>
-                      <a
-                        href="#"
-                        className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
-                      >
-                        Orders
-                      </a>
-                      <a
-                        href="#"
-                        className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
-                      >
-                        Questions
-                      </a>
-                    </div>
-                  </Menu.Item>
-                  <Menu.Item className="py-2.5">
-                    <div>
-                      <a
-                        href="#"
-                        className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
-                      >
-                        Mercado-Credit
-                      </a>
-                      <a
-                        href="#"
-                        className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
-                      >
-                        Movies & TV shows
-                      </a>
-                    </div>
-                  </Menu.Item>
-                  <Menu.Item className="py-2.5">
-                    <div>
-                      <a
-                        href="#"
-                        className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
-                      >
-                        Sell
-                      </a>
-                      <a
-                        href="#"
-                        className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
-                      >
-                        My account
-                      </a>
-                      <a
-                        href="#"
-                        className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
-                      >
-                        New releases
-                      </a>
-                      <a
-                        href="#"
-                        className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
-                      >
-                        Publications
-                      </a>
-                      <a
-                        href="#"
-                        className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
-                      >
-                        Sold items
-                      </a>
-                      <a
-                        href="#"
-                        className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
-                      >
-                        Billing
-                      </a>
-                    </div>
-                  </Menu.Item>
-                  <Menu.Item className="py-2.5">
-                    <div>
-                      <a
-                        href="#"
-                        className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
-                      >
-                        My personal information
-                      </a>
-                      <a
-                        href="#"
-                        className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
-                      >
-                        Security
-                      </a>
-                      <a
-                        href="#"
-                        className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
-                      >
-                        Privacy
-                      </a>
-                    </div>
-                  </Menu.Item>
-                  <Menu.Item className="py-2.5">
-                    <div>
-                      <a
-                        href="#"
-                        className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
-                        onClick={session ? signOut : signIn}
-                      >
-                        Log out
-                      </a>
-                    </div>
-                  </Menu.Item>
-                </Menu.Items>
-              </Menu>
-            )}
+                  </div>
+                </Menu.Item>
+                <Menu.Item className="py-2.5">
+                  <div>
+                    <a
+                      href="#"
+                      className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
+                    >
+                      Orders
+                    </a>
+                    <a
+                      href="#"
+                      className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
+                    >
+                      Questions
+                    </a>
+                  </div>
+                </Menu.Item>
+                <Menu.Item className="py-2.5">
+                  <div>
+                    <a
+                      href="#"
+                      className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
+                    >
+                      Mercado-Credit
+                    </a>
+                    <a
+                      href="#"
+                      className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
+                    >
+                      Movies & TV shows
+                    </a>
+                  </div>
+                </Menu.Item>
+                <Menu.Item className="py-2.5">
+                  <div>
+                    <a
+                      href="#"
+                      className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
+                    >
+                      Sell
+                    </a>
+                    <a
+                      href="#"
+                      className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
+                    >
+                      My account
+                    </a>
+                    <a
+                      href="#"
+                      className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
+                    >
+                      New releases
+                    </a>
+                    <a
+                      href="#"
+                      className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
+                    >
+                      Publications
+                    </a>
+                    <a
+                      href="#"
+                      className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
+                    >
+                      Sold items
+                    </a>
+                    <a
+                      href="#"
+                      className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
+                    >
+                      Billing
+                    </a>
+                  </div>
+                </Menu.Item>
+                <Menu.Item className="py-2.5">
+                  <div>
+                    <a
+                      href="#"
+                      className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
+                    >
+                      My personal information
+                    </a>
+                    <a
+                      href="#"
+                      className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
+                    >
+                      Security
+                    </a>
+                    <a
+                      href="#"
+                      className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
+                    >
+                      Privacy
+                    </a>
+                  </div>
+                </Menu.Item>
+                <Menu.Item className="py-2.5">
+                  <div>
+                    <a
+                      href="#"
+                      className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
+                      onClick={session ? signOut : signIn}
+                    >
+                      Log out
+                    </a>
+                  </div>
+                </Menu.Item>
+              </Menu.Items>
+            </Menu>
             <div className="cursor-pointer">
-              {session ? <p>My orders</p> : <p onClick={signIn}>Login</p>}
+              <p>{session ? `My orders` : 'Login'}</p>
             </div>
             <div className="flex cursor-pointer  items-center pr-3">
               <p>{session ? `Favorites` : 'My orders'}</p>

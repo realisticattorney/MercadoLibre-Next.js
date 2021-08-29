@@ -339,6 +339,7 @@ const Header = () => {
             </span>
 
             <ShoppingCartIcon
+              onClick={() => router.push('/checkout')}
               className="h-7 font-thin text-mercadolibre-blue heroicon-sw-0.8"
             />
           </div>

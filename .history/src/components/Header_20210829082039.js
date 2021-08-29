@@ -332,13 +332,13 @@ const Header = () => {
               </>
             )}
           </Menu>
-          <div className="relative link flex items-center "
-                        onClick={() => router.push('/checkout')}>
+          <div className="relative link flex items-center ">
             <span className="absolute top-0 right-1.5  h-3 w-3.5 font-light bg-mercadolibre text-center rounded-full text-black text-xs">
               {items.length}
             </span>
 
             <ShoppingCartIcon
+              onClick={() => router.push('/checkout')}
               className="h-7 font-thin text-mercadolibre-blue heroicon-sw-0.8"
             />
           </div>
@@ -519,7 +519,11 @@ const Header = () => {
               </Menu>
             )}
             <div className="cursor-pointer">
-              {session ? <p>My orders</p> : <p onClick={signIn}>Login</p>}
+              {session ?
+              <p>My orders</p> :
+              <p
+              onClick={session ? signOut : signIn}
+              >Login</p>
             </div>
             <div className="flex cursor-pointer  items-center pr-3">
               <p>{session ? `Favorites` : 'My orders'}</p>
