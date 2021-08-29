@@ -374,8 +374,8 @@ const Header = () => {
                 </p>
                 <ChevronDownIcon className="h-3.5 text-gray-500 text-opacity-50" />
               </Menu.Button>
-              <Menu.Items className="origin-top absolute -right-10 mt-2.5 w-72 rounded-b-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-50 py-3 divide-y-2">
-                <Menu.Item className="flex flex-nowrap px-4 py-2 items-center">
+              <Menu.Items className="origin-top absolute -right-10 mt-2.5 w-60 rounded-b-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-50 py-3 divide-y-2">
+                <Menu.Item className="">
                   <div className="">
                     <UserIcon className="h-12 border-4 rounded-full p-2 border-indigo-600 text-gray-600" />
                     <div className="flex-col group flex justify-center px-4 py-2 text-sm ">

@@ -374,46 +374,9 @@ const Header = () => {
                 </p>
                 <ChevronDownIcon className="h-3.5 text-gray-500 text-opacity-50" />
               </Menu.Button>
-              <Menu.Items className="origin-top absolute -right-10 mt-2.5 w-72 rounded-b-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-50 py-3 divide-y-2">
-                <Menu.Item className="flex flex-nowrap px-4 py-2 items-center">
-                  <div className="">
-                    <UserIcon className="h-12 border-4 rounded-full p-2 border-indigo-600 text-gray-600" />
-                    <div className="flex-col group flex justify-center px-4 py-2 text-sm ">
-                      {session ? (
-                        <>
-                          <p className="text-gray-500 text-sm -mb-1">
-                            Hi {session.user.name.split(' ')[0]}
-                          </p>
-                          <a
-                            href="#"
-                            className="group flex items-center text-base  text-gray-900 heroicon-sw-1.2  font-semibold"
-                          >
-                            Level 5 - Advanced {'>'}
-                          </a>{' '}
-                        </>
-                      ) : (
-                        <>
-                          <p
-                            href="#"
-                            className="group flex items-center text-base  text-gray-900 heroicon-sw-1.2  font-semibold"
-                          >
-                            Welcome
-                          </p>
-
-                          <p className="text-gray-500 text-sm -mb-1">
-                            {' '}
-                            Sign in to see your orders, cart, and more
-                          </p>
-                          <button className="button text-white rounded-md my-3">
-                            Login
-                          </button>
-                        </>
-                      )}
-                    </div>
-                  </div>
-                </Menu.Item>
+              <Menu.Items className="origin-top absolute -right-10 mt-2.5 w-60 rounded-b-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-50 py-3">
                 <Menu.Item className="">
-                  <div>
+                  <>
                     <a
                       href="#"
                       className="group flex py-3 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-8"
@@ -426,10 +389,10 @@ const Header = () => {
                     >
                       Real State
                     </a>
-                  </div>
+                  </>
                 </Menu.Item>
                 <Menu.Item className="">
-                  <div>
+                  <>
                     <a
                       href="#"
                       className="group flex py-3 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-8"
@@ -442,10 +405,10 @@ const Header = () => {
                     >
                       Real State
                     </a>
-                  </div>
+                  </>
                 </Menu.Item>
                 <Menu.Item className="">
-                  <div>
+                  <>
                     <a
                       href="#"
                       className="group flex py-3 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-8"
@@ -458,7 +421,7 @@ const Header = () => {
                     >
                       Real State
                     </a>
-                  </div>
+                  </>
                 </Menu.Item>
               </Menu.Items>
             </Menu>
