@@ -394,7 +394,7 @@ const Header = () => {
               <p className="link hidden lg:inline-flex">Categories</p>
               <ChevronDownIcon className="h-3 text-gray-500 text-opacity-50" />
             </Menu.Button>
-            <Menu.Items className="origin-top absolute -right-10 mt-3 w-60 rounded-l-md shadow-lg bg-mercadolibre-gray ring-1 ring-black ring-opacity-5 focus:outline-none z-50 py-3">
+            <Menu.Items className="origin-top absolute -right-10 mt-3 w-60 rounded-md shadow-lg bg-mercadolibre-gray ring-1 ring-black ring-opacity-5 focus:outline-none z-50 py-3">
               <Menu.Item className="">
                 <>
                   <a

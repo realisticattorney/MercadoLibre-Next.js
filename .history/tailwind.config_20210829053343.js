@@ -11,7 +11,7 @@ module.exports = {
         mercadolibre: {
           blue: '#2D3277',
           DEFAULT: '#FFF159',
-          gray: '#363636',
+          gray: #363636
         },
       },
     },

@@ -389,122 +389,13 @@ const Header = () => {
           </button>
         </div>
         <div className="lg:col-span-1 lg:row-start-2 lg:col-start-2 lg:row-span-1 hidden lg:flex space-x-4 text-gray-600 font-light">
-          <Menu as="div" className="relative">
-            <Menu.Button className="flex items-center">
-              <p className="link hidden lg:inline-flex">Categories</p>
-              <ChevronDownIcon className="h-3 text-gray-500 text-opacity-50" />
-            </Menu.Button>
-            <Menu.Items className="origin-top absolute -right-10 mt-3 w-60 rounded-l-md shadow-lg bg-mercadolibre-gray ring-1 ring-black ring-opacity-5 focus:outline-none z-50 py-3">
-              <Menu.Item className="">
-                <>
-                  <a
-                    href="#"
-                    className="group flex py-3 items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white pl-8"
-                  >
-                    Motors
-                  </a>
-                  <a
-                    href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    Real State
-                  </a>
-                  <Menu as="div" className="relative w-[700px]">
-                    <Menu.Button
-                      href="#"
-                      className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
-                    >
-                      Electronics
-                    </Menu.Button>
-                    <Menu.Items className="absolute mt-3 w-full left-60 -top-28 h-[772px] rounded-r-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-51 py-3"></Menu.Items>
-                  </Menu>
-                  <a
-                    href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    Home & Furniture
-                  </a>
-                  <a
-                    href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    Home Appliances
-                  </a>
-                  <a
-                    href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    Tools
-                  </a>
-                  <a
-                    href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    Building Materials
-                  </a>
-                  <a
-                    href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    Fitness & Sports
-                  </a>
-                  <a
-                    href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    Cars Accesories
-                  </a>
-                  <a
-                    href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    Fashion
-                  </a>
-                  <a
-                    href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    Toys
-                  </a>
-                  <a
-                    href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    Baby & Kids
-                  </a>
-                  <a
-                    href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    Beauty & Personal Care
-                  </a>
-                  <a
-                    href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    Health Equipments
-                  </a>
-                  <a
-                    href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    Office & School Supplies
-                  </a>
-                  <a
-                    href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    Services
-                  </a>
-                  <a
-                    href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
-                  >
-                    Sustainable Living
-                  </a>
-                </>
-              </Menu.Item>
-            </Menu.Items>
+        <Menu as="div">
+          <Menu.Button className="flex items-center">
+            <p className="link hidden lg:inline-flex">Categories</p>
+            <ChevronDownIcon className="h-3 text-gray-500 text-opacity-50" />
+          </Menu.Button>
+          <Menu.Items className="origin-top absolute right-0 mt-3 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none z-50">
+          
           </Menu>
           <p className="link hidden lg:inline-flex">Offers</p>
           <p className="link hidden lg:inline-flex">History</p>
