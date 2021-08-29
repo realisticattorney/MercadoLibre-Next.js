@@ -10,8 +10,6 @@ import {
   BellIcon,
   PencilAltIcon,
   XIcon,
-  UserIcon
-  
 } from '@heroicons/react/outline';
 import { signIn, signOut, useSession } from 'next-auth/client';
 import { useRouter } from 'next/router';
@@ -39,7 +37,7 @@ const Header = () => {
 
   return (
     <header className="lg:grid lg:grid-flow-col lg:grid-rows-2 bg-mercadolibre items-center lg:pl-3 lg:pt-1">
-      <div className="pl-2 flex items-center bg-mercadolibre flex-grow py-1 border-b border-gray-400 border-opacity-30 lg:contents ">
+      <div className="px-2 flex items-center bg-mercadolibre flex-grow py-1 border-b border-gray-400 border-opacity-30 lg:contents ">
         {/*Left - Logo */}
         <div
           className="flex items-center cursor-pointer lg:col-span-1 lg:row-start-1 lg:col-start-1 lg:row-span-1"
@@ -77,17 +75,21 @@ const Header = () => {
               className="link flex items-center mx-2"
               onClick={openHandler}
             >
-              {isOpen ? (
-                <XIcon
-                  className="h-6 text-mercadolibre-blue lg:hidden heroicon-sw-0.8 "
-                  aria-hidden="true"
-                />
-              ) : (
-                <MenuIcon
-                  className="h-6 text-mercadolibre-blue lg:hidden heroicon-sw-0.8"
-                  aria-hidden="true"
-                />
-              )}
+              <XIcon
+                className={
+                  isOpen
+                    ? 'h-6 text-mercadolibre-blue lg:hidden heroicon-sw-0.8 transition duration-300 active:scale-0'
+                
+                aria-hidden="true"
+              />
+              <MenuIcon
+                className={
+                  isOpen
+                    ? 'h-0 transition transform duration-350'
+                    : 'h-6 text-mercadolibre-blue lg:hidden heroicon-sw-0.8'
+                }
+                aria-hidden="true"
+              />
             </button>
           </div>
           <div className="relative link flex items-center ">
@@ -164,17 +166,27 @@ const Header = () => {
 
       {isOpen && (
         <div className="origin-top absolute right-0 -mt-10 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none z-50">
-          <div className="flex px-4 py-2 items-center">
-          <UserIcon className="h-12 border-4 rounded-full p-2 border-indigo-600 text-gray-600" />
-        <div className="flex-col group flex justify-center px-4 py-2 text-sm ">
-          <p className="text-gray-500 text-sm -mb-1">Hi {(session.user.name).split(" ")[0]}</p>
+          <div className="py-1">
             <a
               href="#"
-              className="group flex items-center text-base  text-gray-700 hover:bg-indigo-500 hover:text-white font-semibold"
+              className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
-              Level 5 - Advanced
+              <PencilAltIcon
+                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
+                aria-hidden="true"
+              />
+              Edit
             </a>
-            </div>
+            <a
+              href="#"
+              className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
+            >
+              <PencilAltIcon
+                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
+                aria-hidden="true"
+              />
+              Duplicate
+            </a>
           </div>
           <div className="py-1">
             <a

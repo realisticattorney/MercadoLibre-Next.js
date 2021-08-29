@@ -167,7 +167,7 @@ const Header = () => {
           <div className="flex px-4 py-2 items-center">
           <UserIcon className="h-12 border-4 rounded-full p-2 border-indigo-600 text-gray-600" />
         <div className="flex-col group flex justify-center px-4 py-2 text-sm ">
-          <p className="text-gray-500 text-sm -mb-1">Hi {(session.user.name).split(" ")[0]}</p>
+          <p className="text-gray-500 text-sm">Hi {(session.user.name).split(" ")[0]}</p>
             <a
               href="#"
               className="group flex items-center text-base  text-gray-700 hover:bg-indigo-500 hover:text-white font-semibold"

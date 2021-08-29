@@ -164,7 +164,7 @@ const Header = () => {
 
       {isOpen && (
         <div className="origin-top absolute right-0 -mt-10 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none z-50">
-          <div className="flex px-4 py-2 items-center">
+          <div className="flex px-4 py-3 items-center">
           <UserIcon className="h-12 border-4 rounded-full p-2 border-indigo-600 text-gray-600" />
         <div className="flex-col group flex justify-center px-4 py-2 text-sm ">
           <p className="text-gray-500 text-sm -mb-1">Hi {(session.user.name).split(" ")[0]}</p>
