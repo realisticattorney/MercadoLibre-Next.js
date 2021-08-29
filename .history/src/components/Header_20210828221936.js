@@ -16,8 +16,6 @@ import {
   HeartIcon,
   TicketIcon,
   PlayIcon,
-  ClockIcon,
-  TagIcon,
 } from '@heroicons/react/outline';
 import { signIn, signOut, useSession } from 'next-auth/client';
 import { useRouter } from 'next/router';
@@ -259,7 +257,7 @@ const Header = () => {
               href="#"
               className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
-              <ClockIcon
+              <PencilAltIcon
                 className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
                 aria-hidden="true"
               />
@@ -269,7 +267,7 @@ const Header = () => {
               href="#"
               className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
-              <TagIcon
+              <PencilAltIcon
                 className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
                 aria-hidden="true"
               />

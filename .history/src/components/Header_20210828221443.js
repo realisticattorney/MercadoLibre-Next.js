@@ -10,14 +10,8 @@ import {
   BellIcon,
   PencilAltIcon,
   XIcon,
-  UserIcon,
-  HomeIcon,
-  ShoppingBagIcon,
-  HeartIcon,
-  TicketIcon,
-  PlayIcon,
-  ClockIcon,
-  TagIcon,
+  UserIcon
+  
 } from '@heroicons/react/outline';
 import { signIn, signOut, useSession } from 'next-auth/client';
 import { useRouter } from 'next/router';
@@ -171,115 +165,21 @@ const Header = () => {
       {isOpen && (
         <div className="origin-top absolute right-0 -mt-10 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none z-50">
           <div className="flex px-4 py-2 items-center">
-            <UserIcon className="h-12 border-4 rounded-full p-2 border-indigo-600 text-gray-600" />
-            <div className="flex-col group flex justify-center px-4 py-2 text-sm ">
-              <p className="text-gray-500 text-sm -mb-1">
-                Hi {session.user.name.split(' ')[0]}
-              </p>
-              <a
-                href="#"
-                className="group flex items-center text-base  text-gray-700 hover:bg-indigo-500 hover:text-white font-semibold"
-              >
-                Level 5 - Advanced {'>'}
-              </a>
+          <UserIcon className="h-12 border-4 rounded-full p-2 border-indigo-600 text-gray-600" />
+        <div className="flex-col group flex justify-center px-4 py-2 text-sm ">
+          <p className="text-gray-500 text-sm -mb-1">Hi {(session.user.name).split(" ")[0]}</p>
+            <a
+              href="#"
+              className="group flex items-center text-base  text-gray-700 hover:bg-indigo-500 hover:text-white font-semibold"
+            >
+              Level 5 - Advanced {">"}
+            </a>
             </div>
           </div>
-          <div className="p-2 space-y-6">
-            <a
-              href="#"
-              className="group flex items-center px-4 pt-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
-            >
-              <HomeIcon
-                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
-                aria-hidden="true"
-              />
-              Edit
-            </a>
-            <a
-              href="#"
-              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
-            >
-              <BellIcon
-                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
-                aria-hidden="true"
-              />
-              Duplicate
-            </a>
-            <a
-              href="#"
-              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
-            >
-              <ShoppingBagIcon
-                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
-                aria-hidden="true"
-              />
-              Duplicate
-            </a>
-            <a
-              href="#"
-              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
-            >
-              <HeartIcon
-                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
-                aria-hidden="true"
-              />
-              Duplicate
-            </a>
-            <a
-              href="#"
-              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
-            >
-              <UserIcon
-                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
-                aria-hidden="true"
-              />
-              Duplicate
-            </a>
-            <a
-              href="#"
-              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
-            >
-              <TicketIcon
-                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
-                aria-hidden="true"
-              />
-              Duplicate
-            </a>
-            <a
-              href="#"
-              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
-            >
-              <PlayIcon
-                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
-                aria-hidden="true"
-              />
-              Duplicate
-            </a>
-            <a
-              href="#"
-              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
-            >
-              <ClockIcon
-                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
-                aria-hidden="true"
-              />
-              Duplicate
-            </a>
-            <a
-              href="#"
-              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
-            >
-              <TagIcon
-                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
-                aria-hidden="true"
-              />
-              Duplicate
-            </a>
-          </div>
           <div className="p-2">
             <a
               href="#"
-              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
               <PencilAltIcon
                 className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
@@ -289,58 +189,75 @@ const Header = () => {
             </a>
             <a
               href="#"
-              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
               <PencilAltIcon
                 className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
                 aria-hidden="true"
               />
-              Edit
+              Duplicate
             </a>
             <a
               href="#"
-              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
               <PencilAltIcon
                 className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
                 aria-hidden="true"
               />
-              Edit
+              Duplicate
             </a>
             <a
               href="#"
-              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
               <PencilAltIcon
                 className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
                 aria-hidden="true"
               />
-              Edit
+              Duplicate
             </a>
-          </div>
-          <div className="p-2">
             <a
               href="#"
-              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
               <PencilAltIcon
                 className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
                 aria-hidden="true"
               />
-              Edit
+              Duplicate
             </a>
-          </div>
-          <div className="p-2">
             <a
               href="#"
-              className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
+              className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
               <PencilAltIcon
                 className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
                 aria-hidden="true"
               />
-              Edit
+              Duplicate
             </a>
+            <a
+              href="#"
+              className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
+            >
+              <PencilAltIcon
+                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
+                aria-hidden="true"
+              />
+              Duplicate
+            </a>
+            <a
+              href="#"
+              className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
+            >
+              <PencilAltIcon
+                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
+                aria-hidden="true"
+              />
+              Duplicate
+            </a>
+         
           </div>
         </div>
       )}

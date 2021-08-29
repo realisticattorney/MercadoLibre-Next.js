@@ -24,6 +24,7 @@ import { useRouter } from 'next/router';
 import { useSelector } from 'react-redux';
 import { selectItems } from '../slices/basketSlice';
 import { useState } from 'react';
+import { CashIcon } from '@heroicons/react/solid';
 //onClick a div...bro
 //next.js Image component compress your image making it smaller w/o losing quality
 //click on the component to go to the file of the component
@@ -239,7 +240,7 @@ const Header = () => {
               href="#"
               className="group flex items-center px-4 text-sm text-gray-700 hover:bg-indigo-500 hover:text-white"
             >
-              <TicketIcon
+              <CashIcon
                 className="mr-3 h-5 w-5 text-gray-400 group-hover:text-white"
                 aria-hidden="true"
               />
