@@ -42,12 +42,6 @@ const Header = () => {
   const items = useSelector(selectItems);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  function isOpenHandler() {
-    setIsMenuOpen(!isMenuOpen);
-    console.log(isMenuOpen);
-  }
-
   return (
     <header className="lg:grid lg:grid-flow-col lg:grid-rows-2 bg-mercadolibre items-center lg:pl-3 lg:pt-1">
       <div className="pl-2 flex items-center bg-mercadolibre flex-grow py-1 border-b border-gray-400 border-opacity-30 lg:contents ">
@@ -84,18 +78,20 @@ const Header = () => {
         {/*right - */}
         <div className="text-mercadolibre-blue flex items-center text-xs whitespace-nowrap lg:col-span-1 lg:row-start-2 lg:col-start-3 lg:row-span-1 lg:flex-row-reverse">
           <Menu as="div">
-            <Menu.Button className="link flex items-center mx-2">
+            <Menu.Button
+              as="button"
+              className="link flex items-center mx-2"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
               {isMenuOpen ? (
                 <XIcon
                   className="h-6 text-mercadolibre-blue lg:hidden heroicon-sw-0.8"
                   aria-hidden="true"
-                  onClick={isOpenHandler}
                 />
               ) : (
                 <MenuIcon
                   className="h-6 text-mercadolibre-blue lg:hidden heroicon-sw-0.8"
                   aria-hidden="true"
-                  onClick={isOpenHandler}
                 />
               )}
             </Menu.Button>

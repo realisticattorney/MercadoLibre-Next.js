@@ -89,7 +89,6 @@ const Header = () => {
                 <XIcon
                   className="h-6 text-mercadolibre-blue lg:hidden heroicon-sw-0.8"
                   aria-hidden="true"
-                  onClick={isOpenHandler}
                 />
               ) : (
                 <MenuIcon

@@ -27,8 +27,6 @@ import { useRouter } from 'next/router';
 import { useSelector } from 'react-redux';
 import { selectItems } from '../slices/basketSlice';
 import { Menu } from '@headlessui/react';
-import { useState } from 'react';
-
 //onClick a div...bro
 //next.js Image component compress your image making it smaller w/o losing quality
 //click on the component to go to the file of the component
@@ -40,13 +38,6 @@ const Header = () => {
   const router = useRouter();
 
   const items = useSelector(selectItems);
-
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  function isOpenHandler() {
-    setIsMenuOpen(!isMenuOpen);
-    console.log(isMenuOpen);
-  }
 
   return (
     <header className="lg:grid lg:grid-flow-col lg:grid-rows-2 bg-mercadolibre items-center lg:pl-3 lg:pt-1">
@@ -84,20 +75,14 @@ const Header = () => {
         {/*right - */}
         <div className="text-mercadolibre-blue flex items-center text-xs whitespace-nowrap lg:col-span-1 lg:row-start-2 lg:col-start-3 lg:row-span-1 lg:flex-row-reverse">
           <Menu as="div">
-            <Menu.Button className="link flex items-center mx-2">
-              {isMenuOpen ? (
-                <XIcon
-                  className="h-6 text-mercadolibre-blue lg:hidden heroicon-sw-0.8"
-                  aria-hidden="true"
-                  onClick={isOpenHandler}
-                />
-              ) : (
-                <MenuIcon
-                  className="h-6 text-mercadolibre-blue lg:hidden heroicon-sw-0.8"
-                  aria-hidden="true"
-                  onClick={isOpenHandler}
-                />
-              )}
+            <Menu.Button className="link flex items-center mx-2"
+            onClick={}
+            >
+              <MenuIcon
+                as={isActive ? XIcon : MenuIcon}
+                className="h-6 text-mercadolibre-blue lg:hidden heroicon-sw-0.8"
+                aria-hidden="true"
+              />
             </Menu.Button>
             <Menu.Items className="origin-top absolute right-0 mt-3 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none z-50">
               <div className="flex px-4 py-2 items-center">

@@ -83,7 +83,8 @@ const Header = () => {
 
         {/*right - */}
         <div className="text-mercadolibre-blue flex items-center text-xs whitespace-nowrap lg:col-span-1 lg:row-start-2 lg:col-start-3 lg:row-span-1 lg:flex-row-reverse">
-          <Menu as="div">
+          <Menu as="div"
+          onClick={isOpenHandler}>
             <Menu.Button className="link flex items-center mx-2">
               {isMenuOpen ? (
                 <XIcon

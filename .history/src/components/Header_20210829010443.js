@@ -83,19 +83,17 @@ const Header = () => {
 
         {/*right - */}
         <div className="text-mercadolibre-blue flex items-center text-xs whitespace-nowrap lg:col-span-1 lg:row-start-2 lg:col-start-3 lg:row-span-1 lg:flex-row-reverse">
-          <Menu as="div">
+          <Menu as="div" onClick={isOpenHandler}>
             <Menu.Button className="link flex items-center mx-2">
               {isMenuOpen ? (
                 <XIcon
                   className="h-6 text-mercadolibre-blue lg:hidden heroicon-sw-0.8"
                   aria-hidden="true"
-                  onClick={isOpenHandler}
                 />
               ) : (
                 <MenuIcon
                   className="h-6 text-mercadolibre-blue lg:hidden heroicon-sw-0.8"
                   aria-hidden="true"
-                  onClick={isOpenHandler}
                 />
               )}
             </Menu.Button>
