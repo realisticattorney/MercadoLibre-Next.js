@@ -9,7 +9,7 @@ body {
 
 @layer components {
   .link {
-    @apply cursor-pointer hover:no-underline;
+    @apply cursor-pointer hover:underline;
   }
 
   .button {

@@ -571,7 +571,7 @@ const Header = () => {
                             <h2 className="text-xl font-medium">Electronics</h2>
                           </div>
                           <div className="grid grid-cols-3 grid-rows-2 mt-5">
-                            <div className="space-y-2">
+                            <div >
                               <p className="font-medium hover:text-blue-600 cursor-pointer">
                                 Smartphones & Phones
                               </p>
@@ -582,7 +582,7 @@ const Header = () => {
                                 Accessories for smartphones
                               </p>
                             </div>
-                            <div className="space-y-2">
+                            <div >
                               <p className="font-medium hover:text-blue-600 cursor-pointer">
                                 Cameras & Accessories
                               </p>
@@ -593,7 +593,7 @@ const Header = () => {
                                 Accessories for cameras
                               </p>
                             </div>
-                            <div className="space-y-2">
+                            <div >
                               <p className="font-medium hover:text-blue-600 cursor-pointer">
                                 Videogame Consoles
                               </p>
@@ -604,7 +604,7 @@ const Header = () => {
                                 For PS5
                               </p>
                             </div>
-                            <div className="space-y-2">
+                            <div >
                               <p className="font-medium hover:text-blue-600 cursor-pointer">
                                 Computers
                               </p>
@@ -621,7 +621,7 @@ const Header = () => {
                                 PC
                               </p>
                             </div>
-                            <div className="space-y-2">
+                            <div >
                               <p className="font-medium hover:text-blue-600 cursor-pointer">
                                 Audio & Video
                               </p>
@@ -635,7 +635,7 @@ const Header = () => {
                                 Drones & Accessories
                               </p>
                             </div>
-                            <div className="space-y-2">
+                            <div >
                               <p className="font-medium hover:text-blue-600 cursor-pointer">
                                 TVs
                               </p>

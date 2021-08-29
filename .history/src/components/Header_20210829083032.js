@@ -536,10 +536,12 @@ const Header = () => {
         <div className="lg:col-span-1 lg:row-start-2 lg:col-start-2 lg:row-span-1 hidden lg:flex space-x-4 text-gray-600 font-light">
           <Menu as="div" className="relative">
             <Menu.Button className="flex items-center focus:outline-none no-underline">
-              <p className="link hidden lg:inline-flex cursor-pointer focus:outline-none no-underline ">
-                Categories
-              </p>
-              <ChevronDownIcon className="h-3.5 text-gray-500 text-opacity-50 no-underline" />
+              <div>
+                <p className="link hidden lg:inline-flex cursor-pointer focus:outline-none no-underline ">
+                  Categories
+                </p>
+              </div>
+              <ChevronDownIcon className="h-3 text-gray-500 text-opacity-50 no-underline" />
             </Menu.Button>
             <Menu.Items className="origin-top absolute -right-10 mt-3 w-60 rounded-l-md shadow-lg bg-mercadolibre-gray ring-1 ring-black ring-opacity-5 focus:outline-none z-50 py-3">
               <Menu.Item className="">
@@ -552,26 +554,25 @@ const Header = () => {
                   </a>
                   <a
                     href="#"
-                    className="group flex py-3 pl-8 items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
                   >
                     Real State
                   </a>
                   <Menu as="div" className="relative w-[700px]">
                     <Menu.Button
                       href="#"
-                      className="group flex py-3 pl-8 pr-5 w-60  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white focus:outline-none justify-between"
+                      className="group flex py-3 pl-8 w-60  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white focus:outline-none"
                     >
                       Electronics
-                      <ChevronRightIcon className="h-5 items-center text-gray-100 text-opacity-50 no-underline" />
                     </Menu.Button>
-                    <Menu.Items className="absolute mt-3 w-full left-60 -top-28 h-[772px] rounded-r-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-51 ">
+                    <Menu.Items className="absolute mt-3 w-full left-60 -top-28 h-[772px] rounded-r-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-51">
                       <Menu.Item className="p-8">
                         <div className="flex flex-col w-full">
                           <div className="border-b border-gray-200 pb-2">
                             <h2 className="text-xl font-medium">Electronics</h2>
                           </div>
                           <div className="grid grid-cols-3 grid-rows-2 mt-5">
-                            <div className="space-y-2">
+                            <div>
                               <p className="font-medium hover:text-blue-600 cursor-pointer">
                                 Smartphones & Phones
                               </p>
@@ -582,7 +583,7 @@ const Header = () => {
                                 Accessories for smartphones
                               </p>
                             </div>
-                            <div className="space-y-2">
+                            <div>
                               <p className="font-medium hover:text-blue-600 cursor-pointer">
                                 Cameras & Accessories
                               </p>
@@ -593,7 +594,7 @@ const Header = () => {
                                 Accessories for cameras
                               </p>
                             </div>
-                            <div className="space-y-2">
+                            <div>
                               <p className="font-medium hover:text-blue-600 cursor-pointer">
                                 Videogame Consoles
                               </p>
@@ -604,7 +605,7 @@ const Header = () => {
                                 For PS5
                               </p>
                             </div>
-                            <div className="space-y-2">
+                            <div>
                               <p className="font-medium hover:text-blue-600 cursor-pointer">
                                 Computers
                               </p>
@@ -621,7 +622,7 @@ const Header = () => {
                                 PC
                               </p>
                             </div>
-                            <div className="space-y-2">
+                            <div>
                               <p className="font-medium hover:text-blue-600 cursor-pointer">
                                 Audio & Video
                               </p>
@@ -635,7 +636,7 @@ const Header = () => {
                                 Drones & Accessories
                               </p>
                             </div>
-                            <div className="space-y-2">
+                            <div>
                               <p className="font-medium hover:text-blue-600 cursor-pointer">
                                 TVs
                               </p>
@@ -733,11 +734,7 @@ const Header = () => {
               </Menu.Item>
             </Menu.Items>
           </Menu>
-          <div className="cursor-pointer no-underline ">
-            <p className="link hidden lg:inline-flex focus:no-underline">
-              Offers
-            </p>
-          </div>
+          <p className="link hidden lg:inline-flex">Offers</p>
           <p className="link hidden lg:inline-flex">History</p>
           <p className="link hidden xl:inline-flex">Supermarket</p>
           <p className="link hidden xl:inline-flex">Fashion</p>
