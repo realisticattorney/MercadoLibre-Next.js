@@ -46,6 +46,11 @@
     "lodash" "^4.17.13"
     "to-fast-properties" "^2.0.0"
 
+"@badrap/bar-of-progress@^0.1.2":
+  "integrity" "sha512-bCwx/HbgUfJEndzlubJF5FVQrFEcGX4HZsoCfoa+gSq37pjbJBvIyqMBLIGnb5y0ICovIrxJUxvlbmxeic0rSQ=="
+  "resolved" "https://registry.npmjs.org/@badrap/bar-of-progress/-/bar-of-progress-0.1.2.tgz"
+  "version" "0.1.2"
+
 "@firebase/analytics-types@0.6.0":
   "integrity" "sha512-kbMawY0WRPyL/lbknBkme4CNLl+Gw+E9G4OpNeXAauqoQiNkBgpIvZYy7BRT4sNGhZbxdxXxXbruqUwDzLmvTw=="
   "resolved" "https://registry.npmjs.org/@firebase/analytics-types/-/analytics-types-0.6.0.tgz"
