@@ -405,14 +405,14 @@ const Header = () => {
                   </a>
                   <a
                     href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
                   >
                     Real State
                   </a>
                   <Menu as="div" className="relative w-[700px]">
                     <Menu.Button
                       href="#"
-                      className="group flex py-3 pl-8 w-60  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white focus:outline-none"
+                      className="group flex py-3 pl-8 w-60  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white focus:outline-none"
                     >
                       Electronics
                     </Menu.Button>
@@ -499,85 +499,85 @@ const Header = () => {
                   </Menu>
                   <a
                     href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
                   >
                     Home & Furniture
                   </a>
                   <a
                     href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
                   >
                     Home Appliances
                   </a>
                   <a
                     href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
                   >
                     Tools
                   </a>
                   <a
                     href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
                   >
                     Building Materials
                   </a>
                   <a
                     href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
                   >
                     Fitness & Sports
                   </a>
                   <a
                     href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
                   >
                     Cars Accesories
                   </a>
                   <a
                     href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
                   >
                     Fashion
                   </a>
                   <a
                     href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
                   >
                     Toys
                   </a>
                   <a
                     href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
                   >
                     Baby & Kids
                   </a>
                   <a
                     href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
                   >
                     Beauty & Personal Care
                   </a>
                   <a
                     href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
                   >
                     Health Equipments
                   </a>
                   <a
                     href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
                   >
                     Office & School Supplies
                   </a>
                   <a
                     href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
                   >
                     Services
                   </a>
                   <a
                     href="#"
-                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-indigo-500 hover:text-white"
                   >
                     Sustainable Living
                   </a>
