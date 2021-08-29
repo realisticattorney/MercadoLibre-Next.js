@@ -366,7 +366,7 @@ const Header = () => {
             <Menu as="div" className="relative">
               <Menu.Button
                 className="flex cursor-pointer items-center focus:outline-none"
-                
+                // onClick={session ? signOut : signIn}
               >
                 <UserCircleIcon className="h-6 mr-1 text-mercadolibre-blue heroicon-sw-1" />
                 <p>
@@ -440,7 +440,7 @@ const Header = () => {
                       href="#"
                       className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
                     >
-                      Movies & TV shows
+                      Movies & TV Shows
                     </a>
                   </div>
                 </Menu.Item>
@@ -456,64 +456,13 @@ const Header = () => {
                       href="#"
                       className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
                     >
-                      My account
+                      Real State
                     </a>
                     <a
                       href="#"
                       className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
                     >
-                      New releases
-                    </a>
-                    <a
-                      href="#"
-                      className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
-                    >
-                      Publications
-                    </a>
-                    <a
-                      href="#"
-                      className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
-                    >
-                      Sold items
-                    </a>
-                    <a
-                      href="#"
-                      className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
-                    >
-                      Billing
-                    </a>
-                  </div>
-                </Menu.Item>
-                <Menu.Item className="py-2.5">
-                  <div>
-                    <a
-                      href="#"
-                      className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
-                    >
-                      My personal information
-                    </a>
-                    <a
-                      href="#"
-                      className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
-                    >
-                      Security
-                    </a>
-                    <a
-                      href="#"
-                      className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
-                    >
-                      Privacy
-                    </a>
-                  </div>
-                </Menu.Item>
-                <Menu.Item className="py-2.5">
-                  <div>
-                    <a
-                      href="#"
-                      className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
-                      onClick={session ? signOut : signIn}
-                    >
-                      Log out
+                      Real State
                     </a>
                   </div>
                 </Menu.Item>

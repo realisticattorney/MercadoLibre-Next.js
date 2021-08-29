@@ -366,7 +366,7 @@ const Header = () => {
             <Menu as="div" className="relative">
               <Menu.Button
                 className="flex cursor-pointer items-center focus:outline-none"
-                
+                // onClick={session ? signOut : signIn}
               >
                 <UserCircleIcon className="h-6 mr-1 text-mercadolibre-blue heroicon-sw-1" />
                 <p>
@@ -490,30 +490,13 @@ const Header = () => {
                       href="#"
                       className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
                     >
-                      My personal information
+                      Mercado-Credit
                     </a>
                     <a
                       href="#"
                       className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
                     >
-                      Security
-                    </a>
-                    <a
-                      href="#"
-                      className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
-                    >
-                      Privacy
-                    </a>
-                  </div>
-                </Menu.Item>
-                <Menu.Item className="py-2.5">
-                  <div>
-                    <a
-                      href="#"
-                      className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
-                      onClick={session ? signOut : signIn}
-                    >
-                      Log out
+                      Movies & TV shows
                     </a>
                   </div>
                 </Menu.Item>

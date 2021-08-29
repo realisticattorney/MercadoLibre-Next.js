@@ -511,7 +511,6 @@ const Header = () => {
                     <a
                       href="#"
                       className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
-                      onClick={session ? signOut : signIn}
                     >
                       Log out
                     </a>
