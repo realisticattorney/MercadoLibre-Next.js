@@ -378,7 +378,7 @@ const Header = () => {
                 <Menu.Item className="flex flex-nowrap px-4 py-1 items-center">
                   <div className="">
                     <UserIcon className="h-12 border-4 rounded-full p-2 border-indigo-600 text-gray-600" />
-                    <div className="flex-col group flex justify-center px-3 py-2 text-sm ">
+                    <div className="flex-col group flex justify-center px-4 py-2 text-sm ">
                       {session ? (
                         <>
                           <p className="text-gray-500 text-sm -mb-1">
@@ -412,49 +412,49 @@ const Header = () => {
                     </div>
                   </div>
                 </Menu.Item>
-                <Menu.Item className="py-2.5">
+                <Menu.Item className="">
                   <div>
                     <a
                       href="#"
-                      className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
+                      className="group flex py-1 my-2 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-8"
                     >
                       Motors
                     </a>
                     <a
                       href="#"
-                      className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
+                      className="group flex py-1 my-2 pl-8  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
                     >
                       Real State
                     </a>
                   </div>
                 </Menu.Item>
-                <Menu.Item className="py-2.5">
+                <Menu.Item className="">
                   <div>
                     <a
                       href="#"
-                      className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
+                      className="group flex py-1 my-2 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-8"
                     >
                       Motors
                     </a>
                     <a
                       href="#"
-                      className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
+                      className="group flex py-1 my-2 pl-8  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
                     >
                       Real State
                     </a>
                   </div>
                 </Menu.Item>
-                <Menu.Item className="py-2.5">
+                <Menu.Item className="">
                   <div>
                     <a
                       href="#"
-                      className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
+                      className="group flex py-1 my-2 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-8"
                     >
                       Motors
                     </a>
                     <a
                       href="#"
-                      className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
+                      className="group flex py-1 my-2 pl-8  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
                     >
                       Real State
                     </a>
