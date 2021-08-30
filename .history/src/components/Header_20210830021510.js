@@ -168,7 +168,6 @@ const Header = () => {
                         <a
                           href="#"
                           className="group flex items-center text-sm text-gray-900 font-medium "
-                          onClick={() => router.push('/orders')}
                         >
                           <ShoppingBagIcon
                             className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2"
@@ -416,7 +415,6 @@ const Header = () => {
                       <a
                         href="#"
                         className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
-                        onClick={() => router.push('/orders')}
                       >
                         Orders
                       </a>
@@ -521,11 +519,7 @@ const Header = () => {
               </Menu>
             )}
             <div className="cursor-pointer">
-              {session ? (
-                <p onClick={() => router.push('/orders')}>My orders</p>
-              ) : (
-                <p onClick={signIn}>Login</p>
-              )}
+              {session ? <p>My orders</p> : <p onClick={signIn}>Login</p>}
             </div>
             <div className="flex cursor-pointer  items-center pr-3">
               <p>{session ? `Favorites` : 'My orders'}</p>

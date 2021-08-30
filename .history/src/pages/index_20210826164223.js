@@ -7,7 +7,6 @@ import CategoryFeed from '../components/CategoryFeed';
 //this can only be read by the server
 import fs from 'fs/promises';
 import path from 'path';
-import { getSession } from 'next-auth/client';
 
 export default function Home({ categories }) {
   const router = useRouter();
@@ -37,7 +36,6 @@ export default function Home({ categories }) {
 }
 
 export async function getStaticProps(context) {
-  const session = await getSession(context)
   const filePath = path.join(process.cwd(), 'data', 'categories.json');
   const jsonCategoriesData = await fs.readFile(filePath);
   const categoriesData = JSON.parse(jsonCategoriesData);
@@ -45,7 +43,6 @@ export async function getStaticProps(context) {
   return {
     props: {
       categories: categoriesData.categories,
-      session
     },
   };
 }
