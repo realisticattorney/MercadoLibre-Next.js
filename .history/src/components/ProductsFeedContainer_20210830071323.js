@@ -4,11 +4,9 @@ import ProductFeed from './ProductFeed';
 const ProductsFeedContainer = ({ products }) => {
   const { results, available_filters, filters } = products;
 
-  const indexOfFilters = [0, 2, 3, 4, 7, 8, 15];
+  console.log(available_filters);
 
-  const shownFilters = available_filters.filter((item, index) =>
-    indexOfFilters.includes(index)
-  );
+  const 
 
 
   return (
@@ -24,9 +22,7 @@ const ProductsFeedContainer = ({ products }) => {
             <h5 className="text-gray-500 text-sm font-medium">
               {filters[0]?.values[0].name} {' > '} {filters[0]?.values[0].name}
             </h5>
-            <h5 className="text-3xl text-gray-800 font-medium">
-              {filters[0]?.values[0].name}
-            </h5>
+            <h5 className="text-3xl text-gray-800 font-medium">{filters[0]?.values[0].name}</h5>
             <p className="text-gray-700 font-light text-sm">5.340 Results</p>
           </div>
 
@@ -82,14 +78,78 @@ const ProductsFeedContainer = ({ products }) => {
             </div>
           </div>
 
-          {/* Filters */}
-          {shownFilters.map((filter, index) => (
+          {/* Official Stores */}
+          <div>
+            <h4 className="font-semibold text-lg">Official Stores</h4>
+          </div>
+
+          {/* Categories */}
+          <div>
+            <h4 className="font-semibold text-lg">Categories</h4>
             <FilterComponent
-              key={filter.id}
-              itemNumber={index}
-              filter={filter}
+              key={available_filters[0].id}
+              availableFilters={available_filters}
+              itemNumber={0}
             />
-          ))}
+          </div>
+
+          {/* Discounts */}
+          <div>
+            <h4 className="font-semibold text-lg">Discounts</h4>
+            <FilterComponent
+              key={available_filters[2].id}
+              availableFilters={available_filters}
+              itemNumber={2}
+            />
+          </div>
+          {/* Shipping Cost */}
+          <div>
+            <h4 className="font-semibold text-lg">Shipping Cost</h4>
+            <FilterComponent
+              key={available_filters[15]?.id}
+              availableFilters={available_filters}
+              itemNumber={15}
+            />
+          </div>
+
+          {/* Tipo de entrega */}
+          <div>
+            <h4 className="font-semibold text-lg">Tipo de entrega</h4>
+            <FilterComponent
+              key={available_filters[7].id}
+              availableFilters={available_filters}
+              itemNumber={7}
+            />
+          </div>
+          {/* Location */}
+          <div>
+            <h4 className="font-semibold text-lg">Location</h4>
+            <FilterComponent
+              key={available_filters[3].id}
+              availableFilters={available_filters}
+              itemNumber={3}
+            />
+          </div>
+          {/* Price Range */}
+          <div>
+            <h4 className="font-semibold text-lg">Price Range</h4>
+            <FilterComponent
+              key={available_filters[4].id}
+              availableFilters={available_filters}
+              itemNumber={4}
+            />
+          </div>
+          {/* Best sellers */}
+          <div>
+            <h4 className="font-semibold text-lg">Price Range</h4>
+            <FilterComponent
+              key={available_filters[8].id}
+              availableFilters={available_filters}
+              itemNumber={8}
+            />
+          </div>
+
+          {/* laconchae ut....... */}
         </div>
 
         <div className="col-span-2 md:col-span-5">

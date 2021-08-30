@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 const FilterComponent = ({ filter, itemNumber }) => {
   console.log(filter);
@@ -10,25 +10,30 @@ const FilterComponent = ({ filter, itemNumber }) => {
 
   let title;
 
-  if (filter.name === 'Tiendas oficiales') {
-    title = 'Official Stores';
-  } else if (filter.name === 'Ubicación') {
-    title = 'Location';
-  } else if (filter.name === 'Precio') {
-    title = 'Price';
-  } else if (filter.name === 'Filtro por MercadoPago') {
-    title = 'Accepts MercadoPago';
-  } else if (filter.name === 'Marca') {
+    
+  if(filter.name === 'Tiendas oficiales'){
+    title = 'Official Stores';}
+    else if(filter.name === 'Ubicación'){
+    title = 'Location';}
+    else if(filter.name === 'Precio'){
+    title = 'Price';}
+    else if(filter.name === 'Filtro por MercadoPago'){
+    title = 'Accepts MercadoPago';}
+    else if(filter.name === 'Marca'){
     title = 'Brand';
-  } else if (filter.name === 'Filtro por fecha de comienzo') {
+}
+    else if(filter.name === 'Filtro por fecha de comienzo'){
     title = 'Recently Published';
-  } else if (filter.name === 'Filtro por calidad de vendedores') {
+}
+    else if(filter.name === 'Filtro por calidad de vendedores'){
     title = 'Seller Reputation';
-  } else if (filter.name === 'Condición') {
+}
+    else if(filter.name === 'Condición'){
     title = 'Condition';
-  } else if (filter.name === 'Marca') {
+}
+    else if(filter.name === 'Marca'){
     title = 'Brand';
-  }
+}
 
   return (
     <div>

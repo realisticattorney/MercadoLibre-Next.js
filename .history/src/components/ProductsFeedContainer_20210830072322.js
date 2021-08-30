@@ -4,13 +4,14 @@ import ProductFeed from './ProductFeed';
 const ProductsFeedContainer = ({ products }) => {
   const { results, available_filters, filters } = products;
 
-  const indexOfFilters = [0, 2, 3, 4, 7, 8, 15];
+  const indexOfFilters = [0, 2, 3, 4, 7, 8, 15, 16];
 
   const shownFilters = available_filters.filter((item, index) =>
     indexOfFilters.includes(index)
   );
 
-
+  // console.log(available_filters);
+  // console.log('a adads ' + shownFilters);
   return (
     <div className="flex flex-col">
       {/* <p className="p-2">

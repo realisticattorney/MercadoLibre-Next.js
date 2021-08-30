@@ -18,16 +18,8 @@ const FilterComponent = ({ filter, itemNumber }) => {
     title = 'Price';
   } else if (filter.name === 'Filtro por MercadoPago') {
     title = 'Accepts MercadoPago';
-  } else if (filter.name === 'Marca') {
-    title = 'Brand';
-  } else if (filter.name === 'Filtro por fecha de comienzo') {
-    title = 'Recently Published';
-  } else if (filter.name === 'Filtro por calidad de vendedores') {
-    title = 'Seller Reputation';
-  } else if (filter.name === 'Condición') {
-    title = 'Condition';
-  } else if (filter.name === 'Marca') {
-    title = 'Brand';
+  } else if (filter.name === 'Tiendas de servicio') {
+    title = 'Service Stores';
   }
 
   return (

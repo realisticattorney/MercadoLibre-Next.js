@@ -10,7 +10,8 @@ const ProductsFeedContainer = ({ products }) => {
     indexOfFilters.includes(index)
   );
 
-
+  // console.log(available_filters);
+  // console.log('a adads ' + shownFilters);
   return (
     <div className="flex flex-col">
       {/* <p className="p-2">

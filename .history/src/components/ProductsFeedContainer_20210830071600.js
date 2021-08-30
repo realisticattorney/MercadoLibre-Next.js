@@ -4,13 +4,12 @@ import ProductFeed from './ProductFeed';
 const ProductsFeedContainer = ({ products }) => {
   const { results, available_filters, filters } = products;
 
-  const indexOfFilters = [0, 2, 3, 4, 7, 8, 15];
-
-  const shownFilters = available_filters.filter((item, index) =>
-    indexOfFilters.includes(index)
-  );
-
-
+  
+  const indexOfFilters = [0, 2, 3, 4, 7, 8, 15, 22];
+  
+  const shownFilters = available_filters.filter((filter, index) => indexOfFilters.includes(index));
+  
+  console.log(available_filters);
   return (
     <div className="flex flex-col">
       {/* <p className="p-2">
@@ -83,13 +82,8 @@ const ProductsFeedContainer = ({ products }) => {
           </div>
 
           {/* Filters */}
-          {shownFilters.map((filter, index) => (
-            <FilterComponent
-              key={filter.id}
-              itemNumber={index}
-              filter={filter}
-            />
-          ))}
+          {shownFilters.map((filter) => ()}
+        
         </div>
 
         <div className="col-span-2 md:col-span-5">

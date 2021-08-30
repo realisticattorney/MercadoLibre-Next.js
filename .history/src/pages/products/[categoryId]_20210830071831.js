@@ -1,7 +1,7 @@
 import ProductFeed from '../../components/ProductFeed';
 import Header from '../../components/Header';
 import Banner from '../../components/Banner';
-// import fs from 'fs/promises';
+import fs from 'fs/promises';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import path from 'path';
@@ -87,22 +87,22 @@ export default CategoryId;
 //   };
 // }
 
-export async function getServerSideProps(context) {
-  const { categoryId } = context.params;
+// export async function getServerSideProps(context) {
+//   const { categoryId } = context.params;
 
-  try {
-    const products = await fetch(
-      `https://api.mercadolibre.com/sites/MLA/search?category=${categoryId}&limit=10`
-    );
-    return {
-      props: {
-        products: await products.json(),
-        categoryId,
-      },
-    };
-  } catch (e) {
-    return {
-      error: e,
-    };
-  }
-}
+//   try {
+//     const products = await fetch(
+//       `https://api.mercadolibre.com/sites/MLA/search?category=${categoryId}&limit=10`
+//     );
+//     return {
+//       props: {
+//         products: await products.json(),
+//         categoryId,
+//       },
+//     };
+//   } catch (e) {
+//     return {
+//       error: e,
+//     };
+//   }
+// }
