@@ -499,12 +499,12 @@ const Header = () => {
                     </Menu.Items>
                   </Menu>
 
-                  {otherMenuItems.map((item) => (
+                  {otherMenuItems.map((item, index) => (
                     <a
                       href="#"
                       className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
                     >
-                      {item}
+                      Home & Furniture
                     </a>
                   ))}
                 </>

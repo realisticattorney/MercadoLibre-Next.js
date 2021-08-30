@@ -54,23 +54,6 @@ const Header = () => {
     'Buy and sell using our app!',
   ];
 
-  const otherMenuItems = [
-    'Home & Furniture',
-    'Home Appliances',
-    'Tools',
-    'Building Materials',
-    'Fitness & Sports',
-    'Cars Accesories',
-    'Fashion',
-    'Toys',
-    'Baby & Kids',
-    'Beauty & Personal Care',
-    'Health Equipments',
-    'Office & School Supplies',
-    'Services',
-    'Sustainable Living',
-  ];
-
   return (
     <header className="lg:grid lg:grid-flow-col lg:grid-rows-2 bg-mercadolibre items-center lg:pl-3 lg:pt-1">
       <div className="pl-2 flex items-center bg-mercadolibre flex-grow py-1 border-b border-gray-400 border-opacity-30 lg:contents ">
@@ -174,6 +157,182 @@ const Header = () => {
                           </a>
                         </Menu.Item>
                       ))}
+
+                      {/* <Menu.Item>
+                        <a
+                          href="#"
+                          className="group flex items-center text-sm text-gray-900 font-medium "
+                        >
+                          <BellIcon
+                            className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2"
+                            aria-hidden="true"
+                          />
+                          Notifications
+                        </a>
+                      </Menu.Item>
+                      <Menu.Item>
+                        <a
+                          href="#"
+                          className="group flex items-center text-sm text-gray-900 font-medium "
+                          onClick={() => router.push('/orders')}
+                        >
+                          <ShoppingBagIcon
+                            className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2"
+                            aria-hidden="true"
+                          />
+                          My Orders
+                        </a>
+                      </Menu.Item>
+                      <Menu.Item>
+                        <a
+                          href="#"
+                          className="group flex items-center text-sm text-gray-900 font-medium "
+                        >
+                          <HeartIcon
+                            className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2"
+                            aria-hidden="true"
+                          />
+                          Favorites
+                        </a>
+                      </Menu.Item>
+                      <Menu.Item>
+                        <a
+                          href="#"
+                          className="group flex items-center text-sm text-gray-900 font-medium "
+                        >
+                          <UserIcon
+                            className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2"
+                            aria-hidden="true"
+                          />
+                          My account
+                        </a>
+                      </Menu.Item>
+                      <Menu.Item>
+                        <a
+                          href="#"
+                          className="group flex items-center text-sm text-gray-900 font-medium "
+                        >
+                          <ReceiptTaxIcon
+                            className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2"
+                            aria-hidden="true"
+                          />
+                          Deals
+                        </a>
+                      </Menu.Item>
+                      <Menu.Item>
+                        <a
+                          href="#"
+                          className="group flex items-center text-sm text-gray-900 font-medium "
+                        >
+                          <PlayIcon
+                            className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2"
+                            aria-hidden="true"
+                          />
+                          Movies & TV Shows
+                        </a>
+                      </Menu.Item>
+                      <Menu.Item>
+                        <a
+                          href="#"
+                          className="group flex items-center text-sm text-gray-900 font-medium "
+                        >
+                          <ClockIcon
+                            className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2"
+                            aria-hidden="true"
+                          />
+                          History
+                        </a>
+                      </Menu.Item>
+                      <Menu.Item>
+                        <a
+                          href="#"
+                          className="group flex items-center text-sm text-gray-900 font-medium "
+                        >
+                          <TagIcon
+                            className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2"
+                            aria-hidden="true"
+                          />
+                          Sell
+                        </a>
+                      </Menu.Item>
+                    </div>
+                    <div className="p-6 space-y-6">
+                      <Menu.Item>
+                        <a
+                          href="#"
+                          className="group flex items-center text-sm text-gray-900 font-medium "
+                        >
+                          <ShoppingCartIcon
+                            className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2"
+                            aria-hidden="true"
+                          />
+                          Supermarket
+                        </a>
+                      </Menu.Item>
+                      <Menu.Item>
+                        <a
+                          href="#"
+                          className="group flex items-center text-sm text-gray-900 font-medium "
+                        >
+                          <ShoppingBagIcon
+                            className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2"
+                            aria-hidden="true"
+                          />
+                          Fashion
+                        </a>
+                      </Menu.Item>
+                      <Menu.Item>
+                        <a
+                          href="#"
+                          className="group flex items-center text-sm text-gray-900 font-medium "
+                        >
+                          <OfficeBuildingIcon
+                            className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2"
+                            aria-hidden="true"
+                          />
+                          Official Stores
+                        </a>
+                      </Menu.Item>
+                      <Menu.Item>
+                        <a
+                          href="#"
+                          className="group flex items-center text-sm text-gray-900 font-medium "
+                        >
+                          <ViewGridIcon
+                            className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2"
+                            aria-hidden="true"
+                          />
+                          Categories
+                        </a>
+                      </Menu.Item>
+                    </div>
+                    <div className="p-6">
+                      <Menu.Item>
+                        <a
+                          href="#"
+                          className="group flex items-center  text-sm text-gray-900 font-medium "
+                        >
+                          <QuestionMarkCircleIcon
+                            className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2"
+                            aria-hidden="true"
+                          />
+                          Help
+                        </a>
+                      </Menu.Item>
+                    </div>
+                    <div className="p-6">
+                      <Menu.Item>
+                        <a
+                          href="#"
+                          className="group flex items-center text-sm text-gray-900 font-medium "
+                        >
+                          <DownloadIcon
+                            className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2"
+                            aria-hidden="true"
+                          />
+                          Buy and sell using our app!
+                        </a>
+                      </Menu.Item> */}
                     </div>
                   </Menu.Items>
                 )}
@@ -498,15 +657,90 @@ const Header = () => {
                       </Menu.Item>
                     </Menu.Items>
                   </Menu>
-
-                  {otherMenuItems.map((item) => (
-                    <a
-                      href="#"
-                      className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
-                    >
-                      {item}
-                    </a>
-                  ))}
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Home & Furniture
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Home Appliances
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Tools
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Building Materials
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Fitness & Sports
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Cars Accesories
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Fashion
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Toys
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Baby & Kids
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Beauty & Personal Care
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Health Equipments
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Office & School Supplies
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Services
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Sustainable Living
+                  </a>
                 </>
               </Menu.Item>
             </Menu.Items>

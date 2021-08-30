@@ -54,22 +54,7 @@ const Header = () => {
     'Buy and sell using our app!',
   ];
 
-  const otherMenuItems = [
-    'Home & Furniture',
-    'Home Appliances',
-    'Tools',
-    'Building Materials',
-    'Fitness & Sports',
-    'Cars Accesories',
-    'Fashion',
-    'Toys',
-    'Baby & Kids',
-    'Beauty & Personal Care',
-    'Health Equipments',
-    'Office & School Supplies',
-    'Services',
-    'Sustainable Living',
-  ];
+  const otherMenuItems = ["Home & Furniture",  "Home Appliances", "Tools",   "Building Materials",  "Fitness & Sports",  "Cars Accesories",     "Fashion",     "Toys",    Baby & Kids, Beauty & Personal Care,   Health Equipments,  Office & School Supplies,  Services,    Sustainable Living]
 
   return (
     <header className="lg:grid lg:grid-flow-col lg:grid-rows-2 bg-mercadolibre items-center lg:pl-3 lg:pt-1">
@@ -498,15 +483,90 @@ const Header = () => {
                       </Menu.Item>
                     </Menu.Items>
                   </Menu>
-
-                  {otherMenuItems.map((item) => (
-                    <a
-                      href="#"
-                      className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
-                    >
-                      {item}
-                    </a>
-                  ))}
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Home & Furniture
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                  Home & Furniture,  Home Appliances
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Tools
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Building Materials
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Fitness & Sports
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Cars Accesories
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Fashion
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Toys
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Baby & Kids
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Beauty & Personal Care
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Health Equipments
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Office & School Supplies
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Services
+                  </a>
+                  <a
+                    href="#"
+                    className="group flex py-3 pl-8  items-center text-sm text-white font-medium hover:bg-blue-500 hover:text-white"
+                  >
+                    Sustainable Living
+                  </a>
                 </>
               </Menu.Item>
             </Menu.Items>
