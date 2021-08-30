@@ -1,5 +1,5 @@
 //this is called webhook.js although you can have different endpoints for different events firing off
-//Here we listen to the webhook event and then call the fulfillOrder function
+//Here we listen to events that stripe sends us
 import { buffer } from 'micro';
 import * as admin from 'firebase-admin';
 //admin has access to everything

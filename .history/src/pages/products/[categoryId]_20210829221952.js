@@ -17,9 +17,9 @@ const CategoryId = ({ products, categoryId }) => {
 
   return (
     <div className=" bg-gray-200">
-      <Head>
+      {/* <Head>
         <title>Mercado Libre</title>
-      </Head>
+      </Head> */}
 
       <Header />
 

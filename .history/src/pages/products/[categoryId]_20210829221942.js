@@ -2,7 +2,7 @@ import ProductFeed from '../../components/ProductFeed';
 import Header from '../../components/Header';
 import Banner from '../../components/Banner';
 // import fs from 'fs/promises';
-import Head from 'next/head';
+import Header 
 import { useRouter } from 'next/router';
 import path from 'path';
 import Image from 'next/image';
@@ -17,9 +17,9 @@ const CategoryId = ({ products, categoryId }) => {
 
   return (
     <div className=" bg-gray-200">
-      <Head>
+      {/* <Head>
         <title>Mercado Libre</title>
-      </Head>
+      </Head> */}
 
       <Header />
 

@@ -48,11 +48,9 @@ const Product = ({ product }) => {
 
   return (
     <div className="relative flex flex-col m-2 bg-white z-30 shadow-sm transition duration-300 hover:shadow-2xl border border-gray-300 rounded-md ">
-      <div>
-        <button
-          icon={HeartIcon}
-          className="absolute z-50 h-6 right-3 top-3 text-blue-500 heroicon-sw-1"
-        ></button>
+    <div>
+      <button className="absolute z-50 h-6 right-3 top-3 text-blue-500 heroicon-sw-1" />
+
       </div>
       <div className="border-b text-center">
         <Image src={thumbnail} height={200} width={200} objectFit="contain" />
@@ -71,11 +69,9 @@ const Product = ({ product }) => {
         )}
         <p className="text-xs my-2 line-clamp-2">
           {title}
-          {eshop && (
-            <span className="text-gray-500 text-xs line-clamp-2">
-              sold by {eshop.nick_name}
-            </span>
-          )}
+          {eshop && <span className="text-gray-500 text-xs line-clamp-2">
+            sold by {eshop.nick_name}
+          </span>}
         </p>
 
         <div className="flex">

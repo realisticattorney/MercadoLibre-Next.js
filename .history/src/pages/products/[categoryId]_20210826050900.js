@@ -2,7 +2,6 @@ import ProductFeed from '../../components/ProductFeed';
 import Header from '../../components/Header';
 import Banner from '../../components/Banner';
 // import fs from 'fs/promises';
-import Head from 'next/head';
 import { useRouter } from 'next/router';
 import path from 'path';
 import Image from 'next/image';
@@ -17,9 +16,9 @@ const CategoryId = ({ products, categoryId }) => {
 
   return (
     <div className=" bg-gray-200">
-      <Head>
+      {/* <Head>
         <title>Mercado Libre</title>
-      </Head>
+      </Head> */}
 
       <Header />
 
@@ -64,3 +63,29 @@ export async function getServerSideProps(context) {
     };
   }
 }
+// export async function getStaticProps(context) {
+//   const { categoryId } = context.params;
+//   let category;
+//   if(categoryId === 1) {
+//     category = "MLA1055"
+//   }
+
+//   const filePath = path.join(process.cwd(), 'data', 'products.json');
+//   const jsonProductsData = await fs.readFile(filePath);
+//   const productsData = JSON.parse(jsonProductsData);
+
+//   return {
+//     props: {
+//       categories: productsData.results,
+//       categoryId: category,
+//     },
+//   };
+// }
+
+// export async function getStaticPaths() {
+
+//   return {
+//     paths: [{ params: { categoryId: "1"  } }],
+//     fallback: false,
+//   };
+// }
