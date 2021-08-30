@@ -174,27 +174,23 @@ const Header = () => {
                     </div>
                     <div className="p-6 space-y-6">
                       {mainMenuItems.map((item, index) => (
-                        <Menu.Item
-                          className={`${
-                            index === 8 || index === 12 || index === 13
-                              ? 'border-b border-gray-200 pb-6'
-                              : ''
-                          }`}
-                        >
-                          <div>
-                            <a
-                              href="#"
-                              className="flex items-center text-sm text-gray-900 font-medium"
-                            >
-                              <SvgIcon
-                                component={item[1]}
-                                className={`${classes.root} mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2`}
-                                aria-hidden="true"
-                                style={{ fill: grey[50] }}
-                              />
-                              {item[0]}
-                            </a>
-                          </div>
+                        <Menu.Item>
+                          <a
+                            href="#"
+                            className={`${
+                              index === 8 || index === 12 || index === 13
+                                ? 'border-b border-gray-600  pb-3 mb-3'
+                                : ''
+                            }  flex items-center text-sm text-gray-900 font-medium`}
+                          >
+                            <SvgIcon
+                              component={item[1]}
+                              className={`${classes.root} mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2`}
+                              aria-hidden="true"
+                              style={{ fill: grey[50] }}
+                            />
+                            {item[0]}
+                          </a>
                         </Menu.Item>
                       ))}
                     </div>

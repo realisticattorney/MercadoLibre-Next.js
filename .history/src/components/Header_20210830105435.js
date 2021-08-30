@@ -178,7 +178,7 @@ const Header = () => {
                           className={`${
                             index === 8 || index === 12 || index === 13
                               ? 'border-b border-gray-200 pb-6'
-                              : ''
+                              : 'p-6 '
                           }`}
                         >
                           <div>

@@ -174,17 +174,15 @@ const Header = () => {
                     </div>
                     <div className="p-6 space-y-6">
                       {mainMenuItems.map((item, index) => (
-                        <Menu.Item
-                          className={`${
-                            index === 8 || index === 12 || index === 13
-                              ? 'border-b border-gray-200 pb-6'
-                              : ''
-                          }`}
-                        >
-                          <div>
+                        <Menu.Item>
+                          <div className={`${
+                              index === 8 || index === 12 || index === 13
+                                ? 'border-b border-gray-300 pb-6'
+                                : ''
+                            }`}>
                             <a
                               href="#"
-                              className="flex items-center text-sm text-gray-900 font-medium"
+                              className="group flex items-center text-sm text-gray-900 font-medium"
                             >
                               <SvgIcon
                                 component={item[1]}

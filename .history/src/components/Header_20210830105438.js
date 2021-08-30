@@ -172,13 +172,13 @@ const Header = () => {
                         )}
                       </div>
                     </div>
-                    <div className="p-6 space-y-6">
+                    <div className="space-y-6">
                       {mainMenuItems.map((item, index) => (
                         <Menu.Item
                           className={`${
                             index === 8 || index === 12 || index === 13
                               ? 'border-b border-gray-200 pb-6'
-                              : ''
+                              : 'p-6 '
                           }`}
                         >
                           <div>
