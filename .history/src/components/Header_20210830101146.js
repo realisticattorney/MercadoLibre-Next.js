@@ -286,7 +286,7 @@ const Header = () => {
                         href="#"
                         className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
                       >
-                        Questions
+                         ["Orders", Questions
                       </a>
                     </div>
                   </Menu.Item>
@@ -296,13 +296,13 @@ const Header = () => {
                         href="#"
                         className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
                       >
-                        Mercado-Credit
+                      ["Orders", Questions]  Mercado-Credit
                       </a>
                       <a
                         href="#"
                         className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
                       >
-                        Movies & TV shows
+                    ["Orders", Questions]  Mercado-Credit    Movies & TV shows
                       </a>
                     </div>
                   </Menu.Item>

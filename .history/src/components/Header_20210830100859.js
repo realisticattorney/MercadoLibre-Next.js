@@ -173,6 +173,21 @@ const Header = () => {
                       </div>
                     </div>
                     <div className="p-6 space-y-6">
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
                       {mainMenuItems.map((item) => (
                         <Menu.Item>
                           <a
@@ -183,7 +198,7 @@ const Header = () => {
                               component={item[1]}
                               className={`${classes.root} mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2`}
                               aria-hidden="true"
-                              style={{ fill: grey[50] }}
+                              style={{ color: grey[50],  }}
                             />
                             {item[0]}
                           </a>

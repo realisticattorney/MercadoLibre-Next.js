@@ -30,17 +30,7 @@ import { selectItems } from '../slices/basketSlice';
 import { Menu } from '@headlessui/react';
 import { useState } from 'react';
 import SvgIcon from '@material-ui/core/SvgIcon';
-import { grey } from '@material-ui/core/colors';
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    '& > svg': {
-      margin: theme.spacing(2),
-    },
-  },
-}));
-
+import { green } from '@material-ui/core/colors';
 const Header = () => {
   const classes = useStyles();
   const [session] = useSession();
@@ -173,6 +163,21 @@ const Header = () => {
                       </div>
                     </div>
                     <div className="p-6 space-y-6">
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
                       {mainMenuItems.map((item) => (
                         <Menu.Item>
                           <a
@@ -183,7 +188,7 @@ const Header = () => {
                               component={item[1]}
                               className={`${classes.root} mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2`}
                               aria-hidden="true"
-                              style={{ fill: grey[50] }}
+                              color="action"
                             />
                             {item[0]}
                           </a>

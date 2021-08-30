@@ -21,7 +21,6 @@ import {
   OfficeBuildingIcon,
   ViewGridIcon,
   QuestionMarkCircleIcon,
-  TicketIcon,
 } from '@heroicons/react/outline';
 import { signIn, signOut, useSession } from 'next-auth/client';
 import { useRouter } from 'next/router';
@@ -30,19 +29,7 @@ import { selectItems } from '../slices/basketSlice';
 import { Menu } from '@headlessui/react';
 import { useState } from 'react';
 import SvgIcon from '@material-ui/core/SvgIcon';
-import { grey } from '@material-ui/core/colors';
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    '& > svg': {
-      margin: theme.spacing(2),
-    },
-  },
-}));
-
 const Header = () => {
-  const classes = useStyles();
   const [session] = useSession();
 
   const router = useRouter();
@@ -50,21 +37,21 @@ const Header = () => {
   const items = useSelector(selectItems);
   const lala = 'ShoppingBagIcon';
   const mainMenuItems = [
-    ['Start', HomeIcon],
-    ['Notifications', BellIcon],
-    ['My Orders', ShoppingBagIcon],
-    ['Favorites', HeartIcon],
-    ['My account', UserCircleIcon],
-    ['Deals', TagIcon],
-    ['Movies & TV Shows', PlayIcon],
-    ['History', ClockIcon],
-    ['Sell', ReceiptTaxIcon],
-    ['Supermarket', ShoppingCartIcon],
-    ['Fashion', ShoppingBagIcon],
-    ['Official Stores', OfficeBuildingIcon],
-    ['Categories', ViewGridIcon],
-    ['Help', QuestionMarkCircleIcon],
-    ['Buy and sell using our app!', DownloadIcon],
+    ['Start', HomeIcon]
+    ['Notifications', BellIcon]
+    ['My Orders', ShoppingBagIcon]
+    ['Favorites', HeartIcon]
+    ['My account', UserCircleIcon]
+    ['Deals', Tag]
+    ['Movies & TV Shows',]
+    ['History',]
+    ['Sell',]
+    ['Supermarket',]
+    ['Fashion',]
+    ['Official Stores',]
+    ['Categories',]
+    ['Help',]
+    ['Buy and sell using our app!',]
   ];
 
   const otherMenuItems = [
@@ -173,6 +160,21 @@ const Header = () => {
                       </div>
                     </div>
                     <div className="p-6 space-y-6">
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
+                      {/* sadjkljflsdkalasdfjjkfsdjasdfkjasdffjk */}
                       {mainMenuItems.map((item) => (
                         <Menu.Item>
                           <a
@@ -180,12 +182,11 @@ const Header = () => {
                             className="group flex items-center text-sm text-gray-900 font-medium "
                           >
                             <SvgIcon
-                              component={item[1]}
-                              className={`${classes.root} mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2`}
+                              component={HeartIcon}
+                              className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2"
                               aria-hidden="true"
-                              style={{ fill: grey[50] }}
                             />
-                            {item[0]}
+                            {item}
                           </a>
                         </Menu.Item>
                       ))}
