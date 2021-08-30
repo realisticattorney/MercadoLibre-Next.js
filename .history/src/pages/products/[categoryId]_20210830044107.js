@@ -64,6 +64,7 @@ export async function getStaticProps(context) {
       categoryId,
     },
     revalidate: 60,
+    notFound: true,
   };
 }
 

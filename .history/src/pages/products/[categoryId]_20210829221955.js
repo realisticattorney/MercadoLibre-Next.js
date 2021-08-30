@@ -45,44 +45,22 @@ const CategoryId = ({ products, categoryId }) => {
 
 export default CategoryId;
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const { categoryId } = context.params;
 
-  const products = await fetch(
-    `https://api.mercadolibre.com/sites/MLA/search?category=${categoryId}&limit=10`
-  ).then((res) => res.json());
-
-  if (products.length === 0) {
+  try {
+    const products = await fetch(
+      `https://api.mercadolibre.com/sites/MLA/search?category=${categoryId}&limit=10`
+    );
     return {
-      notFound: true,
+      props: {
+        products: await products.json(),
+        categoryId,
+      },
+    };
+  } catch (e) {
+    return {
+      error: e,
     };
   }
-
-  return {
-    props: {
-      products,
-      categoryId,
-    },
-    revalidate: 60,
-  };
 }
-
-// export async function getServerSideProps(context) {
-//   const { categoryId } = context.params;
-
-//   try {
-//     const products = await fetch(
-//       `https://api.mercadolibre.com/sites/MLA/search?category=${categoryId}&limit=10`
-//     );
-//     return {
-//       props: {
-//         products: await products.json(),
-//         categoryId,
-//       },
-//     };
-//   } catch (e) {
-//     return {
-//       error: e,
-//     };
-//   }
-// }

@@ -45,28 +45,6 @@ const CategoryId = ({ products, categoryId }) => {
 
 export default CategoryId;
 
-export async function getStaticProps(context) {
-  const { categoryId } = context.params;
-
-  const products = await fetch(
-    `https://api.mercadolibre.com/sites/MLA/search?category=${categoryId}&limit=10`
-  ).then((res) => res.json());
-
-  if (products.length === 0) {
-    return {
-      notFound: true,
-    };
-  }
-
-  return {
-    props: {
-      products,
-      categoryId,
-    },
-    revalidate: 60,
-  };
-}
-
 // export async function getServerSideProps(context) {
 //   const { categoryId } = context.params;
 
