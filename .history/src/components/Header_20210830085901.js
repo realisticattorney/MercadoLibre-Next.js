@@ -166,8 +166,7 @@ const Header = () => {
                             href="#"
                             className="group flex items-center text-sm text-gray-900 font-medium "
                           >
-                            <svg
-                              component={item}
+                            <svg component={item}
                               className="mr-3 h-6 w-6 text-gray-900 heroicon-sw-1.2"
                               aria-hidden="true"
                             />
