@@ -27,9 +27,14 @@ import { useRouter } from 'next/router';
 import { useSelector } from 'react-redux';
 import { selectItems } from '../slices/basketSlice';
 import { Menu } from '@headlessui/react';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+
+//onClick a div...bro
+//next.js Image component compress your image making it smaller w/o losing quality
+//click on the component to go to the file of the component
 
 const Header = () => {
+  //lets check our session
   const [session] = useSession();
 
   const router = useRouter();
@@ -37,6 +42,7 @@ const Header = () => {
   const items = useSelector(selectItems);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
 
   return (
     <header className="lg:grid lg:grid-flow-col lg:grid-rows-2 bg-mercadolibre items-center lg:pl-3 lg:pt-1">

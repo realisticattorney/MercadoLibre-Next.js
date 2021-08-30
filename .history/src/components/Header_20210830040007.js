@@ -27,7 +27,7 @@ import { useRouter } from 'next/router';
 import { useSelector } from 'react-redux';
 import { selectItems } from '../slices/basketSlice';
 import { Menu } from '@headlessui/react';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 const Header = () => {
   const [session] = useSession();
