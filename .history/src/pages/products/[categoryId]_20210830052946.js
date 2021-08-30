@@ -10,11 +10,7 @@ import ProductsFeedContainer from '../../components/ProductsFeedContainer';
 
 const CategoryId = ({ products, categoryId }) => {
   const router = useRouter();
-  console.log(products);
 
-  // if (!products) {
-  //   return <div>Loading...</div>;
-  // }
 
   return (
     <div className=" bg-gray-200">
@@ -38,7 +34,7 @@ const CategoryId = ({ products, categoryId }) => {
           </div>
         </div>
 
-        <ProductsFeedContainer products={products} />
+        <ProductsFeedContainer products={products}  />
       </main>
     </div>
   );

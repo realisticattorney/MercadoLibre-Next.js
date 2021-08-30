@@ -1,9 +1,4 @@
 const FilterComponent = ({ availableFilters, itemNumber }) => {
-
-  if(!availableFilters) {
-    return null;
-  }
-  
   return (
     <div>
       <ul>

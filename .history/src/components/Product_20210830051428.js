@@ -8,8 +8,15 @@ import { toast } from 'react-toastify';
 //line-clamp to interrupt text once it gets too long
 //focus:ring-0 to remove the focus
 const Product = ({ product }) => {
-  const { id, title, price, thumbnail, eshop, original_price, shipping } =
-    product;
+  const {
+    id,
+    title,
+    price,
+    thumbnail,
+    eshop,
+    original_price,
+    shipping,
+  } = product;
 
   const [rating] = useState(Math.round(Math.random() * 2) + 3);
 
@@ -56,7 +63,7 @@ const Product = ({ product }) => {
           </p>
         )}
         <p className="mb-5 text-3xl font-regular">$ {price}</p>
-        {shipping?.free_shipping === true && (
+        {shipping.free_shipping === true && (
           <div className="flex items-center space-x-2 -mt-5">
             <p className="text-sm text-green-500">Free Shipping</p>
           </div>

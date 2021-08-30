@@ -1,6 +1,6 @@
 const FilterComponent = ({ availableFilters, itemNumber }) => {
 
-  if(!availableFilters) {
+  if(!availableFilters.length === 0) {
     return null;
   }
   

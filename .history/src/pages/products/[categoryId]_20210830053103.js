@@ -12,9 +12,9 @@ const CategoryId = ({ products, categoryId }) => {
   const router = useRouter();
   console.log(products);
 
-  // if (!products) {
-  //   return <div>Loading...</div>;
-  // }
+  if (!products) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className=" bg-gray-200">

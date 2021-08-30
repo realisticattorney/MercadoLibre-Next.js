@@ -8,8 +8,15 @@ import { toast } from 'react-toastify';
 //line-clamp to interrupt text once it gets too long
 //focus:ring-0 to remove the focus
 const Product = ({ product }) => {
-  const { id, title, price, thumbnail, eshop, original_price, shipping } =
-    product;
+  const {
+    id,
+    title,
+    price,
+    thumbnail,
+    eshop,
+    original_price,
+    shipping,
+  } = product;
 
   const [rating] = useState(Math.round(Math.random() * 2) + 3);
 

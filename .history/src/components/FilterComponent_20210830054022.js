@@ -1,13 +1,8 @@
 const FilterComponent = ({ availableFilters, itemNumber }) => {
-
-  if(!availableFilters) {
-    return null;
-  }
-  
   return (
     <div>
       <ul>
-        {availableFilters[itemNumber]?.values.slice(0, 8).map((filter) => (
+        {availableFilters[itemNumber].values.slice(0, 8).map((filter) => (
           <li className="my-2">
             <a href="#" className="text-gray-700">
               {filter.name}

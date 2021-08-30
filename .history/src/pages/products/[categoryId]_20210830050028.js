@@ -10,11 +10,10 @@ import ProductsFeedContainer from '../../components/ProductsFeedContainer';
 
 const CategoryId = ({ products, categoryId }) => {
   const router = useRouter();
+
   console.log(products);
 
-  // if (!products) {
-  //   return <div>Loading...</div>;
-  // }
+  const { results, available_filters } = products;
 
   return (
     <div className=" bg-gray-200">
@@ -51,9 +50,7 @@ export async function getStaticProps(context) {
 
   const products = await fetch(
     `https://api.mercadolibre.com/sites/MLA/search?category=${categoryId}&limit=10`
-  )
-    .then((res) => res.json())
-    .catch((err) => console.log(err));
+  ).then((res) => res.json());
 
   if (products.length === 0) {
     return {
@@ -83,7 +80,7 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: 'blocking',
+    fallback: false,
   };
 }
 

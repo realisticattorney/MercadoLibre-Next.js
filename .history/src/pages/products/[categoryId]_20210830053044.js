@@ -10,11 +10,10 @@ import ProductsFeedContainer from '../../components/ProductsFeedContainer';
 
 const CategoryId = ({ products, categoryId }) => {
   const router = useRouter();
-  console.log(products);
 
-  // if (!products) {
-  //   return <div>Loading...</div>;
-  // }
+  if(!products) {
+    return <div>Loading...</div>
+  }
 
   return (
     <div className=" bg-gray-200">
@@ -48,7 +47,7 @@ export default CategoryId;
 
 export async function getStaticProps(context) {
   const { categoryId } = context.params;
-
+  
   const products = await fetch(
     `https://api.mercadolibre.com/sites/MLA/search?category=${categoryId}&limit=10`
   )

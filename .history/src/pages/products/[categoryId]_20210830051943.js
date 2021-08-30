@@ -10,11 +10,10 @@ import ProductsFeedContainer from '../../components/ProductsFeedContainer';
 
 const CategoryId = ({ products, categoryId }) => {
   const router = useRouter();
+
   console.log(products);
 
-  // if (!products) {
-  //   return <div>Loading...</div>;
-  // }
+  const { results, available_filters } = products;
 
   return (
     <div className=" bg-gray-200">
@@ -46,7 +45,7 @@ const CategoryId = ({ products, categoryId }) => {
 
 export default CategoryId;
 
-export async function getStaticProps(context) {
+export async function getStaticProps(context, {params: {slug} }) {
   const { categoryId } = context.params;
 
   const products = await fetch(
