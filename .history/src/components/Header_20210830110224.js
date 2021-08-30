@@ -299,20 +299,11 @@ const Header = () => {
                     </div>
                   </Menu.Item>
                   {userMenuItems.map((item, index) => (
-                    <Menu.Item
-                      className={`${
-                        index === 2 ||
-                        index === 4 ||
-                        index === 10 ||
-                        index === 13
-                          ? ''
-                          : 'border-0 border-white'
-                      }`}
-                    >
+                    <Menu.Item className={`py-2.5 ${index === 1 || }`}>
                       <div>
                         <a
                           href="#"
-                          className="flex py-4 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
+                          className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
                           onClick={() => router.push('/orders')}
                         >
                           {item}
@@ -320,6 +311,112 @@ const Header = () => {
                       </div>
                     </Menu.Item>
                   ))}
+                  {/* <Menu.Item className="py-2.5">
+                    <div>
+                      <a
+                        href="#"
+                        className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
+                        onClick={() => router.push('/orders')}
+                      >
+                        Orders
+                      </a>
+                      <a
+                        href="#"
+                        className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
+                      >
+                        Questions
+                      </a>
+                    </div>
+                  </Menu.Item>
+                  <Menu.Item className="py-2.5">
+                    <div>
+                      <a
+                        href="#"
+                        className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
+                      >
+                        Mercado-Credit
+                      </a>
+                      <a
+                        href="#"
+                        className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
+                      >
+                        Movies & TV shows
+                      </a>
+                    </div>
+                  </Menu.Item>
+                  <Menu.Item className="py-2.5">
+                    <div>
+                      <a
+                        href="#"
+                        className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
+                      >
+                        Sell
+                      </a>
+                      <a
+                        href="#"
+                        className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
+                      >
+                        My account
+                      </a>
+                      <a
+                        href="#"
+                        className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
+                      >
+                        New releases
+                      </a>
+                      <a
+                        href="#"
+                        className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
+                      >
+                        Publications
+                      </a>
+                      <a
+                        href="#"
+                        className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
+                      >
+                        Sold items
+                      </a>
+                      <a
+                        href="#"
+                        className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
+                      >
+                        Billing
+                      </a>
+                    </div>
+                  </Menu.Item>
+                  <Menu.Item className="py-2.5">
+                    <div>
+                      <a
+                        href="#"
+                        className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
+                      >
+                        My personal information
+                      </a>
+                      <a
+                        href="#"
+                        className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
+                      >
+                        Security
+                      </a>
+                      <a
+                        href="#"
+                        className="group flex py-1.5 pl-6  items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white"
+                      >
+                        Privacy
+                      </a>
+                    </div>
+                  </Menu.Item>
+                  <Menu.Item className="py-2.5">
+                    <div>
+                      <a
+                        href="#"
+                        className="group flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
+                        onClick={session ? signOut : signIn}
+                      >
+                        Log out
+                      </a> */}
+                  {/* </div>
+                  </Menu.Item> */}
                 </Menu.Items>
               </Menu>
             )}

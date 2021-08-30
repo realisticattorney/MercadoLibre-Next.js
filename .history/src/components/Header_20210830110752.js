@@ -260,7 +260,7 @@ const Header = () => {
                   </p>
                   <ChevronDownIcon className="h-3.5 text-gray-500 text-opacity-50" />
                 </Menu.Button>
-                <Menu.Items className="origin-top absolute -right-10 mt-2.5 w-72 rounded-b-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-50 py-3 divide-y">
+                <Menu.Items className="origin-top absolute -right-10 mt-2.5 w-72 rounded-b-md shadow-lg bg-white ring-black ring-opacity-5 focus:outline-none z-50 py-3 divide-y">
                   <Menu.Item className="flex flex-nowrap px-4 py-1 items-center">
                     <div className="">
                       <UserIcon className="h-12 border-4 rounded-full p-2 border-indigo-600 text-gray-600" />
@@ -300,19 +300,19 @@ const Header = () => {
                   </Menu.Item>
                   {userMenuItems.map((item, index) => (
                     <Menu.Item
-                      className={`${
-                        index === 2 ||
-                        index === 4 ||
-                        index === 10 ||
-                        index === 13
-                          ? ''
-                          : 'border-0 border-white'
+                      className={`py-2.5 ${
+                        index === 1 ||
+                        index === 3 ||
+                        index === 9 ||
+                        index === 12
+                          ? 'border-b border-gray-500'
+                          : ''
                       }`}
                     >
                       <div>
                         <a
                           href="#"
-                          className="flex py-4 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
+                          className="flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
                           onClick={() => router.push('/orders')}
                         >
                           {item}

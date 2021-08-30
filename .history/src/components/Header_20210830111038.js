@@ -300,11 +300,11 @@ const Header = () => {
                   </Menu.Item>
                   {userMenuItems.map((item, index) => (
                     <Menu.Item
-                      className={`${
-                        index === 2 ||
-                        index === 4 ||
-                        index === 10 ||
-                        index === 13
+                      className={`py-2.5 ${
+                        index === 1 ||
+                        index === 3 ||
+                        index === 9 ||
+                        index === 12
                           ? ''
                           : 'border-0 border-white'
                       }`}
@@ -312,7 +312,7 @@ const Header = () => {
                       <div>
                         <a
                           href="#"
-                          className="flex py-4 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
+                          className="flex py-1.5 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
                           onClick={() => router.push('/orders')}
                         >
                           {item}

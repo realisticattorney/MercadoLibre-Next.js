@@ -312,7 +312,7 @@ const Header = () => {
                       <div>
                         <a
                           href="#"
-                          className="flex py-4 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
+                          className="flex items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
                           onClick={() => router.push('/orders')}
                         >
                           {item}
