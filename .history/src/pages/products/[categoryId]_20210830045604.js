@@ -73,7 +73,8 @@ export async function getStaticPaths() {
     path.join(process.cwd(), 'data', 'categories.json')
   );
   const categories = JSON.parse(jsonCategories);
-  const paths = categories.categories.map((category) => ({
+  console.log(categories));
+  const paths = categories.map((category) => ({
     params: {
       categoryId: category.id,
     },

@@ -69,11 +69,11 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   //get the paths from /data/categories.json id
-  const jsonCategories = await fs.readFile(
+  const categories = await fs.readFile(
     path.join(process.cwd(), 'data', 'categories.json')
-  );
-  const categories = JSON.parse(jsonCategories);
-  const paths = categories.categories.map((category) => ({
+  ).
+
+  const paths = categories.map((category) => ({
     params: {
       categoryId: category.id,
     },

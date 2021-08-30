@@ -1,7 +1,7 @@
 import ProductFeed from '../../components/ProductFeed';
 import Header from '../../components/Header';
 import Banner from '../../components/Banner';
-import fs from 'fs/promises';
+// import fs from 'fs/promises';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import path from 'path';
@@ -69,21 +69,10 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   //get the paths from /data/categories.json id
-  const jsonCategories = await fs.readFile(
-    path.join(process.cwd(), 'data', 'categories.json')
-  );
-  const categories = JSON.parse(jsonCategories);
-  const paths = categories.categories.map((category) => ({
-    params: {
-      categoryId: category.id,
-    },
-  }));
 
-  return {
-    paths,
-    fallback: false,
-  };
 }
+
+
 
 // export async function getServerSideProps(context) {
 //   const { categoryId } = context.params;
