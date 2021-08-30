@@ -16,7 +16,7 @@ export default async (req, res) => {
       },
     },
   }));
-
+  
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
     shipping_rates: ['shr_1JSf5pBQb7JmoLpkuJqFl9PW'],
@@ -29,7 +29,7 @@ export default async (req, res) => {
     cancel_url: `${process.env.HOST}/checkout`,
     metadata: {
       email,
-      images: JSON.stringify(items.map((item) => item.thumbnail)),
+      images: JSON.stringify(items.map((item) => item.image)),
     },
   });
 

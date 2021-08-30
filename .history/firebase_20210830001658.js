@@ -9,7 +9,7 @@ const firebaseConfig = {
   appId: '1:255264900510:web:6f07fd67df9407b79fc28f',
 };
 
-// Initialize Firebase in the front end
+// Initialize Firebase in the front 
 const app = !firebase.apps.length
   ? firebase.initializeApp(firebaseConfig)
   : firebase.app();
