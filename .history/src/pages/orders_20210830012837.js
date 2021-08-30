@@ -14,15 +14,14 @@ const Orders = ({ orders }) => {
         <h1 className="text-3xl border-b mb-2 pb-1 bg-blue-400">Your Orders</h1>
 
         {session ? (
-          <h2>{orders.length} Orders</h2>
+          <h2>x orders</h2>
         ) : (
           <h2>Please sign in to see your orders</h2>
         )}
 
         <div className="mt-5 space-y-4">
-          {orders?.map((order) => (
-            <Order order={order} key={order.id} />
-          ))}
+           {orders?.map((order) => (
+              <Order />))}
         </div>
       </main>
     </div>

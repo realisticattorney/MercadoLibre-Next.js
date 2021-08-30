@@ -2,7 +2,6 @@ import moment from 'moment';
 import { getSession, useSession } from 'next-auth/client';
 import db from '../../firebase';
 import Header from '../components/Header';
-import Order from '../components/Order';
 
 const Orders = ({ orders }) => {
   const [session] = useSession();
@@ -14,15 +13,13 @@ const Orders = ({ orders }) => {
         <h1 className="text-3xl border-b mb-2 pb-1 bg-blue-400">Your Orders</h1>
 
         {session ? (
-          <h2>{orders.length} Orders</h2>
+          <h2>x orders</h2>
         ) : (
           <h2>Please sign in to see your orders</h2>
         )}
 
         <div className="mt-5 space-y-4">
-          {orders?.map((order) => (
-            <Order order={order} key={order.id} />
-          ))}
+           
         </div>
       </main>
     </div>
