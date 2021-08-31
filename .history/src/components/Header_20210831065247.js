@@ -222,7 +222,7 @@ const Header = () => {
             className="relative link flex items-center "
             onClick={() => router.push('/checkout')}
           >
-            <span className="absolute top-0 right-1.5   h-3 w-3.5 font-light bg-mercadolibre text-center rounded-full text-black text-xs">
+            <span className="absolute top-0 right-1.5  h-3 w-3.5 font-light bg-mercadolibre text-center rounded-full text-black text-xs">
               {items.length}
             </span>
 

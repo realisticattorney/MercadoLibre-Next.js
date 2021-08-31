@@ -222,7 +222,7 @@ const Header = () => {
             className="relative link flex items-center "
             onClick={() => router.push('/checkout')}
           >
-            <span className="absolute top-0 right-1.5   h-3 w-3.5 font-light bg-mercadolibre text-center rounded-full text-black text-xs">
+            <span className="absolute top-0 right-1.5  h-3 w-3.5 font-light bg-mercadolibre text-center rounded-full text-black text-xs">
               {items.length}
             </span>
 
@@ -236,7 +236,7 @@ const Header = () => {
 
       <div className="flex items-center justify-between space-x-3 py-2 pl-2 bg-mercadolibre text-sm lg:contents">
         <div className="lg:col-span-1 lg:row-start-2 lg:col-start-1 lg:row-span-1">
-          <button className="link flex items-center text-mercadolibre-blue no-underline focus:outline-none">
+          <button className="link flex items-center text-mercadolibre-blue no-underline ">
             <LocationMarkerIcon className="h-4 lg:h-7 mr-1 text-mercadolibre-blue heroicon-sw-1" />
             <span className="text-xs font-light text-left">
               Deliver to{' '}
