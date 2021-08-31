@@ -1,3 +1,4 @@
+import ProductFeed from '../../components/ProductFeed';
 import Header from '../../components/Header';
 import fs from 'fs/promises';
 import Head from 'next/head';

@@ -1,5 +1,7 @@
+import ProductFeed from '../../components/ProductFeed';
 import Header from '../../components/Header';
-import fs from 'fs/promises';
+import Banner from '../../components/Banner';
+// import fs from 'fs/promises';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import path from 'path';

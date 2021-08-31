@@ -378,7 +378,6 @@ const Header = () => {
                             <h2 className="text-xl font-medium">Electronics</h2>
                           </div>
                           <div className="grid grid-cols-3 grid-rows-2 mt-5">
-                          
                             <div className="space-y-2">
                               <p className="font-medium hover:text-blue-600 cursor-pointer">
                                 Smartphones & Phones
