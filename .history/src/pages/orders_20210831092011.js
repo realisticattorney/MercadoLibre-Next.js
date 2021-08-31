@@ -36,15 +36,15 @@ const Orders = ({ orders }) => {
             <MenuIcon className="h-6" />
             <h4 className="hidden md:inline-flex font-semibold" >My account</h4>
           </div>
-          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-500 flex space-x-2 items-center">
+          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-400 flex space-x-2 items-center">
             <ClipboardListIcon className="h-6 heroicon-sw-1.5" />
             <h4 className="hidden md:inline-flex text-sm" >Summary</h4>
           </div>
-          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-500 flex space-x-2 items-center">
+          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-400 flex space-x-2 items-center">
             <ReceiptTaxIcon className="h-6 heroicon-sw-1.2" />
             <h4 className="hidden md:inline-flex text-sm" >Billing</h4>
           </div>
-          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-500 flex space-x-2 items-center">
+          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-400 flex space-x-2 items-center">
             <StarIcon className="h-6 heroicon-sw-1.2" />
             <h4 className="hidden md:inline-flex text-sm" >Reputation</h4>
           </div>
@@ -52,15 +52,15 @@ const Orders = ({ orders }) => {
             <ShoppingBagIcon className="h-6 heroicon-sw-1.2" />
             <h4 className="hidden md:inline-flex text-sm" >Orders</h4>
           </div>
-          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-500 flex space-x-2 items-center">
+          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-400 flex space-x-2 items-center">
             <HomeIcon className="h-6 heroicon-sw-1.2" />
             <h4 className="hidden md:inline-flex text-sm" >Sales</h4>
           </div>
-          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-500 flex space-x-2 items-center">
+          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-400 flex space-x-2 items-center">
             <OfficeBuildingIcon className="h-6 heroicon-sw-1.2" />
             <h4 className="hidden md:inline-flex text-sm" >Real Estate</h4>
           </div>
-          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-500 flex space-x-2 items-center">
+          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-400 flex space-x-2 items-center">
             <CogIcon className="h-6 heroicon-sw-1.2" />
             <h4 className="hidden md:inline-flex text-sm" >Settings</h4>
           </div>

@@ -1,15 +1,11 @@
 import {
-  ClipboardListIcon,
   CogIcon,
   HeartIcon,
   HomeIcon,
   KeyIcon,
   MenuIcon,
   OfficeBuildingIcon,
-  ReceiptTaxIcon,
-  ShieldCheckIcon,
   ShoppingBagIcon,
-  StarIcon,
   TicketIcon,
   ViewGridIcon,
 } from '@heroicons/react/outline';
@@ -31,43 +27,33 @@ const Orders = ({ orders }) => {
       <Header />
       <main className="relative flex mx-auto">
         <div className="flex-col bg-gray-100 absolute left-0 h-full transform">
-          <div className="py-10 pl-4 pr-5 md:pr-28 border-l-4 border-transparent text-blue-600 md:text-gray-500 flex space-x-2">
+          <div className="py-10 pl-4 pr-5 border-l-4 border-transparent text-blue-600">
           
             <MenuIcon className="h-6" />
-            <h4 className="hidden md:inline-flex font-semibold" >My account</h4>
+            <h4>M</h4>
           </div>
-          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-500 flex space-x-2 items-center">
-            <ClipboardListIcon className="h-6 heroicon-sw-1.5" />
-            <h4 className="hidden md:inline-flex text-sm" >Summary</h4>
+          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-400">
+            <HeartIcon className="h-6 heroicon-sw-1.5" />
           </div>
-          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-500 flex space-x-2 items-center">
-            <ReceiptTaxIcon className="h-6 heroicon-sw-1.2" />
-            <h4 className="hidden md:inline-flex text-sm" >Billing</h4>
+          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-400">
+            <TicketIcon className="h-6 heroicon-sw-1.2" />
           </div>
-          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-500 flex space-x-2 items-center">
-            <StarIcon className="h-6 heroicon-sw-1.2" />
-            <h4 className="hidden md:inline-flex text-sm" >Reputation</h4>
-          </div>
-          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-blue-600 flex space-x-2 items-center">
+          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-blue-600">
             <ShoppingBagIcon className="h-6 heroicon-sw-1.2" />
-            <h4 className="hidden md:inline-flex text-sm" >Orders</h4>
           </div>
-          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-500 flex space-x-2 items-center">
-            <HomeIcon className="h-6 heroicon-sw-1.2" />
-            <h4 className="hidden md:inline-flex text-sm" >Sales</h4>
-          </div>
-          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-500 flex space-x-2 items-center">
+          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-400">
             <OfficeBuildingIcon className="h-6 heroicon-sw-1.2" />
-            <h4 className="hidden md:inline-flex text-sm" >Real Estate</h4>
           </div>
-          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-500 flex space-x-2 items-center">
+          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-400">
+            <HomeIcon className="h-6 heroicon-sw-1.2" />
+          </div>
+          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-400">
             <CogIcon className="h-6 heroicon-sw-1.2" />
-            <h4 className="hidden md:inline-flex text-sm" >Settings</h4>
           </div>
         </div>
 
         {/* right-side */}
-        <div className=" flex-grow p-10 mx-auto ml-16 md:ml-60 justify-center">
+        <div className=" flex-grow p-10 mx-auto ml-16 justify-center">
           <div className="max-w-screen-lg mx-auto">
             <h1 className="text-3xl text-gray-800 border-b mb-2 pb-1">
               Orders
