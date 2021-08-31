@@ -18,7 +18,7 @@ const ProductsFeedContainer = ({ products }) => {
         electrico peabody
       </p> */}
       <div className="flex mt-10">
-        <div className="flex-col flex p-2 space-y-6  min-w-[220px]
+        <div className="flex-col flex p-2 space-y-6  min-w-[200px]
         md:min-w-[260px]">
           {/* Subhead, Title, Results */}
           <div>

@@ -35,22 +35,16 @@ const Checkout = () => {
     <div className="bg-gray-100">
       <Header />
 
-      <main className=" max-w-screen-lg md:mx-auto">
+      <main className=" max-w-screen-2xl md:mx-auto">
         {/* Left section*/}
-        <div className="flex-grow mt-6 shadow-sm">
+        <div className="flex-grow m-0 shadow-sm">
           <div className="flex flex-col p-5 space-y-10 bg-white">
-            <h1 className="text-xl text-gray-700 border-b pb-4">
-              {items.length === 0 ? 'Shopping Basket (0)' : 'Shopping Basket'}
+            <h1 className="text-3xl border-b pb-4">
+              {items.length === 0 ? 'Your Basket is empty' : 'Shopping Basket'}
             </h1>
             {items.map((item, i) => (
               <CheckoutProduct product={item} key={i} />
             ))}
-            {items.length === 0 && (
-              <div className="flex-col justify-center text-center min-h-[160px]">
-                <h2 className="text-gray-600 text-3xl">Your cart is empty</h2>
-                <p className="text-gray-400 text-lg">Not sure what to buy? Discover</p>
-              </div>
-            )}
           </div>
 
           <div className="flex flex-col bg-white p-5 mb-1 border-b text-right items-end">

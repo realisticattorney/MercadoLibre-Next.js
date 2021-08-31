@@ -10,7 +10,6 @@ const ProductsFeedContainer = ({ products }) => {
     indexOfFilters.includes(index)
   );
 
-
   return (
     <div className="flex flex-col">
       {/* <p className="p-2">
@@ -18,8 +17,7 @@ const ProductsFeedContainer = ({ products }) => {
         electrico peabody
       </p> */}
       <div className="flex mt-10">
-        <div className="flex-col flex p-2 space-y-6  min-w-[220px]
-        md:min-w-[260px]">
+        <div className="flex-col flex p-2 space-y-6 w-40">
           {/* Subhead, Title, Results */}
           <div>
             <h5 className="text-gray-500 text-sm font-medium">

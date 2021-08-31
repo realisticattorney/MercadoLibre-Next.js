@@ -475,16 +475,13 @@ const Header = () => {
           </Menu>
           <div className="cursor-pointer no-underline ">
             <p className="link hidden lg:inline-flex focus:no-underline"
-                   onClick={() => router.replace(`/products/MLA1039`)}>
+                   onClick={() => router.replace(`/products/${item[1]}`)}>
               Offers
             </p>
           </div>
           <p className="link hidden lg:inline-flex">History</p>
-          <p className="link hidden xl:inline-flex"
-               onClick={() => router.replace(`/products/MLA1423`)}>Supermarket</p>
-          <p className="link hidden xl:inline-flex"
-           onClick={() => router.replace(`/products/MLA3114`)}
-           >Fashion</p>
+          <p className="link hidden xl:inline-flex">Supermarket</p>
+          <p className="link hidden xl:inline-flex">Fashion</p>
           <p className="link hidden lg:inline-flex">Sell</p>
           <p className="link hidden lg:inline-flex">Help</p>
         </div>

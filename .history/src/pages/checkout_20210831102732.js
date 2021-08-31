@@ -48,7 +48,7 @@ const Checkout = () => {
             {items.length === 0 && (
               <div className="flex-col justify-center text-center min-h-[160px]">
                 <h2 className="text-gray-600 text-3xl">Your cart is empty</h2>
-                <p className="text-gray-400 text-lg">Not sure what to buy? Discover</p>
+                <p className="text-gray-400">Not sure what to buy? Discover between</p>
               </div>
             )}
           </div>

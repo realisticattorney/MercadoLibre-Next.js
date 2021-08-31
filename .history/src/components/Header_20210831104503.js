@@ -481,10 +481,8 @@ const Header = () => {
           </div>
           <p className="link hidden lg:inline-flex">History</p>
           <p className="link hidden xl:inline-flex"
-               onClick={() => router.replace(`/products/MLA1423`)}>Supermarket</p>
-          <p className="link hidden xl:inline-flex"
-           onClick={() => router.replace(`/products/MLA3114`)}
-           >Fashion</p>
+          v>Supermarket</p>
+          <p className="link hidden xl:inline-flex">Fashion</p>
           <p className="link hidden lg:inline-flex">Sell</p>
           <p className="link hidden lg:inline-flex">Help</p>
         </div>
