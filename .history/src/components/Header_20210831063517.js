@@ -66,20 +66,20 @@ const Header = () => {
   ];
 
   const otherMenuItems = [
-    ['Home & Furniture', 'MLA1574'],
-    ['Home Appliances', 'MLA11830'],
-    ['Tools', 'MLA417282'],
-    ['Building Materials', 'MLA5228'],
-    ['Fitness & Sports', 'MLA1276'],
-    ['Cars Accesories', 'MLA1747'],
-    ['Fashion', 'MLA3114'],
-    ['Toys', 'MLA1132'],
-    ['Baby & Kids', 'MLA1455'],
-    ['Beauty & Personal Care', 'MLA1253'],
-    ['Health Equipments', 'MLA409431'],
-    ['Office & School Supplies', 'MLA1499'],
-    ['Services', 'MLA1540'],
-    ['Sustainable Living', 'MLA417006'],
+    ['Home & Furniture',]
+    ['Home Appliances',]
+    ['Tools',]
+    ['Building Materials',]
+    ['Fitness & Sports',]
+    ['Cars Accesories',]
+    ['Fashion',]
+    ['Toys',]
+    ['Baby & Kids',]
+    ['Beauty & Personal Care',]
+    ['Health Equipments',]
+    ['Office & School Supplies',]
+    ['Services',]
+    ['Sustainable Living',]
   ];
 
   const userMenuItems = [
