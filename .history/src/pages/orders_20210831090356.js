@@ -52,24 +52,22 @@ const Orders = ({ orders }) => {
 
         {/* right-side */}
         <div className=" flex-grow p-10 mx-auto ml-16 justify-center">
-          <div className="max-w-screen-lg mx-auto">
-            <h1 className="text-3xl text-gray-800 border-b mb-2 pb-1">
-              Orders
-            </h1>
+        <div className="max-w-screen-lg mx-auto">
+          <h1 className="text-3xl text-gray-800 border-b mb-2 pb-1">Orders</h1>
 
-            {session ? (
-              <h2 className="text-gray-400 font-medium">
-                {orders.length} orders
-              </h2>
-            ) : (
-              <h2>Please sign in to see your orders</h2>
-            )}
+          {session ? (
+            <h2 className="text-gray-400 font-medium">
+              {orders.length} orders
+            </h2>
+          ) : (
+            <h2>Please sign in to see your orders</h2>
+          )}
 
-            <div className="mt-5 space-y-4 ">
-              {orders?.map((order) => (
-                <Order order={order} key={order.id} />
-              ))}
-            </div>
+          <div className="mt-5 space-y-4 ">
+            {orders?.map((order) => (
+              <Order order={order} key={order.id} />
+            ))}
+          </div>
           </div>
         </div>
       </main>
