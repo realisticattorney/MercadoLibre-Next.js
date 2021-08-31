@@ -33,19 +33,21 @@ export default function Home({ categories }) {
   );
 }
 
-export async function getStaticProps(context) {
-  const session = await getSession(context);
-  const filePath = path.join(process.cwd(), 'data', 'categories.json');
-  const jsonCategoriesData = await fs.readFile(filePath);
-  const categoriesData = JSON.parse(jsonCategoriesData);
+// export async function getStaticProps(context) {
 
-  return {
-    props: {
-      categories: categoriesData.categories,
-      session,
-    },
-  };
-}
+  
+//   const session = await getSession(context);
+//   const filePath = path.join(process.cwd(), 'data', 'categories.json');
+//   const jsonCategoriesData = await fs.readFile(filePath);
+//   const categoriesData = JSON.parse(jsonCategoriesData);
+
+//   return {
+//     props: {
+//       categories: categoriesData.categories,
+//       session,
+//     },
+//   };
+// }
 
 // To do any server-side
 // GET >> https://fakestoreapi.com/products

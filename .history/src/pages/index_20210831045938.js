@@ -8,10 +8,12 @@ import CategoryFeed from '../components/CategoryFeed';
 import fs from 'fs/promises';
 import path from 'path';
 import { getSession } from 'next-auth/client';
+var url = require('url');
 
 export default function Home({ categories }) {
   const router = useRouter();
 
+  
   return (
     <div className="bg-gray-200">
       <Head>
@@ -24,6 +26,8 @@ export default function Home({ categories }) {
         {/* Banner */}
         <Banner />
 
+   
+
         <section className="px-1">
           {/* Categories */}
           {<CategoryFeed categories={categories} />}
@@ -34,7 +38,16 @@ export default function Home({ categories }) {
 }
 
 export async function getStaticProps(context) {
-  const session = await getSession(context);
+
+
+function fullUrl(req) {
+  return url.format({
+    protocol: req.protocol,
+    host: req.get('host'),
+    pathname: req.originalUrl
+  });
+}
+  const session = await getSession(context)
   const filePath = path.join(process.cwd(), 'data', 'categories.json');
   const jsonCategoriesData = await fs.readFile(filePath);
   const categoriesData = JSON.parse(jsonCategoriesData);
@@ -42,7 +55,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       categories: categoriesData.categories,
-      session,
+      session
     },
   };
 }

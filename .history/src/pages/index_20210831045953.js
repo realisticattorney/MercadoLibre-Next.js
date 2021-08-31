@@ -9,6 +9,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { getSession } from 'next-auth/client';
 
+
 export default function Home({ categories }) {
   const router = useRouter();
 
@@ -34,6 +35,13 @@ export default function Home({ categories }) {
 }
 
 export async function getStaticProps(context) {
+  function fullUrl(req) {
+    return url.format({
+      protocol: req.protocol,
+      host: req.get('host'),
+      pathname: req.originalUrl,
+    });
+  }
   const session = await getSession(context);
   const filePath = path.join(process.cwd(), 'data', 'categories.json');
   const jsonCategoriesData = await fs.readFile(filePath);

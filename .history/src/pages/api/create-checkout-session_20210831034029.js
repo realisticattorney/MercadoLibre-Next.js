@@ -1,5 +1,7 @@
 // api folder is backend code
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const successUrl = process.env.HOST + '/success';
+const cancelUrl = process.env.HOST + '/checkout';
 
 export default async (req, res) => {
   const { items, email } = req.body;
@@ -25,8 +27,10 @@ export default async (req, res) => {
     },
     line_items: transformedItems,
     mode: 'payment',
-    success_url: `${process.env.HOST}/success`,
-    cancel_url: `${process.env.HOST}/checkout`,
+    success_url:
+      'https://mercado-libre-next-js-2dqagiag6-realisticattorney.vercel.app/success',
+    cancel_url:
+      'https://mercado-libre-next-js-2dqagiag6-realisticattorney.vercel.app/checkout',
     metadata: {
       email,
       images: JSON.stringify(items.map((item) => item.thumbnail)),

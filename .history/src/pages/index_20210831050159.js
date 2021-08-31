@@ -5,7 +5,7 @@ import Banner from '../components/Banner';
 import { useRouter } from 'next/router';
 import CategoryFeed from '../components/CategoryFeed';
 //this can only be read by the server
-import fs from 'fs/promises';
+// import fs from 'fs/promises';
 import path from 'path';
 import { getSession } from 'next-auth/client';
 
@@ -33,35 +33,37 @@ export default function Home({ categories }) {
   );
 }
 
-export async function getStaticProps(context) {
-  const session = await getSession(context);
-  const filePath = path.join(process.cwd(), 'data', 'categories.json');
-  const jsonCategoriesData = await fs.readFile(filePath);
-  const categoriesData = JSON.parse(jsonCategoriesData);
+// export async function getStaticProps(context) {
 
-  return {
-    props: {
-      categories: categoriesData.categories,
-      session,
-    },
-  };
-}
+  
+//   const session = await getSession(context);
+//   const filePath = path.join(process.cwd(), 'data', 'categories.json');
+//   const jsonCategoriesData = await fs.readFile(filePath);
+//   const categoriesData = JSON.parse(jsonCategoriesData);
+
+//   return {
+//     props: {
+//       categories: categoriesData.categories,
+//       session,
+//     },
+//   };
+// }
 
 // To do any server-side
 // GET >> https://fakestoreapi.com/products
-// export async function getServerSideProps(context) {
+export async function getServerSideProps(context) {
+  console.log(context)
+  try {
+  const products = await fetch(`https://fakestoreapi.com/products`)
+  return {
+    props: {
+      products: await products.json()
+    }
+  };
+} catch (e) {
+  return {
+    error: e
+  };
+}
 
-//   try {
-//   const products = await fetch(`https://fakestoreapi.com/products`)
-//   return {
-//     props: {
-//       products: await products.json()
-//     }
-//   };
-// } catch (e) {
-//   return {
-//     error: e
-//   };
-// }
-
-// }
+}

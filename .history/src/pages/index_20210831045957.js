@@ -34,6 +34,15 @@ export default function Home({ categories }) {
 }
 
 export async function getStaticProps(context) {
+  var url = require('url');
+
+  function fullUrl(req) {
+    return url.format({
+      protocol: req.protocol,
+      host: req.get('host'),
+      pathname: req.originalUrl,
+    });
+  }
   const session = await getSession(context);
   const filePath = path.join(process.cwd(), 'data', 'categories.json');
   const jsonCategoriesData = await fs.readFile(filePath);

@@ -1,6 +1,9 @@
 // api folder is backend code
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
-
+const successUrl = process.env.HOST + '/success';
+const cancelUrl = process.env.HOST + '/checkout';
+var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
+console.log(fullUrl);
 export default async (req, res) => {
   const { items, email } = req.body;
 
@@ -25,8 +28,8 @@ export default async (req, res) => {
     },
     line_items: transformedItems,
     mode: 'payment',
-    success_url: `${process.env.HOST}/success`,
-    cancel_url: `${process.env.HOST}/checkout`,
+    success_url: successUrl,
+    cancel_url: cancelUrl,
     metadata: {
       email,
       images: JSON.stringify(items.map((item) => item.thumbnail)),
