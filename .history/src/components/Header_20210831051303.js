@@ -322,12 +322,8 @@ const Header = () => {
                 </Menu.Items>
               </Menu>
             )}
-            <div className="cursor-pointer">
-              {session ? (
-                <p onClick={() => router.push('/orders')}>My orders</p>
-              ) : (
-                <p onClick={signIn}>Login</p>
-              )}
+            <div className="cursor-pointer link">
+                      <SignIn />
             </div>
             <div className="flex cursor-pointer  items-center pr-3">
               <p>{session ? `Favorites` : 'My orders'}</p>
