@@ -23,7 +23,7 @@ const Orders = ({ orders }) => {
   const [activeMenu, setActiveMenu] = useState('');
 
   return (
-    <div className=" bg-gray-200 h-screen">
+    <div className=" bg-gray-200 h-full">
       <Header />
       <main className="relative max-w-screen-lg flex mx-auto ">
         <div className="flex-col bg-gray-100 fixed left-0 h-full">

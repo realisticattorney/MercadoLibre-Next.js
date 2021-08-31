@@ -23,10 +23,10 @@ const Orders = ({ orders }) => {
   const [activeMenu, setActiveMenu] = useState('');
 
   return (
-    <div className=" bg-gray-200 h-screen">
+    <div>
       <Header />
-      <main className="relative max-w-screen-lg flex mx-auto ">
-        <div className="flex-col bg-gray-100 fixed left-0 h-full">
+      <main className="max-w-screen-lg flex">
+        <div className="flex-col bg-gray-100">
           <div className="py-10 pl-4 pr-5 border-l-4 border-transparent text-blue-600">
             <MenuIcon className="h-6" />
           </div>
@@ -51,7 +51,7 @@ const Orders = ({ orders }) => {
         </div>
 
         {/* right-side */}
-        <div className=" flex-grow p-10 mx-auto ml-16">
+        <div className="bg-gray-200 flex-grow p-10">
           <h1 className="text-3xl text-gray-800 border-b mb-2 pb-1">Orders</h1>
 
           {session ? (
@@ -62,11 +62,11 @@ const Orders = ({ orders }) => {
             <h2>Please sign in to see your orders</h2>
           )}
 
-          <div className="mt-5 space-y-4 ">
-            {orders?.map((order) => (
-              <Order order={order} key={order.id} />
-            ))}
-          </div>
+          <div className="mt-5 space-y-4">
+          {orders?.map((order) => (
+            <Order order={order} key={order.id} />
+          ))}
+        </div>
         </div>
       </main>
     </div>

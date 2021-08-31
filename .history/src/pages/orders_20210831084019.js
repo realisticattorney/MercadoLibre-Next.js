@@ -23,10 +23,10 @@ const Orders = ({ orders }) => {
   const [activeMenu, setActiveMenu] = useState('');
 
   return (
-    <div className=" bg-gray-200 h-screen">
+    <div className=" bg-gray-200">
       <Header />
-      <main className="relative max-w-screen-lg flex mx-auto ">
-        <div className="flex-col bg-gray-100 fixed left-0 h-full">
+      <main className="max-w-screen-lg flex mx-auto ">
+        <div className="flex-col bg-gray-100 absolute left-0 h-full">
           <div className="py-10 pl-4 pr-5 border-l-4 border-transparent text-blue-600">
             <MenuIcon className="h-6" />
           </div>

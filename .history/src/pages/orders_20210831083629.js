@@ -23,10 +23,10 @@ const Orders = ({ orders }) => {
   const [activeMenu, setActiveMenu] = useState('');
 
   return (
-    <div className=" bg-gray-200 h-screen">
+    <div className="bg-gray-200">
       <Header />
-      <main className="relative max-w-screen-lg flex mx-auto ">
-        <div className="flex-col bg-gray-100 fixed left-0 h-full">
+      <main className="max-w-screen-lg flex mx-0">
+        <div className="flex-col bg-gray-100 origin-top-left max-h-full">
           <div className="py-10 pl-4 pr-5 border-l-4 border-transparent text-blue-600">
             <MenuIcon className="h-6" />
           </div>
@@ -49,23 +49,26 @@ const Orders = ({ orders }) => {
             <CogIcon className="h-6 heroicon-sw-1.2" />
           </div>
         </div>
+        <div className="mx-auto max-w-screen-lg">
+          {/* right-side */}
+          <div className=" flex-grow p-10 mx-auto ">
+            <h1 className="text-3xl text-gray-800 border-b mb-2 pb-1">
+              Orders
+            </h1>
 
-        {/* right-side */}
-        <div className=" flex-grow p-10 mx-auto ml-16">
-          <h1 className="text-3xl text-gray-800 border-b mb-2 pb-1">Orders</h1>
+            {session ? (
+              <h2 className="text-gray-400 font-medium">
+                {orders.length} orders
+              </h2>
+            ) : (
+              <h2>Please sign in to see your orders</h2>
+            )}
 
-          {session ? (
-            <h2 className="text-gray-400 font-medium">
-              {orders.length} orders
-            </h2>
-          ) : (
-            <h2>Please sign in to see your orders</h2>
-          )}
-
-          <div className="mt-5 space-y-4 ">
-            {orders?.map((order) => (
-              <Order order={order} key={order.id} />
-            ))}
+            <div className="mt-5 space-y-4 ">
+              {orders?.map((order) => (
+                <Order order={order} key={order.id} />
+              ))}
+            </div>
           </div>
         </div>
       </main>

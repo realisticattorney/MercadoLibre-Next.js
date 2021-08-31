@@ -2,7 +2,7 @@ import moment from 'moment';
 
 const Order = ({ order }) => {
   return (
-    <div className="relative border rounded-md bg-white border-1 shadow-xs">
+    <div className="relative border rounded-md bg-white border-1 border-gray-300">
       <div className="flex items-center space-x-10 bg-gray-100 p-5 text-sm">
         <div>
           <p className="font-bold text-xs">ORDER PLACED</p>
