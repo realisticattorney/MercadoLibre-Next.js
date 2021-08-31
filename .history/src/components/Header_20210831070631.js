@@ -241,8 +241,9 @@ const Header = () => {
             <LocationMarkerIcon className="h-4 lg:h-7 mr-1 text-mercadolibre-blue heroicon-sw-1" />
             <span className="text-xs font-light text-left items-center">
               Deliver to{' '}
-              <span className="lg:line-clamp-2 lg:text-sm -mt-1">
+              <span className="lg:line-clamp-2 lg:text-sm items-center -mt-1">
                 Anywhere{' '}
+                <GlobeAltIcon className="h-4 inline-flex heroicon-sw-1" />
               </span>
             </span>
           </button>

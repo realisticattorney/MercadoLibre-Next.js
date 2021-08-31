@@ -12,17 +12,26 @@ const Orders = ({ orders }) => {
     <div>
       <Header />
       <main className="max-w-screen-lg flex">
-        <div className="flex-col bg-gray-100">
-          <div className="py-10 pl-4 pr-5 border-l-4 border-transparent text-blue-600">
+        <div className="flex-col bg-gray-100 p-5 ">
+          <div className="py-">
             <HeartIcon className="h-5" />
           </div>
-          <div className="py-4 pl-4 pr-5 transition ease-in-out cursor-pointer border-l-4 border-transparent hover:border-blue-500 text-gray-500">
+          <div>
             <HeartIcon className="h-5" />
           </div>
-          
+          <div>
+            <HeartIcon className="h-5" />
+          </div>
+          <div>
+            <HeartIcon className="h-5" />
+          </div>
+          <div>
+            <HeartIcon className="h-5" />
+          </div>
+          <div>
+            <HeartIcon className="h-5" />
+          </div>
         </div>
-
-      {/* right-side */}
         <div className="bg-gray-200 flex-grow">
           <h1 className="text-3xl border-b mb-2 pb-1 bg-blue-400">
             Your Orders

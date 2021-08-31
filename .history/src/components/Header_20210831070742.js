@@ -236,13 +236,14 @@ const Header = () => {
       </div>
 
       <div className="flex items-center justify-between space-x-3 py-2 pl-2 bg-mercadolibre text-sm lg:contents">
-        <div className="lg:col-span-1 lg:row-start-2 lg:col-start-1 lg:row-span-1">
+        <div className="lg:col-span-1 items-center lg:row-start-2 lg:col-start-1 lg:row-span-1">
           <button className="link flex items-center text-mercadolibre-blue no-underline focus:outline-none">
             <LocationMarkerIcon className="h-4 lg:h-7 mr-1 text-mercadolibre-blue heroicon-sw-1" />
             <span className="text-xs font-light text-left items-center">
               Deliver to{' '}
               <span className="lg:line-clamp-2 lg:text-sm -mt-1">
                 Anywhere{' '}
+                <GlobeAltIcon className="h-4 inline-flex heroicon-sw-1" />
               </span>
             </span>
           </button>

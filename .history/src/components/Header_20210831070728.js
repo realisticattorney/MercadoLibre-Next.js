@@ -243,6 +243,7 @@ const Header = () => {
               Deliver to{' '}
               <span className="lg:line-clamp-2 lg:text-sm -mt-1">
                 Anywhere{' '}
+                <GlobeAltIcon className="h-4 inline-flex heroicon-sw-1" />
               </span>
             </span>
           </button>
