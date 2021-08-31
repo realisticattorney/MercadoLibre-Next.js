@@ -30,7 +30,6 @@ import { Menu } from '@headlessui/react';
 import SvgIcon from '@material-ui/core/SvgIcon';
 import { grey } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
-import SignIn from './SignIn';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -322,8 +321,12 @@ const Header = () => {
                 </Menu.Items>
               </Menu>
             )}
-            <div className="cursor-pointer link">
-                      <SignIn />
+            <div className="cursor-pointer">
+              {session ? (
+                <p onClick={() => router.push('/orders')}>My orders</p>
+              ) : (
+                <p onClick={signIn}>Login</p>
+              )}
             </div>
             <div className="flex cursor-pointer  items-center pr-3">
               <p>{session ? `Favorites` : 'My orders'}</p>
