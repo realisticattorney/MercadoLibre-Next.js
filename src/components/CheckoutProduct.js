@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { addToBasket, removeFromBasket } from '../slices/basketSlice';
 
 const CheckoutProduct = ({ product }) => {
-  const { id, title, price, description, category, image } = product;
+  const { id, title, price, category, thumbnail, shipping } = product;
 
   const [rating] = useState(Math.round(Math.random() * 2) + 3);
 
@@ -21,43 +21,33 @@ const CheckoutProduct = ({ product }) => {
   };
 
   return (
-    <div className="grid grid-cols-5">
-      <Image src={image} width={200} height={200} objectFit="contain" />
-      {/* Middle Section */}
-      <div className="col-span-3 mx-5">
-        <p>{title}</p>
-        <div className="flex">
-          {Array(rating)
-            .fill()
-            .map((_, i) => (
-              <StarIcon key={i} className="h-5 text-yellow-500" />
-            ))}
-        </div>
+    <div className="grid grid-cols-5 pb-2 border-b">
+      <Image src={thumbnail} width={200} height={200} objectFit="contain" />
+      <div className="col-span-3 mx-5 space-y-3">
+        <p className="text-gray-700 font-semibold text-lg">{title}</p>
 
-        <p className="text-xs my-2 line-clamp-3">{description}</p>
-        <p className="font-semibold">${price}</p>
-
-        {hasPrime && (
+        {shipping.free_shipping === true && (
           <div className="flex items-center space-x-2">
-            <img
-              loading="lazy"
-              src="https://links.papareact.com/fdw"
-              alt=""
-              className="w-12"
-            />
-            <p className="text-xs text-gray-500">FREE Next-day Delivery</p>
+            <p className="text-sm text-green-500">Free Shipping</p>
           </div>
         )}
+        <div className="flex flex-col max-w-[150px] space-y-3">
+          <button
+            onClick={addItemToBasket}
+            className="link text-sm text-left mt-1 cursor-pointer no-underline focus:no-underline text-blue-600"
+          >
+            Add to Basket
+          </button>
+          <button onClick={removeItemFromBasket}   className="link text-sm text-left mt-3 cursor-pointer no-underline focus:no-underline text-blue-600"
+          >
+            Remove from Basket
+          </button>
+        </div>
       </div>
 
       {/* Right Section */}
       <div className="flex flex-col space-y-2 my-auto justify-self-end">
-        <button onClick={addItemToBasket} className="button">
-          Add to Basket
-        </button>
-        <button onClick={removeItemFromBasket} className="button">
-          Remove from Basket
-        </button>
+        <p className="mb-5 text-3xl font-regular text-gray-700">$ {price}</p>
       </div>
     </div>
   );
