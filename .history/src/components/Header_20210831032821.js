@@ -311,7 +311,7 @@ const Header = () => {
                         <a
                           href="#"
                           className="flex py-4 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
-                          
+                      
                           onClick={() => router.push('/orders')}
                         >
                           {item}
@@ -326,7 +326,7 @@ const Header = () => {
               {session ? (
                 <p onClick={() => router.push('/orders')}>My orders</p>
               ) : (
-                <p onClick={signIn}>Login</p>
+                <p onClick={sessionsignIn}>Login</p>
               )}
             </div>
             <div className="flex cursor-pointer  items-center pr-3">

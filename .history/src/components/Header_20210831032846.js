@@ -21,12 +21,14 @@ import {
   OfficeBuildingIcon,
   ViewGridIcon,
   QuestionMarkCircleIcon,
+  TicketIcon,
 } from '@heroicons/react/outline';
 import { signIn, signOut, useSession } from 'next-auth/client';
 import { useRouter } from 'next/router';
 import { useSelector } from 'react-redux';
 import { selectItems } from '../slices/basketSlice';
 import { Menu } from '@headlessui/react';
+import { useState } from 'react';
 import SvgIcon from '@material-ui/core/SvgIcon';
 import { grey } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
@@ -310,8 +312,7 @@ const Header = () => {
                       <div>
                         <a
                           href="#"
-                          className="flex py-4 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
-                          
+                          className="flex py-4items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
                           onClick={() => router.push('/orders')}
                         >
                           {item}
@@ -379,7 +380,6 @@ const Header = () => {
                             <h2 className="text-xl font-medium">Electronics</h2>
                           </div>
                           <div className="grid grid-cols-3 grid-rows-2 mt-5">
-                          
                             <div className="space-y-2">
                               <p className="font-medium hover:text-blue-600 cursor-pointer">
                                 Smartphones & Phones

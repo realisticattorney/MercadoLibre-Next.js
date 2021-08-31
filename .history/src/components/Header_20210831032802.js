@@ -311,7 +311,6 @@ const Header = () => {
                         <a
                           href="#"
                           className="flex py-4 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
-                          
                           onClick={() => router.push('/orders')}
                         >
                           {item}
@@ -322,11 +321,11 @@ const Header = () => {
                 </Menu.Items>
               </Menu>
             )}
-            <div className="cursor-pointer">
+            <div className="cursor-pointer link" onClick={session ? signOut : signIn}>
               {session ? (
-                <p onClick={() => router.push('/orders')}>My orders</p>
+                    <button onClick={() => signOut()}>Sign out</button>
               ) : (
-                <p onClick={signIn}>Login</p>
+                <button onClick={() => signIn()}>Sign in</button>
               )}
             </div>
             <div className="flex cursor-pointer  items-center pr-3">
@@ -379,7 +378,6 @@ const Header = () => {
                             <h2 className="text-xl font-medium">Electronics</h2>
                           </div>
                           <div className="grid grid-cols-3 grid-rows-2 mt-5">
-                          
                             <div className="space-y-2">
                               <p className="font-medium hover:text-blue-600 cursor-pointer">
                                 Smartphones & Phones

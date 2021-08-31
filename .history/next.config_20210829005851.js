@@ -3,9 +3,6 @@ module.exports = {
   images: {
     domains: ['http2.mlstatic.com', 'fakestoreapi.com'],
   },
-  future: {
-    webpack5: true,
-  },
   env: {
     stripe_public_key: process.env.STRIPE_PUBLIC_KEY,
   },
