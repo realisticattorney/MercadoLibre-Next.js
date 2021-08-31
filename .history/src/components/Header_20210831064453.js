@@ -375,14 +375,7 @@ const Header = () => {
                       <Menu.Item className="p-8">
                         <div className="flex flex-col w-full">
                           <div className="border-b border-gray-200 pb-2">
-                            <h2
-                              className="text-xl font-medium hover:text-blue-600 cursor-pointer"
-                              onClick={() =>
-                                router.replace(`/products/MLA1000`)
-                              }
-                            >
-                              Electronics
-                            </h2>
+                            <h2 className="text-xl font-medium">Electronics</h2>
                           </div>
                           <div className="grid grid-cols-3 grid-rows-2 mt-5">
                             <div className="space-y-2">
