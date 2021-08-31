@@ -325,7 +325,7 @@ const Header = () => {
               {session ? (
                 <p onClick={signOut}>{session.user.name}</p>
               ) : (
-                <p onClick={signIn}>Login</p>
+                <p onClick={signIn : signOut}>Login</p>
               )}
             </div>
             <div className="flex cursor-pointer  items-center pr-3">
