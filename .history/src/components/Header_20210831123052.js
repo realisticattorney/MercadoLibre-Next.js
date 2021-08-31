@@ -84,20 +84,20 @@ const Header = () => {
   ];
 
   const userMenuItems = [
-    ['Orders', 'orders'],
-    ['Questions', 'orders'],
-    ['Mercado-Credit', 'orders'],
-    ['Movies & TV Shows', 'MLA1000'],
-    ['Sell', 'orders'],
-    ['My account', 'orders'],
-    ['New releases', 'MLA1039'],
-    ['Publications', 'orders'],
-    ['Sold items', 'orders'],
-    ['Billing', 'orders'],
-    ['My personal information', 'orders'],
-    ['Security', 'orders'],
-    ['Privacy', 'orders'],
-    ['Log out', 'logout'],
+    ['Orders', "orders"]
+    ['Questions', "orders"]
+    ['Mercado-Credit', "orders"]
+    ['Movies & TV Shows', "MLA11830"]
+    ['Sell', "orders"]
+    ['My account', "orders"]
+    ['New releases', "MLA1039"]
+    ['Publications', "orders"]
+    ['Sold items', "orders"]
+    ['Billing', "orders"]
+    ['My personal information', "orders"]
+    ['Security', "orders"]
+    ['Privacy', "orders"]
+    ['Log out', "logout"]
   ];
 
   return (
@@ -309,31 +309,32 @@ const Header = () => {
                       }`}
                     >
                       <div>
-                        {index === 4 || index === 7 ? (
-                          <a
-                            href="#"
-                            className="flex py-4 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
-                            onClick={() => router.push(`/products/${item[1]}`)}
-                          >
-                            {item[0]}
-                          </a>
-                        ) : index === 13 ? (
-                          <a
-                            href="#"
-                            className="flex py-4 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
-                            onClick={signOut}
-                          >
-                            {item[0]}
-                          </a>
-                        ) : (
-                          <a
-                            href="#"
-                            className="flex py-4 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
-                            onClick={() => router.push('/orders')}
-                          >
-                            {item[0]}
-                          </a>
-                        )}
+                      {item === 4 || item === 5 ? (
+                        <a
+                          href="#"
+                          className="flex py-4 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
+                          onClick={() => router.push('/orders')}
+                        >
+                          {item[0]}
+                        </a>
+
+                      ) : item[1] === 'logout' ? (
+                        <a
+                          href="#"
+                          className="flex py-4 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
+                          onClick={() => router.push('/orders')}
+                        >
+                          {item}
+                        </a>
+                      ) : (
+                        <a
+                          href="#"
+                          className="flex py-4 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
+                          onClick={() => router.push('/orders')}
+                        >
+                          {item}
+                        </a>
+                      )}
                       </div>
                     </Menu.Item>
                   ))}
@@ -492,26 +493,17 @@ const Header = () => {
             </Menu.Items>
           </Menu>
           <div className="cursor-pointer no-underline ">
-            <p
-              className="link hidden lg:inline-flex focus:no-underline"
-              onClick={() => router.replace(`/products/MLA1039`)}
-            >
+            <p className="link hidden lg:inline-flex focus:no-underline"
+                   onClick={() => router.replace(`/products/MLA1039`)}>
               Offers
             </p>
           </div>
           <p className="link hidden lg:inline-flex">History</p>
-          <p
-            className="link hidden xl:inline-flex"
-            onClick={() => router.replace(`/products/MLA1423`)}
-          >
-            Supermarket
-          </p>
-          <p
-            className="link hidden xl:inline-flex"
-            onClick={() => router.replace(`/products/MLA3114`)}
-          >
-            Fashion
-          </p>
+          <p className="link hidden xl:inline-flex"
+               onClick={() => router.replace(`/products/MLA1423`)}>Supermarket</p>
+          <p className="link hidden xl:inline-flex"
+           onClick={() => router.replace(`/products/MLA3114`)}
+           >Fashion</p>
           <p className="link hidden lg:inline-flex">Sell</p>
           <p className="link hidden lg:inline-flex">Help</p>
         </div>

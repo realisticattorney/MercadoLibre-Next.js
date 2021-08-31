@@ -87,7 +87,7 @@ const Header = () => {
     ['Orders', 'orders'],
     ['Questions', 'orders'],
     ['Mercado-Credit', 'orders'],
-    ['Movies & TV Shows', 'MLA1000'],
+    ['Movies & TV Shows', 'MLA11830'],
     ['Sell', 'orders'],
     ['My account', 'orders'],
     ['New releases', 'MLA1039'],
@@ -309,15 +309,15 @@ const Header = () => {
                       }`}
                     >
                       <div>
-                        {index === 4 || index === 7 ? (
+                        {index === 4 || index === 5 ? (
                           <a
                             href="#"
                             className="flex py-4 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
-                            onClick={() => router.push(`/products/${item[1]}`)}
+                            onClick={() => router.push(`/products/${}`)}
                           >
                             {item[0]}
                           </a>
-                        ) : index === 13 ? (
+                        ) : index === 14 ? (
                           <a
                             href="#"
                             className="flex py-4 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"

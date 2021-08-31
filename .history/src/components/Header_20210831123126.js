@@ -84,20 +84,15 @@ const Header = () => {
   ];
 
   const userMenuItems = [
-    ['Orders', 'orders'],
-    ['Questions', 'orders'],
-    ['Mercado-Credit', 'orders'],
-    ['Movies & TV Shows', 'MLA1000'],
-    ['Sell', 'orders'],
-    ['My account', 'orders'],
-    ['New releases', 'MLA1039'],
-    ['Publications', 'orders'],
-    ['Sold items', 'orders'],
-    ['Billing', 'orders'],
-    ['My personal information', 'orders'],
-    ['Security', 'orders'],
-    ['Privacy', 'orders'],
-    ['Log out', 'logout'],
+    ['Orders', 'orders'][('Questions', 'orders')][('Mercado-Credit', 'orders')][
+      ('Movies & TV Shows', 'MLA11830')
+    ][('Sell', 'orders')][('My account', 'orders')][
+      ('New releases', 'MLA1039')
+    ][('Publications', 'orders')][('Sold items', 'orders')][
+      ('Billing', 'orders')
+    ][('My personal information', 'orders')][('Security', 'orders')][
+      ('Privacy', 'orders')
+    ][('Log out', 'logout')],
   ];
 
   return (
@@ -309,21 +304,21 @@ const Header = () => {
                       }`}
                     >
                       <div>
-                        {index === 4 || index === 7 ? (
+                        {item === 4 || item === 5 ? (
                           <a
                             href="#"
                             className="flex py-4 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
-                            onClick={() => router.push(`/products/${item[1]}`)}
+                            onClick={() => router.push('/orders')}
                           >
                             {item[0]}
                           </a>
-                        ) : index === 13 ? (
+                        ) : index === 14 ? (
                           <a
                             href="#"
                             className="flex py-4 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
-                            onClick={signOut}
+                            onClick={() => router.push('/orders')}
                           >
-                            {item[0]}
+                            {item}
                           </a>
                         ) : (
                           <a
@@ -331,7 +326,7 @@ const Header = () => {
                             className="flex py-4 items-center text-sm text-gray-700 font-medium hover:bg-blue-500 hover:text-white pl-6"
                             onClick={() => router.push('/orders')}
                           >
-                            {item[0]}
+                            {item}
                           </a>
                         )}
                       </div>

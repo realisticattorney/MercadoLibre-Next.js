@@ -8,7 +8,6 @@ import CategoryFeed from '../components/CategoryFeed';
 import fs from 'fs/promises';
 import path from 'path';
 import { getSession } from 'next-auth/client';
-import Footer from '../components/Footer';
 
 export default function Home({ categories }) {
   const router = useRouter();
@@ -31,7 +30,7 @@ export default function Home({ categories }) {
         </section>
       </main>
 
-      <Footer />
+      
     </div>
   );
 }
