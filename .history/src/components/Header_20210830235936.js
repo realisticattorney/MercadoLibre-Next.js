@@ -321,11 +321,12 @@ const Header = () => {
                 </Menu.Items>
               </Menu>
             )}
-            <div
-              className="cursor-pointer link"
-              onClick={session ? signOut : signIn}
-            >
-              <p>{session ? session.user.name : 'Login'}</p>
+            <div className="cursor-pointer link" onClick={session ? signOut : signIn}>
+              {session ? (
+                <p>{session.user.name}</p>
+              ) : (
+                <button onClick={signIn}>Login</button>
+              )}
             </div>
             <div className="flex cursor-pointer  items-center pr-3">
               <p>{session ? `Favorites` : 'My orders'}</p>
