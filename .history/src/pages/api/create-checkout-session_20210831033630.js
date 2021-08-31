@@ -27,10 +27,8 @@ export default async (req, res) => {
     },
     line_items: transformedItems,
     mode: 'payment',
-    success_url:
-      'https://mercado-libre-next-js-2dqagiag6-realisticattorney.vercel.app/success',
-    cancel_url:
-      'https://mercado-libre-next-js-2dqagiag6-realisticattorney.vercel.app/checkout',
+    success_url: "https://mercado-libre-next-js-2dqagiag6-realisticattorney.vercel.app/success",
+    cancel_url: cancelUrl,
     metadata: {
       email,
       images: JSON.stringify(items.map((item) => item.thumbnail)),
