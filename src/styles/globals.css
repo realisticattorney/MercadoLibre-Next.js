@@ -109,6 +109,6 @@ input:checked ~ .toggle-path {
   font-family: 'ProximaNova';
   src: url('/fonts/Nova/ProximaNova-ExtraBld.ttf');
   font-style: normal;
-  font-weight: 800;
+  font-weight: 900;
   font-display: swap;
 }

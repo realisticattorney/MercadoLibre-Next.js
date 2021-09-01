@@ -21,7 +21,6 @@ import {
   OfficeBuildingIcon,
   ViewGridIcon,
   QuestionMarkCircleIcon,
-  GlobeAltIcon,
 } from '@heroicons/react/outline';
 import { signIn, signOut, useSession } from 'next-auth/client';
 import { useRouter } from 'next/router';
@@ -116,7 +115,7 @@ const Header = () => {
             />
           </div>
           <div className="hidden lg:block">
-            <h2 className=" text-xl text-mercadolibre-blue line-clamp-2 font-extrabold opacity-95">
+            <h2 className=" text-xl text-mercadolibre-blue line-clamp-2 font-black opacity-95">
               mercado <span className="line-clamp-2 -mt-2.5">libre</span>
             </h2>
           </div>
