@@ -17,7 +17,7 @@ export default function Home({ categories }) {
     <div className="bg-gray-200">
       <Head>
         <title>Next MercadoLibre</title>
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.ico" />
         <meta
           property="og:image"
           content="https://og-image.vercel.app/.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg&images=https%3A%2F%2Fanymarket.com.ar%2Fwp-content%2Fuploads%2F2019%2F04%2F1200px-MercadoLibre-1.png&widths=undefined&widths=350&heights=200&heights=auto"
