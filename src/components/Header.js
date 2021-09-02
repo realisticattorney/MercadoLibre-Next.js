@@ -107,18 +107,26 @@ const Header = () => {
           className="flex items-center cursor-pointer lg:col-span-1 lg:row-start-1 lg:col-start-1 lg:row-span-1 mr-3"
           onClick={() => router.push('/')}
         >
-          <div className="relative w-12 h-9">
+          <div className="relative w-12 h-9 lg:hidden">
             <Image
               src="/images/logo.jpg"
               layout="fill"
-              className="cursor-pointer"
+              className="cursor-pointer lg:hidden"
+              quality={100}
             />
           </div>
-          <div className="hidden lg:block">
+          <div className="relative w-36 h-9 hidden lg:block">
+            <Image
+              src="/images/logo_large.png"
+              layout="fill"
+              className="hidden md:block cursor-pointer"
+            />
+          </div>
+          {/* <div className="hidden lg:block">
             <h2 className=" text-xl text-mercadolibre-blue line-clamp-2 font-black opacity-95">
               mercado <span className="line-clamp-2 -mt-2.5">libre</span>
-            </h2>
-          </div>
+            </h2> */}
+          {/* </div> */}
         </div>
 
         {/*center - Search*/}
