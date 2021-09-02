@@ -16,7 +16,7 @@ const Banner = () => {
         <div className="w-full h-72  from-gray-100 bottom-0 z-20">
           {/* img loading lazy means that doesnt slows down the app*/}
           <Image
-            quality={100}
+          quality={100}
             loading="lazy"
             objectFit="cover"
             layout="fill"
@@ -26,7 +26,7 @@ const Banner = () => {
         </div>
         <div>
           <Image
-            quality={100}
+          quality={100}
             loading="lazy"
             objectFit="cover"
             layout="fill"
@@ -36,7 +36,7 @@ const Banner = () => {
         </div>
         <div>
           <Image
-            quality={100}
+          quality={100}
             loading="lazy"
             objectFit="cover"
             layout="fill"
@@ -46,7 +46,7 @@ const Banner = () => {
         </div>
         <div>
           <Image
-            quality={100}
+          quality={100}
             loading="lazy"
             objectFit="cover"
             layout="fill"
@@ -56,7 +56,7 @@ const Banner = () => {
         </div>
         <div>
           <Image
-            quality={100}
+          quality={100}
             loading="lazy"
             objectFit="cover"
             layout="fill"

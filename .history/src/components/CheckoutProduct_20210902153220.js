@@ -22,13 +22,7 @@ const CheckoutProduct = ({ product }) => {
 
   return (
     <div className="grid grid-cols-5 pb-2 border-b">
-      <Image
-        src={thumbnail}
-        width={200}
-        height={200}
-        objectFit="contain"
-        quality={100}
-      />
+      <Image src={thumbnail} width={200} height={200} objectFit="contain" quality= />
       <div className="col-span-3 mx-5 space-y-3">
         <p className="text-gray-700 font-semibold text-lg">{title}</p>
 
@@ -44,9 +38,7 @@ const CheckoutProduct = ({ product }) => {
           >
             Add to Basket
           </button>
-          <button
-            onClick={removeItemFromBasket}
-            className="link text-sm text-left mt-3 cursor-pointer no-underline focus:no-underline text-blue-600"
+          <button onClick={removeItemFromBasket}   className="link text-sm text-left mt-3 cursor-pointer no-underline focus:no-underline text-blue-600"
           >
             Remove from Basket
           </button>

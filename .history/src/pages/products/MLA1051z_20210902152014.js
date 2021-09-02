@@ -30,12 +30,12 @@ const Practice = ({ products }) => {
               layout="fill"
               src="/images/banner-1.png"
               alt=""
-              quality={100}
             />
           </div>
         </div>
 
-        <ProductsFeedContainer products={products} />
+         <ProductsFeedContainer products={products} />
+       
       </main>
     </div>
   );

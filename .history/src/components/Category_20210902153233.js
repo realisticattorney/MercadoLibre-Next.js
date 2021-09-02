@@ -22,7 +22,6 @@ const Category = ({ category }) => {
         layout="fill"
         objectFit="cover"
         className="rounded-sm md:rounded-md"
-        quality={100}
       />
       <div className="absolute bottom-4 left-4 bg-gray-50 rounded-md p-3.5 text-xs text-gray-700 uppercase">
         <h4>up to</h4>
@@ -43,7 +42,6 @@ const Category = ({ category }) => {
         layout="fill"
         objectFit="cover"
         className="rounded-sm md:rounded-md"
-        quality={100}
       />
       <div className="text-center text-xs text-gray-700 uppercase">
         <h4 className="mt-3">up to</h4>
@@ -56,13 +54,7 @@ const Category = ({ category }) => {
       className="relative flex flex-col m-2 bg-white z-30 p-5 hover:shadow-2xl shadow-lg rounded-md transform transition-shadow cursor-pointer"
       onClick={() => router.replace(`/products/${id}`)}
     >
-      <Image
-        src={src}
-        height={93}
-        width={115}
-        objectFit="contain"
-        quality={100}
-      />
+      <Image src={src} height={93} width={115} objectFit="contain" quality= />
       <div className="text-center text-xs text-gray-700 uppercase">
         <h4 className="mt-3">up to</h4>
         <span className="font-bold text-xl">30% OFF</span>

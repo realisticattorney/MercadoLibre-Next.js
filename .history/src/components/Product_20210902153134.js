@@ -47,13 +47,7 @@ const Product = ({ product }) => {
         ></button>
       </div>
       <div className="border-b text-center">
-        <Image
-          src={thumbnail}
-          height={200}
-          width={200}
-          objectFit="contain"
-          quality={100}
-        />
+        <Image src={thumbnail} height={200} width={200} objectFit="contain" quality= />
       </div>
       <div className="p-5">
         {original_price && (

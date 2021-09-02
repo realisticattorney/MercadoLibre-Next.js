@@ -18,7 +18,10 @@ export default function Home({ categories }) {
       <Head>
         <title>Next MercadoLibre</title>
         <link rel="icon" href="/favicon.png" />
-        <meta property="og:image" content="/images/ogg.png" />
+        <meta
+          property="og:image"
+          content="/images/"
+        />
       </Head>
 
       <Header />

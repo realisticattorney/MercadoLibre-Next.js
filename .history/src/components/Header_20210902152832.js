@@ -120,7 +120,6 @@ const Header = () => {
               src="/images/logo_large.png"
               layout="fill"
               className="hidden md:block cursor-pointer"
-              quality={100}
             />
           </div>
           {/* <div className="hidden lg:block">

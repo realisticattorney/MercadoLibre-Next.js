@@ -33,7 +33,6 @@ const CategoryId = ({ products, categoryId }) => {
               layout="fill"
               src="/images/banner-1.png"
               alt=""
-              quality={100}
             />
           </div>
         </div>
